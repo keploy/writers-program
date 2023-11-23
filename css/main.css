@@ -1656,23 +1656,25 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     line-height: 42px;
     font-family: 'Inconsolata', monospace;
     font-size: 1.6rem;
+    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    color: #ff904d;
+    color: #6F0A0D;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
 .header-menu-toggle.opaque {
-    background-color: #6f0a0d;
+    background-color: #FF914D
+    ;
 }
 
 .header-menu-toggle.opaque .header-menu-text {
-    background-color: #6f0a0d;
+    background-color: #FF914D    ;
 }
 
 .header-menu-toggle:hover, .header-menu-toggle:focus {
-    color: #ff904d;
+    color: #6F0A0D;
 }
 
 .header-menu-text {
@@ -1853,6 +1855,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     position: absolute;
     right: 9.5rem;
     bottom: 8.4rem;
+    font-weight: 800;
 }
 
 .home-content__scroll a {
@@ -2511,7 +2514,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-works {
     background: #FFFFFF;
-    padding: 0 0 15rem 0;
+    padding: 0 0 0rem 0;
     min-height: 800px;
     position: relative;
     display: none;
@@ -3140,7 +3143,7 @@ html.no-csstransitions .home-content__main {
     top: 0;
     bottom: 0;
     right: 0;
-    background-color: #1a1d21;
+    background-color: #6F0A0D;
 }
 
 .contact-secondary .contact-info {
