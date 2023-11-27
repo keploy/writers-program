@@ -1217,7 +1217,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .display-1 {
     font-family: 'Lato', sans-serif;
-    font-size: 7.8rem;
+    font-size: 6.3rem;
     line-height: 1.25;
     color: #6f0a0d;
     margin-top: 0;
@@ -1229,7 +1229,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .display-2 {
     font-family: 'Lato', sans-serif;
-    font-size: 5.2rem;
+    font-size: 6.3rem;
     line-height: 1.255;
     color: #6f0a0d;
     margin-top: 0;
@@ -1665,12 +1665,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .header-menu-toggle.opaque {
-    background-color: #FF914D
+    background-color: #ffffff
     ;
 }
 
 .header-menu-toggle.opaque .header-menu-text {
-    background-color: #FF914D    ;
+    background-color: #ffffff    ;
 }
 
 .header-menu-toggle:hover, .header-menu-toggle:focus {
@@ -2211,7 +2211,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-about {
     padding-top: 16.2rem;
-    padding-bottom: 9rem;
+    padding-bottom: 15rem;
     background-color: #FFFFFF;
     color: #010507;
     position: relative;
@@ -2381,7 +2381,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-services {
     padding-top: 16.2rem;
-    padding-bottom: 13.2rem;
+    padding-bottom: 15.2rem;
     background-color: #FFFFFF;
     color: #757575;
     position: relative;
