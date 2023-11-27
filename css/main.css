@@ -792,7 +792,7 @@ input[type="reset"],
 input[type="button"] {
     display: inline-block;
     font-family: "Inconsolata", monospace;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     /* text-transform: uppercase; */
     letter-spacing: .3rem;
     height: 5.4rem;
@@ -3673,6 +3673,10 @@ html.no-csstransitions .home-content__main {
   width: auto;
 }
 
+
+
+
+
 /* End Footer Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
@@ -3956,5 +3960,38 @@ html.no-csstransitions .home-content__main {
 
     .modal-img{
         display: none;
+    }
+}
+
+
+
+
+
+.process-wrapper{
+    padding: 0 40rem;
+}
+@media screen and (max-width: 1920px) {
+    .process-wrapper{
+        padding: 0 25rem;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .process-wrapper{
+        padding: 0 12rem;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .process-wrapper{
+        padding: 0 10rem;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .process-wrapper{
+        padding: 0 6rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .process-wrapper{
+        padding: 0 4rem;
     }
 }
