@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]>
+<html class="no-js oldie" lang="en">
+  <![endif]-->
+  <!--[if IE 9 ]>
+  <html class="no-js oldie ie9" lang="en">
+    <![endif]-->
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <html class="no-js" lang="en">
+      <!--<![endif]-->
+      <head>
+        <!--- basic page needs
+          ================================================== -->
+        <meta charset="utf-8">
+        <title>Keploy's Writers Program</title>
+        <meta name="description" content="Keploy's Writers Program">
+        <meta name="author" content="Keploy.io">
+        <!-- mobile specific metas
+          ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS
+          ================================================== -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap"/>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/vendor.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+        <!-- script
+          ================================================== -->
+        <script src="js/modernizr.js"></script>
+        <script src="js/pace.min.js"></script>
+        <!-- favicons
+          ================================================== -->
+          <link rel="canonical" href="https://devrel.keploy.io/" />
+          <link rel="icon" href="./images/favicon.png" type="image/png">
+        <style>
+          ::-webkit-scrollbar {
+          width: 12px;
+          height: 8px;
+          }
+          /* Style the track of the scroll bar */
+          ::-webkit-scrollbar-track {
+          background-color: #FFFFFF; /* set background color */
+          }
+          /* Style the thumb of the scroll bar */
+          ::-webkit-scrollbar-thumb {
+          background-color: #000000; /* set thumb color */
+          }
+          .innerdiv {
+          transform: scale(0.9);
+          /* margin: 1rem; */
+          display: grid;
+          grid-gap: 1.5rem;
+          grid-template-rows: repeat(2, 36rem);
+          grid-template-columns: repeat(4, 33rem);
+          color:white;
+          }
+          .eachdiv {
+          padding: 4rem 5rem;
+          border-radius: 0.8rem;
+          color: white!important;
+          }
+          .div1 {
+          background: #E35134;
+          grid-column: 1/3;
+          grid-row: 1/2;
+          }
+          .div2 {
+          background: #E35134;
+          grid-column: 1/2;
+          grid-row: 2/3;
+          }
+          .div3 {
+          background: #E35134;
+          grid-column: 4/5;
+          grid-row: 1/3;
+          color: black;
+          }
+          .div4 {
+          background: #E35134;
+          grid-column: 3/4;
+          grid-row: 1/2;
+          color: black;
+          }
+          .div5 {
+          background: #E35134;
+          grid-column: 2/4;
+          grid-row: 2/3;
+          }
+          @media only screen and (max-width:791px){
+          .outerdiv{
+          display: none;
+          }
+          }
+          .userdetails {
+          display: flex;
+          }
+          .imgbox {
+          margin-right: 1rem;
+          }
+          .imgbox img {
+          border-radius: 50%;
+          max-width: 70px;
+          height: 70px;
+          width:70px;
+          }
+          .detbox {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          text-align: justify;
+          }
+          .detbox p {
+          margin: 0;
+          }
+          .detbox .name {
+          color: white;
+          font-size: 2rem;
+          margin-bottom: 0.1rem;
+          font-family: "montserrat-medium", sans-serif;
+          font-weight: 600;
+          }
+          .detbox .designation {
+          color: white;
+          font-size: 15px;
+          font-family: "montserrat-medium", sans-serif;
+          text-decoration: none;
+          }
+          .review {
+          display: flex;
+          text-align: left;
+          margin-top:-50px;
+          }
+        </style>
+      </head>
+      <body id="top">
+        <!-- <div class="modal" data-aos="fade-up">
+          <div class="modal-body">
+            <div class="modal-close">
+              <button onclick="modalClose()">Close</button>
+
+            </div>
+            <img src="./images/cohort3.png" class="modal-img" />
+            <img src="./images/cohort3mob.png" class="modal-img-mob" />
+          </div>
+        </div> -->
+        <div style="display:relative">
+        <header class="s-header">
+          <div class="header-logo">
+            <a class="site-logo" href="index.html">
+            <img src="./images/keploy-logo.png" style="transform: scale(2); margin-left:20px" alt="Homepage">
+            </a>
+          </div>
+          <nav class="header-nav">
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+            <div class="header-nav__content">
+              <h3>Navigation</h3>
+              <ul class="header-nav__list">
+                <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                <li><a class="smoothscroll"  href="#program" title="program">Program</a></li>
+                <li><a class="smoothscroll"  href="#writers-program" title="next">Process</a></li>
+                <li><a class="smoothscroll"  href="#community" title="community">Community</a></li>
+                <!-- <li><a class="smoothscroll"  href="#join" title="join">Join</a></li> -->
+              </ul>
+              <ul class="header-nav__social">
+                <li><a href="https://keploy.slack.com/"><i class="fa fa-slack"></i></a></li>
+                <li><a href="https://twitter.com/Keployio"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/keploy/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://keploy.hashnode.dev"><i class="fa fa-rss"></i></a></li>
+              </ul>
+            </div>
+          </nav>
+          <a class="header-menu-toggle" href="#0">
+          <span class="header-menu-text">Menu</span>
+          <span class="header-menu-icon"></span>
+          </a>
+        </header>
+        <!-- end s-header -->
+        <!-- home
+          ================================================== -->
+        <section id="home" class="s-home target-section" data-parallax="scroll"  data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+          <div class="overlay" ></div>
+          <div class="shadow-overlay"></div>
+          <div class="home-content">
+            <div class="row home-content__main">
+              <h1>
+                Keploy's <br/>Writers Program
+              </h1>
+              <h3>Get into the world of Technical Writing and experience <br/> the power of knowledge by writing technical content!!</h3>
+              <div class="home-content__buttons">
+                <a href="https://community.keploy.io" class=" btn btn--stroke">
+                Submit Blog
+                </a>
+                <a href="https://github.com/keploy/writers-program/blob/main/README.md" class="btn btn--stroke">
+                Know More
+                </a>
+              </div>
+            </div>
+            <div class="home-content__scroll">
+              <a href="#about" class="scroll-link smoothscroll">
+              <span>Scroll Down</span>
+              </a>
+            </div>
+            <!-- <div class="home-content__line"></div> -->
+          </div>
+          <!-- end home-content -->
+          <ul class="home-social">
+            <li>
+              <a href="https://keploy.slack.com/"><i class="fa fa-slack" aria-hidden="true"></i><span>Slack</span></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/Keployio"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg"><i class="fa fa-youtube" aria-hidden="true"></i><span>Youtube</span></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/keploy/"><i class="fa fa-linkedin" aria-hidden="true"></i><span>Linkedin</span></a>
+            </li>
+            <li>
+              <a href="https://keploy.hashnode.dev"><i class="fa fa-rss" aria-hidden="true"></i><span>Hashnode</span></a>
+            </li>
+          </ul>
+          <!-- end home-social -->
+        </section>
+        <!-- end s-home -->
+        <!-- about
+          ================================================== -->
+        <section id='about' class="s-about">
+          <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+              <h3 class="subhead subhead--dark">Hello There</h3>
+              <h1 class="display-1 display-1--light" style="
+              margin-bottom: -20px;">We Are Keploy</h1>
+            </div>
+          </div>
+          <!-- end section-header -->
+          <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full">
+              <p>
+                Keploy is a developer-centric backend testing tool. As an open source organisation, we believe everything should be  community-driven. Join us on a journey into the domain of technical writing and experience the growth and knowledge that accompanies this opportunity.
+              </p>
+            </div>
+          </div>
+          <!-- end about-desc -->
+          <!-- <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+            <div class="col-block stats__col ">
+              <div class="stats__count">3</div>
+              <h5>Cohorts</h5>
+            </div>
+            <div class="col-block stats__col">
+              <div class="stats__count">1000</div>
+              <h5>Applications</h5>
+            </div>
+            <div class="col-block stats__col">
+              <div class="stats__count">150</div>
+              <h5>Contributors</h5>
+            </div>
+            <div class="col-block stats__col">
+              <div class="stats__count">12</div>
+              <h5>Interns</h5>
+            </div>
+          </div> -->
+          <!-- end about-stats -->
+          <!-- <div class="about__line"></div> -->
+        </section>
+        <!-- end s-about -->
+        <!-- services
+          ================================================== -->
+        <section id='program' class="s-services">
+          <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+              <h3 class="subhead">Writers Program</h3>
+              <h1 class="display-2">Wanna know what it is like to be a Technical Writer?</h1>
+            </div>
+          </div>
+          <!-- end section-header -->
+          <div class="row services-list block-1-2 block-tab-full">
+            <div class="col-block service-item" data-aos="fade-up">
+              <div class="service-icon">
+                <img src="./images/bubble-gum-content-marketing.gif" alt="Learn gif"/>
+              </div>
+              <div class="service-text">
+                <h3 class="h2">Craft Content</h3>
+                <p>Master the art of creating engaging and informative technical content (a key focus in our Writers Program)</p>
+              </div>
+            </div>
+            <div class="col-block service-item" data-aos="fade-up">
+              <div class="service-icon">
+                <img src="./images/handy-line-machine-learning.gif" alt="Content gif"/>
+              </div>
+              <div class="service-text">
+                <h3 class="h2">Learn</h3>
+                <p>Step into the shoes of a technical writer and understand the aspects of technical content</p>
+              </div>
+            </div>
+            <div class="col-block service-item" data-aos="fade-up">
+              <div class="service-icon">
+                <img src="./images/bloom-online-video-conference-for-employees.gif" alt="Grow gif"/>
+              </div>
+              <div class="service-text">
+                <h3 class="h2">Flourish</h3>
+                <p>In the role of a writer, your audience is your canvas. Discover how to thrive and evolve alongside our vibrant writing community.</p>
+              </div>
+            </div>
+          </div>
+          <!-- end services-list -->
+        </section>
+        <!-- end s-services -->
+        <!-- NEXT DEVREL COHORT -->
+        <!-- <section id="next" class="s-services" style="margin-top:-200px">
+          <div class="intro-wrap">
+            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+              <div class="col-full">
+                <h3 class="subhead">DevRel Cohort 3.0</h3>
+                <h1 class="display-2 display-2--dark">Applications Close In</h1>
+              </div>
+            </div>
+<script src="https://cdn.logwork.com/widget/countdown.js"></script>
+<div>
+<a href="https://logwork.com/countdown-yt11" class="countdown-timer" style="margin-top:-130px" data-timezone="Asia/Kolkata" data-textcolor="#fff" data-date="2023-04-30 12:00" data-background="#644a3c" data-digitscolor="#ff904d" data-unitscolor="#ff904d"><span style="color:white">.</span></a>
+          </div>
+        </section> -->
+        <!-- works
+          ================================================== -->
+        <!-- <section id='community' class="s-works"> -->
+          <!-- <div class="intro-wrap">
+            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+              <div class="col-full">
+                <h3 class="subhead">Community❤️</h3>
+                <h1 class="display-2 display-2--light">This is what the folks from other programs have to say!</h1>
+              </div>
+            </div>
+          </div> -->
+          <!-- end intro-wrap -->
+          <!-- <div class="row works-content">
+            <div class="outerdiv">
+              <div class="innerdiv">
+                <div class="eachdiv div1">
+                  <div class="userdetails">
+                    <div class="imgbox">
+                      <img src="./images/testimonials/sanskriti.jpg" alt="">
+                    </div>
+                    <div class="detbox">
+                      <p class="name">Sanskriti Harmukh (GCE)</p>
+                      <p class="designation">DevRel Program Mentee</p>
+                    </div>
+                  </div>
+                  <div class="review">
+                    <p>
+                    <h4>If you are someone who is looking forward to stepping into the domain of DevRel and is eager to learn its goals in an open source organization then we have a space created for you called Keploy's DevRel Cohort, to boost up your learning and enhance your way of approaching a solution to a problem being a DevRel.</h4>
+                    </p>
+                  </div>
+                </div>
+                <div class="eachdiv div2">
+                  <div class="userdetails" style="margin-top:-10px !important">
+                    <div class="imgbox">
+                      <img src="./images/testimonials/animesh.jpg" alt="">
+                    </div>
+                    <div class="detbox">
+                      <p class="name" style="font-size:16px; text-align: left;">Animesh Pathak (Gold MLSA)</p>
+                      <p class="designation" style="margin-top:-4px">DevRel Program Mentee</p>
+                    </div>
+                  </div>
+                  <div class="review" >
+                    <p >
+                    <h5 style="line-height:1.6 !important" >My experience of DevRel Cohort 1.0 will forever resonate in my heart. I am able to improve my skills. All in all, the virtual atmosphere is simply uplifting and I am enjoying this work with such a great and impressive team!</h5>
+                    </p>
+                  </div>
+                </div>
+                <div class="eachdiv div3">
+                  <div class="userdetails" >
+                    <div class="imgbox">
+                      <img src="./images/testimonials/roy.jpg" alt="">
+                    </div>
+                    <div class="detbox">
+                      <p class="name" style="font-size:16px; text-align: left;">Jyotirmoy Roy</p>
+                      <p class="designation">IRLamigo</p>
+                    </div>
+                  </div>
+                  <div class="review" >
+                    <p>
+                    <h4>Participating in Keploy's DevRel Cohort as a mentee was an exceptional journey that enriched my knowledge and skills about DevRel role in an open-source company. The program helped me to effectively communicate with diverse stakeholders and understand the accountability of a DevRel. I'm grateful for the mentors' constant support and constructive feedback that aided me in making progress.</h4>
+                    </p>
+                  </div>
+                </div>
+                <div class="eachdiv div4">
+                  <div class="userdetails">
+                    <div class="imgbox">
+                      <img src="https://avatars.githubusercontent.com/u/65999534?v=4" alt="">
+                    </div>
+                    <div class="detbox">
+                      <p class="name" style="font-size:16px; text-align: left;">Diganta Kr Banik</p>
+                      <p class="designation" style="margin-top:-4px">Web Developer</p>
+                    </div>
+                  </div>
+                  <div class="review">
+                    <p>
+                    <h5>DevRel was something new to me. I had a great experience during the cohort as a mentee and learnt a lot during the contribution period. If you want to experience what a DevRel is, this program is a really great opportunity to understand the roles and responsibilites of a devrel.</h5>
+                    </p>
+                  </div>
+                </div>
+                <div class="eachdiv div5">
+                  <div class="userdetails">
+                    <div class="imgbox">
+                      <img src="./images/testimonials/shashwat.jpg" alt="">
+                    </div>
+                    <div class="detbox">
+                      <p class="name">Shashwat Gupta</p>
+                      <p class="designation">Backend Developer</p>
+                    </div>
+                  </div>
+                  <div class="review">
+                    <p>
+                    <h4>Keploy's DevRel Cohort has been a game-changer. Immersed in Developer Relations within open-source, I learned effective communication and the key role DevRel plays. Expert mentorship and collaborative peers enriched the journey. For those curious about DevRel's role in open-source, this program is an ideal gateway to explore and learn.</h4>
+                    </p>
+                  </div>
+                </div>
+              </div> -->
+              <!-- <div class="masonry">
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        
+                        <div class="item-folio__thumb">
+                            <p href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
+                                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Getting into the world of DevRel🥑 with <a href="https://twitter.com/Keployio?ref_src=twsrc%5Etfw">@Keployio</a>. Looking to learn and network with wonderful folks! Excited for the next 25 days! Had a lot fun discussing about Keploy and DevRel today! Thanks to <a href="https://twitter.com/sonichigo1219?ref_src=twsrc%5Etfw">@sonichigo1219</a> <a href="https://twitter.com/Senzkriti?ref_src=twsrc%5Etfw">@Senzkriti</a> <a href="https://t.co/eIpbu2Tmy1">pic.twitter.com/eIpbu2Tmy1</a></p>&mdash; Diganta Kr Banik🥑 (@banik_diganta) <a href="https://twitter.com/banik_diganta/status/1603458303253544960?ref_src=twsrc%5Etfw">December 15, 2022</a></blockquote> 
+                            </p>
+                        </div>
+                
+                        <div class="item-folio__thumb">
+                            <p href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
+                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">DevRel cohort 2.0 🥑 orientation call done and dusted 🫰<br>Looking forward to learning about Keploy and DevRel with <a href="https://twitter.com/Keployio?ref_src=twsrc%5Etfw">@Keployio</a> as a contributor for the next 25 days 🔥<br>Special thanks to <a href="https://twitter.com/sonichigo1219?ref_src=twsrc%5Etfw">@sonichigo1219</a> <a href="https://twitter.com/Senzkriti?ref_src=twsrc%5Etfw">@Senzkriti</a> for the awesome session ❤️ <a href="https://t.co/QJs6b7lo0S">pic.twitter.com/QJs6b7lo0S</a></p>&mdash; Barkatul Mujauddin🥑 (@barkatul_twt) <a href="https://twitter.com/barkatul_twt/status/1603673015061188608?ref_src=twsrc%5Etfw">December 16, 2022</a></blockquote>
+                        </p>
+                        </div>
+                
+                    </div>
+                </div> 
+                                    <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        
+                        <div class="item-folio__thumb">
+                            <p href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
+                                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Getting into the world of DevRel🥑 with <a href="https://twitter.com/Keployio?ref_src=twsrc%5Etfw">@Keployio</a>. Looking to learn and network with wonderful folks! Excited for the next 25 days! Had a lot fun discussing about Keploy and DevRel today! Thanks to <a href="https://twitter.com/sonichigo1219?ref_src=twsrc%5Etfw">@sonichigo1219</a> <a href="https://twitter.com/Senzkriti?ref_src=twsrc%5Etfw">@Senzkriti</a> <a href="https://t.co/eIpbu2Tmy1">pic.twitter.com/eIpbu2Tmy1</a></p>&mdash; Diganta Kr Banik🥑 (@banik_diganta) <a href="https://twitter.com/banik_diganta/status/1603458303253544960?ref_src=twsrc%5Etfw">December 15, 2022</a></blockquote> 
+                            </p>
+                        </div>
+                
+                        <div class="item-folio__thumb">
+                            <p href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
+                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">DevRel cohort 2.0 🥑 orientation call done and dusted 🫰<br>Looking forward to learning about Keploy and DevRel with <a href="https://twitter.com/Keployio?ref_src=twsrc%5Etfw">@Keployio</a> as a contributor for the next 25 days 🔥<br>Special thanks to <a href="https://twitter.com/sonichigo1219?ref_src=twsrc%5Etfw">@sonichigo1219</a> <a href="https://twitter.com/Senzkriti?ref_src=twsrc%5Etfw">@Senzkriti</a> for the awesome session ❤️ <a href="https://t.co/QJs6b7lo0S">pic.twitter.com/QJs6b7lo0S</a></p>&mdash; Barkatul Mujauddin🥑 (@barkatul_twt) <a href="https://twitter.com/barkatul_twt/status/1603673015061188608?ref_src=twsrc%5Etfw">December 16, 2022</a></blockquote>
+                        </p>
+                        </div>
+                
+                    </div>
+                </div>
+                </div>  -->
+          <!--  </div> -->
+            <!-- end col-full -->
+        <!--  </div> -->
+          <!-- end works-content -->
+       <!-- </section> -->
+        <!-- end s-works -->
+        <!-- clients
+          ================================================== -->
+        <!-- <section id="clients" class="s-clients">
+          <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+              <h3 class="subhead">COMMUNITY❤️</h3>
+              <h1 class="display-2">Look at what the previous folks have to say!</h1>
+            </div>
+          </div>
+          <div class="row clients-testimonials" data-aos="fade-up">
+            <div class="col-full">
+              <div class="testimonials">
+                <div class="testimonials__slide">
+                  <p>If you are someone who is looking forward to stepping into the domain of DevRel and is eager to learn its goals in an open source organization then we have a space created for you called Keploy's DevRel Cohort, to boost up your learning and enhance your way of approaching a solution to a problem being a DevRel.</p>
+                  <img src="./images/testimonials/sanskriti.jpg" alt="Author image" class="testimonials__avatar">
+                  <div class="testimonials__info">
+                    <span class="testimonials__name">Sanskriti Harmukh</span> 
+                    <span class="testimonials__pos">GitHub Campus Expert</span>
+                  </div>
+                </div>
+                <div class="testimonials__slide">
+                  <p>My experience of DevRel Cohort 1.0 will forever resonate in my heart. I am able to improve my skills. All in all, the virtual atmosphere is simply uplifting and I am enjoying this work with such a great and impressive team!</p>
+                  <img src="./images/testimonials/animesh.jpg" alt="Author image" class="testimonials__avatar">
+                  <div class="testimonials__info">
+                    <span class="testimonials__name">Animesh Pathak</span> 
+                    <span class="testimonials__pos">Gold MLSA</span>
+                  </div>
+                </div>
+                <div class="testimonials__slide">
+                  <p>Participating in Keploy's DevRel Cohort as a mentee was an exceptional journey that enriched my knowledge and skills about the DevRel role in an open-source company. The program helped me to effectively communicate with diverse stakeholders and understand the accountability of a DevRel. I'm grateful for the mentors' constant support and constructive feedback that aided me in making progress. The collaboration with other mentees was also an enjoyable experience that added to the learning curve.</p>
+                  <img src="./images/testimonials/roy.jpg" alt="Author image" class="testimonials__avatar">
+                  <div class="testimonials__info">
+                    <span class="testimonials__name">Jyotirmoy Roy</span> 
+                    <span class="testimonials__pos">IRLamigo</span>
+                  </div>
+                </div>
+                <div class="testimonials__slide">
+                  <p>DevRel was something new to me. I had a great experience during the cohort as a mentee and learnt a lot during the contribution period. If you want to experience what a DevRel is, this program is a really great opportunity to understand the roles and responsibilites of a devrel.</p>
+                  <img src="./images/testimonials/diganta.jpg" alt="Author image" class="testimonials__avatar">
+                  <div class="testimonials__info">
+                    <span class="testimonials__name">Diganta Kr Banik</span> 
+                    <span class="testimonials__pos">Web Developer</span>
+                  </div>
+                </div>
+                <div class="testimonials__slide">
+                  <p>Being a mentee of Keploy's DevRel Cohort was a great experience for me. I learned a lot about the role and responsibilities of a DevRel in an open-source organization, and how to communicate effectively with different stakeholders. The mentors were very supportive and helpful, and they gave me valuable feedback and guidance throughout the program. I also enjoyed collaborating with other mentees.</p>
+                  <img src="./images/testimonials/barkatul.jpg" alt="Author image" class="testimonials__avatar">
+                  <div class="testimonials__info">
+                    <span class="testimonials__name">Barkatul Mujauddin</span> 
+                    <span class="testimonials__pos">Founder HackForCode</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <!-- end s-clients -->
+        <!-- contact
+          ================================================== -->
+
+        <section id="writers-program" style="padding-bottom: 6rem;">
+          <h2 class="process-section-title" style="text-align: center; font-size: 6.3rem; color: #6f0a0d; margin-bottom: 6rem;">
+           The Process
+          </h2>
+          <div class="process-wrapper" style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: space-evenly;">
+            <div class="process-item">
+              <div class="process-div" style="display: flex; flex-direction: row; ">
+                <h3 style="font-size: 3rem;">01</h3>
+                <img src="./images/handy-folder-with-idea-bulb.gif" alt="Content gif" style="height:130px"/>
+              </div>
+              <h4 style="padding-left: 4rem; margin-top: -1rem;">Submit Idea</h4>
+              <p style="width: 36rem; padding-left: 4rem;">Use our application form to submit your content idea with an outline and a previous writing example.</p>
+            </div>
+            <div class="process-item">
+              <div class="process-div" style="display: flex; flex-direction: row;">
+                <h3 style="font-size: 3rem;">02</h3>
+                <img src="./images/dazzle-man-programmer-writing-code-on-a-laptop.gif" alt="Content gif" style="height:130px"/>
+              </div>
+              <h4 style="padding-left: 4rem; margin-top: -1rem;">Write the Content</h4>
+              <p style="width: 36rem; padding-left: 4rem;">Once your topic is approved, start writing. Additional guidelines will be provided to assist you in the process.</p>
+            </div>
+            <div class="process-item">
+              <div class="process-div" style="display: flex; flex-direction: row;">
+                <h3 style="font-size: 3rem;">03</h3>
+                <img src="./images/juicy-woman-is-looking-for-perfect-candidate-1.gif" alt="Content gif" style="height:130px"/>
+              </div>
+              <h4 style="padding-left: 4rem; margin-top: -1rem;">Refine</h4>
+              <p style="width: 36rem; padding-left: 4rem;">Submissions will be reviewed every 3 months, providing feedback and requesting structural changes for selected topics.</p>
+            </div>
+            <div class="process-item">
+              <div class="process-div" style="display: flex; flex-direction: row;">
+                <h3 style="font-size: 3rem;">04</h3>
+                <img src="./images/dizzy-education.gif" alt="Content gif" style="height:130px"/>
+              </div>
+              <h4 style="padding-left: 4rem; margin-top: -1rem;">Revise</h4>
+              <p style="width: 36rem; padding-left: 4rem;">Submit your draft, collaborate with editors, image design, and article prep. Anticipate 1-2 rounds of revisions in 1-2 weeks.</p>
+            </div>
+            <div class="process-item">
+              <div class="process-div" style="display: flex; flex-direction: row;">
+                <h3 style="font-size: 3rem;">05</h3>
+                <img src="./images/dazzle-blog-post-article.gif" alt="Content gif" style="height:130px"/>
+              </div>
+              <h4 style="padding-left: 4rem; margin-top: -1rem;">Publish</h4>
+              <p style="width: 36rem; padding-left: 4rem;">After revisions, we publish your article, send your compensation, and promote it across all our channels.</p>
+            </div>
+            <div class="process-item">
+              <div class="process-div" style="display: flex; flex-direction: row;">
+                <h3 style="font-size: 3rem;">06</h3>
+                <img src="./images/juicy-man-programmer-writing-code-and-make-web-design-on-a-pc.gif" alt="Content gif" style="height:130px"/>
+              </div>
+              <h4 style="padding-left: 4rem; margin-top: -1rem;">Repeat</h4>
+              <p style="width: 36rem; padding-left: 4rem;">There's no limit; you can publish multiple articles. Build a lasting relationship with us by starting the process again from step 1.</p>
+            </div>
+          </div>
+
+          <div class="home-content__buttons" style="padding-top: 0rem; text-align:center">
+            <a href="https://github.com/keploy/writers-program/blob/main/README.md#technical-writing-guidelines" class="btn btn--stroke">
+            Guidelines
+            </a>
+          </div>
+        </section>
+
+        <section id="criteria" style="padding-bottom: 6rem;">
+          <h2 id="process-section-title" style="text-align: center; font-size: 6.3rem; color: #6f0a0d; margin-bottom: 6rem;">
+            Evaluation Criteria
+           </h2>
+          <div class="based-on-application">
+            Based on the application, we will review the following:
+          </div>
+          <div class="listed-criteria">
+            <ol>
+              <li class="criteria-list"><b>Originality: </b><p>Submissions should be entirely original, showcasing your unique perspective and insights.</p></li>
+              <li class="criteria-list"><b>Relevance to Software Developers: </b><p>Content should be tailored for a target audience of beginner to intermediate software developers.</p></li>
+              <li class="criteria-list"><b>Keyword Volume Requirement: </b><p>Ensure the chosen keyword for the blog has a volume of at least more than 400.</p></li>
+              <li class="criteria-list"><b>Conformity to Plagiarism: </b><p>Adhere strictly to the plagiarism policy. Avoid any form of reproducing or claiming someone else's work.</p></li>
+              <li class="criteria-list"><b>Compliance with Terms & Conditions: </b><p>Understand and comply with the terms and conditions of the Keploy Community Writing Program.</p></li>
+            </ol>
+          </div>
+
+          <div class="home-content__buttons" style="padding-top: 0rem; text-align:center">
+            <a href="https://github.com/keploy/writers-program/blob/main/README.md" class="btn btn--stroke">
+            Know More!
+            </a>
+          </div>
+        </section>
+
+
+        <!-- <section id="necessity">
+
+          <div>
+            <h1 style="text-align: center; color: #F76B1C; font-size: 6.3rem; margin-bottom: 6rem;">Necessities</h1>
+          </div>
+
+          <div id="points">
+            <div>
+              <p style="font-family: 'Inconsolata', monospace; font-size: 30px; margin-left: 13.8%; margin-top: 60px; color: #121212;">Originality</p>
+            </div>
+            <div style="flex-shrink: 0; stroke: #000; margin-left: 18%; margin-top: -40px; border: 1px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="133" height="89" viewBox="0 0 133 89" fill="none">
+                <path d="M132.248 85L126.856 82.9368L127.765 88.6383L132.248 85ZM127.73 85.2144C104.212 88.638 71.3229 88.376 45.0172 76.8554C31.8732 71.099 20.3902 62.5397 12.527 50.2405C4.66562 37.9439 0.396535 21.8686 1.74703 1.03234L0.749125 0.96766C-0.612742 21.9793 3.68985 38.2742 11.6845 50.7791C19.6774 63.2814 31.3348 71.9549 44.6161 77.7714C71.1608 89.3968 104.261 89.6414 127.874 86.2039L127.73 85.2144Z" fill="black"/>
+                </svg>
+            </div>
+            <div style="text-align: center;">
+              <p style="font-family: 'Inconsolata', monospace; font-size: 30px; margin-left: 24.7%; margin-top: -29px; color: #121212; font-style: normal; line-height: normal; width: 260px;">Keywords volume more than 400</p>
+            </div>
+            <div  style="flex-shrink: 0; stroke: #000; margin-left: 38.2%; margin-top: -120px; border: 1px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="195" height="85" viewBox="0 0 195 85" fill="none">
+                <path d="M192 84.5212L194.823 79.4849L189.05 79.5583L192 84.5212ZM1.2461 37.9565C32.6614 20.1929 79.5417 1.24374 118.905 1.50262C138.576 1.63199 156.313 6.5572 169.321 18.7607C182.325 30.9603 190.682 50.5077 191.443 80.049L192.443 80.0232C191.677 50.3092 183.263 30.4697 170.005 18.0314C156.751 5.59688 138.734 0.633005 118.912 0.502643C79.2889 0.242056 32.225 19.2908 0.753896 37.086L1.2461 37.9565Z" fill="black"/>
+              </svg>
+            </div>
+            <div style="text-align: center; margin-top: -10px; display: flex; align-items: center; justify-content: center;">
+              <p style="font-family: 'Inconsolata', monospace; font-size: 30px; color: #121212; font-style: normal; line-height: normal; margin-bottom: 0px; width: 300px;">Relevance to Software Developers</p>
+            </div>
+            <div  style="flex-shrink: 0; stroke: #000; margin-left: 48.8%; margin-top: 5px; border: 1px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="162" height="131" viewBox="0 0 162 131" fill="none">
+                <path d="M161.993 119L156.371 117.687L158.044 123.212L161.993 119ZM2.49899 0.921442C-2.13188 30.0297 0.113404 70.7837 21.8553 98.887C43.6492 127.058 84.882 142.342 157.811 120.789L157.527 119.83C84.8182 141.318 44.0917 125.995 22.6462 98.2751C1.14881 70.4878 -1.12521 30.0669 3.48657 1.07856L2.49899 0.921442Z" fill="black"/>
+              </svg>
+            </div>
+            <div style="text-align: center; margin-top: -40px; margin-left: 53.6%;">
+              <p style="font-family: 'Inconsolata', monospace; font-size: 30px; color: #121212; font-style: normal; line-height: normal; margin-bottom: 0px; width: 355px;">Conformity to Plagiarism Policy</p>
+            </div>
+            <div  style="flex-shrink: 0; stroke: #000; margin-left: 895px; margin-top: -65px; margin-left: 69%; border: 1px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="190" height="102" viewBox="0 0 190 102" fill="none">
+                <path d="M186 101.168L189.266 96.4075L183.51 95.9589L186 101.168ZM1.16591 17.6398C33.8865 6.13001 82.0358 -3.54007 121.012 4.40074C140.49 8.36895 157.635 16.7261 169.44 31.4071C181.242 46.084 187.759 67.1468 185.852 96.6334L186.85 96.6979C188.768 67.0323 182.218 45.7011 170.22 30.7804C158.225 15.8638 140.839 7.41964 121.212 3.42087C81.9786 -4.57227 33.6274 5.16107 0.834086 16.6964L1.16591 17.6398Z" fill="black"/>
+              </svg>
+            </div>
+            <div style="text-align: center; margin-top: -10px; margin-left: 70.6%;">
+              <p style="font-family: 'Inconsolata', monospace; font-size: 30px; color: #121212; font-style: normal; line-height: normal; margin-bottom: 0px; width: 300px;">Compliance with Terms & Conditions</p>
+            </div>
+          </div>
+
+
+          <div class="home-content__buttons" style="padding-top: 5rem; text-align:center">
+            <a href="https://github.com/keploy/writers-program/blob/main/README" class="btn btn--stroke">
+            Know More!
+            </a>
+
+        </section> -->
+
+
+
+
+
+        <section id="join" class="s-contact">
+          <div class="overlay"></div>
+          <!-- <div class="contact__line"></div> -->
+          <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+              <!-- <h3 class="subhead">Join Our API Community Today!</h3> -->
+              <h1 class="display-2 display-2--light">Join Our Community Today!</h1>
+            </div>
+          </div>
+          <div class="row contact-content" data-aos="fade-up">
+            <div class="contact-primary">
+              <h3 class="h6">Get Involved In The Community Today!</h3>
+              <img src="./images/slack.png" alt="Slack Image"/>
+              <!-- <img src="./images/slack2.png"/> -->
+              <button class="join-btn"><a href="https://keploy.slack.com/">Join Slack</a></button>
+            </div>
+            <!-- end contact-primary -->
+            <div class="contact-secondary">
+              <div class="contact-info">
+                <!-- <h3 class="h6 hide-on-fullwidth">Contact Info</h3> -->
+                <div class="cinfo">
+                  <h2 style="color:#ddcece;">Connect with writers, mentors, and enthusiasts worldwide who share a passion for crafting content and exploring the layers of technology!</h5>
+                </div>
+                <ul class="contact-social">
+                  <li><a href="https://keploy.slack.com/"><i class="fa fa-slack"></i></a></li>
+                  <li><a href="https://twitter.com/Keployio"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg"><i class="fa fa-youtube"></i></a></li>
+                  <li><a href="https://www.linkedin.com/company/keploy/"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://keploy.hashnode.dev"><i class="fa fa-rss"></i></a></li>
+                </ul>
+                <!-- end contact-social -->
+              </div>
+              <!-- end contact-info -->
+            </div>
+            <!-- end contact-secondary -->
+          </div>
+          <!-- end contact-content -->
+        </section>
+        <!-- end s-contact -->
+        <!-- <section>
+          <div style="width: 100%; height:200px;background:orange; display: flex; flex-direction: column; justify-content: center;align-items: center;"><button style="margin:0 auto;">Join The Next Cohort Today!</button></div>
+          </section> -->
+        <!-- footer
+          ================================================== -->
+        <!--================Impress Area =================-->
+        <!-- <section class="impress_area">
+          <div class="container">
+            <div class="impress_inner">
+              <h2 class="mb-30">Sign-up for the newsletter!</h2>
+              <aside class="f_widget">
+                <div id="mc_embed_signup">
+                  <form id="newsletter" target="" action="" method="post"  class="subscribe_form relative ">
+                    <div class="input-group d-flex flex-row justify-content-center ">
+                      <input name="email" class="input" placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" required="" type="email">
+                      <button class="btn sub-btn submit-btn" style="border:1px;"><span class="lnr lnr-arrow-right"></span></button>
+                    </div>
+                    <div class="mt-10 info"></div>
+                  </form>
+                  <div class="alert alert-warning alert-msg text-hide" role="alert">
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section> -->
+        <!--================End Impress Area =================-->
+        <!--================Footer Area =================-->
+        <footer class="footer_area">
+          <div class="container">
+            <div class="row footer_inner">
+              <div class="col-lg-5 col-sm-6">
+                <aside class="f_widget ab_widget">
+                  <div class="f_title">
+                    <h3 style="margin-left: -10px;">Copyright © 2023  Keploy Inc.</h3>
+                  </div>
+                  <p>Developers experience for e2e testing. Toolkit that creates test-cases and data mocks from API calls, DB queries, etc.</p>
+                </aside>
+              </div>
+              <div class="col-lg-5 col-sm-6">
+                <aside class="f_widget news_widget">
+                  <div class="f_title">
+                    <h3>Newsletter</h3>
+                  </div>
+                  <p>Stay updated with our latest trends</p>
+                  <div id="mc_embed_signup-impress">
+                    <form id="newsletter-1" target="" action="" method="post" class="subscribe_form relative">
+                      <div class="input-group d-flex flex-row justify-content-center">
+                        <input name="email" class="input" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                        <button class="btn sub-btn submit-btn" style="border:1px; right:0px;"><span class="lnr lnr-arrow-right"></span></button>
+                      </div>
+                      <div class="mt-10 info"></div>
+                    </form>
+                    <div class="alert alert-warning alert-msg text-hide" role="alert"></div>
+                  </div>
+                </aside>
+              </div>
+              <div class="col-lg-2">
+                <aside class="f_widget social_widget">
+                  <div class="f_title">
+                    <h3>Find us on</h3>
+                  </div>
+                  <p>Let us be social</p>
+                  <ul class="list" style="margin-left:0">
+                    <li><a href="https://keploy.slack.com/"><i class="fa fa-slack"></i></a></li>
+                    <li><a href="https://twitter.com/Keployio"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/keploy/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://keploy.hashnode.dev"><i class="fa fa-rss"></i></a></li>
+                  </ul>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- photoswipe background
+          ================================================== -->
+        <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+          <div class="pswp__bg"></div>
+          <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+              <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                  "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                  "Zoom in/out"></button>
+                <div class="pswp__preloader">
+                  <div class="pswp__preloader__icn">
+                    <div class="pswp__preloader__cut">
+                      <div class="pswp__preloader__donut"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+              </div>
+              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+              <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end photoSwipe background -->
+        <!-- preloader
+          ================================================== -->
+        <!-- <div id="preloader">
+          <div id="loader">
+            <div class="line-scale-pulse-out">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div> -->
+        <!-- Java Script
+          ================================================== -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script>
+          // function modalClose(){
+          //   $('.modal:first').css('display','none');
+          //   $('body').css('overflow','auto');
+          // }
+          // $(document).on('keydown scroll mousewheel touchmove', function(event) {
+          //   if ($('#modal').is(':visible')) {
+          //     event.preventDefault();
+          //   }
+          // });
+        </script>  
+      </div>
+      </body>
+    </html>
