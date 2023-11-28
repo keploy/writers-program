@@ -792,7 +792,8 @@ input[type="reset"],
 input[type="button"] {
     display: inline-block;
     font-family: "Inconsolata", monospace;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 600;
     /* text-transform: uppercase; */
     letter-spacing: .3rem;
     height: 5.4rem;
@@ -3994,4 +3995,32 @@ html.no-csstransitions .home-content__main {
     .process-wrapper{
         padding: 0 4rem;
     }
+}
+
+
+.based-on-application{
+    font-family: 'Lato', sans-serif;
+    width: 58%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 26px;
+    line-height: 1.286;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.listed-criteria {
+    margin-top: 50px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 1.286;
+    color: #000;
+    line-height: 25px;
+}
+
+.criteria-list {
+    /* margin-top: 20px; */
+    margin-bottom: 40px;
 }
