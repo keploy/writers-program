@@ -21,7 +21,7 @@ At Keploy, we're always looking for new ways for our community to get involved i
  </ul>
 
 ## How to submit?
-To submit your idea, please complete our [Write for Us](https://community.keploy.io/) which contains either an article outline or a draft of your article.
+To submit your idea, please complete our [Write for Us](https://forms.gle/643QLb78zpRjkJ6s7) which contains either an article outline or a draft of your article.
 
 ## About you!!
 We're looking for diverse skilled writers with deep technical knowledge to write content for us. You should have experience writing content, be comfortable receiving feedback about your work, and be open to making revisions recommended by our editorial team. We typically prefer content that targets beginner to intermediate software developers, but we are open to a range of technical depth.
