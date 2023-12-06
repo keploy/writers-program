@@ -1903,6 +1903,15 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     bottom: 0;
 }
 
+.bunny {
+    margin: 0;
+    position: absolute;
+    top: 52%;
+    right: 20.4rem;
+    -webkit-transform: translate3d(0, -50%, 0);
+    -ms-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+}
 
 /* ------------------------------------------------------------------- 
  * ## home social 
