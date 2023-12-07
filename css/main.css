@@ -2006,7 +2006,7 @@ html.cl-preload .home-content__main {
 }
 
 html.cl-loaded .home-content__main {
-    animation-duration: 2s;
+    animation-duration: 1s;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
 }
@@ -3277,8 +3277,8 @@ html.no-csstransitions .home-content__main {
     border-radius: 100%;
     display: inline-block;
     margin-right: .9rem;
-    -webkit-animation: bouncedelay 1.4s infinite ease-in-out both;
-    animation: bouncedelay 1.4s infinite ease-in-out both;
+    -webkit-animation: bouncedelay 1s infinite ease-in-out both;
+    animation: bouncedelay 1s infinite ease-in-out both;
 }
 
 .s-loader .bounce1 {
