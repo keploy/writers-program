@@ -77,11 +77,11 @@ html, body {
 body {
     background: #ffffff;
     font-family: 'Inconsolata', monospace;
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: normal;
     line-height: 1.765;
-    color: #757575;
+    color: #000000;
     margin: 0;
     padding: 0;
     /* overflow: hidden; */
@@ -215,7 +215,8 @@ em, i {
 }
 
 strong, b {
-    font-family: "lora-bold", serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
 }
 
 small {
@@ -875,7 +876,7 @@ input[type="button"].btn--primary:focus {
 }
 
 .btn--stroke, button.btn--stroke {
-    background: transparent !important;
+    /* background: transparent !important; */
     border: 0.2rem solid #ff904d;
     color: #ff904d;
 }
@@ -1232,7 +1233,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-family: 'Lato', sans-serif;
     font-size: 6.3rem;
     line-height: 1.255;
-    color: #6f0a0d;
+    color: #F89559;
     margin-top: 0;
 }
 
@@ -1514,10 +1515,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .header-nav h3 {
     font-family: "Inconsolata-semibold", monospace;
-    font-size: 15px;
+    font-size: 26 px;
     font-weight: bold;
-    line-height: 1.5;
-    text-transform: uppercase;
+    line-height: 0.5;
+    text-transform: normal;
     letter-spacing: .25rem;
     margin-bottom: 2.8rem;
     margin-top: .9rem;
@@ -1537,7 +1538,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .header-nav__list {
     font-family: 'Inconsolata', monospace;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 3.6rem 0 3rem 0;
     padding: 0 0 1.8rem 0;
     list-style: none;
@@ -1660,7 +1661,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    color: #6F0A0D;
+    color: #00163D;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
@@ -1675,7 +1676,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .header-menu-toggle:hover, .header-menu-toggle:focus {
-    color: #6F0A0D;
+    color: #00163D;
 }
 
 .header-menu-text {
@@ -1810,7 +1811,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin-top: 0;
     margin-bottom: 1.2rem;
     margin-left: 6px;
-    font-weight: 600;
+    font-weight: normal;
 }
 
 .home-content h1 {
@@ -1835,7 +1836,17 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .home-content__buttons .btn {
     width: 215px;
     border-color: #121212;
-    color: #121212;
+    color: #00163D;
+    margin: 1.5rem 1.5rem 0 0;
+    letter-spacing: .25rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn2 {
+    width: 215px;
+    border-color: #121212;
+    color: #00163D;
     margin: 1.5rem 1.5rem 0 0;
     letter-spacing: .25rem;
     -webkit-transition: all 0.5s ease-in-out;
@@ -1864,7 +1875,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    color: #121212;
+    color: #00163D;
     position: relative;
     display: inline-block;
     line-height: 3rem;
@@ -1903,6 +1914,15 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     bottom: 0;
 }
 
+.bunny {
+    margin: 0;
+    position: absolute;
+    top: 52%;
+    right: 20.4rem;
+    -webkit-transform: translate3d(0, -50%, 0);
+    -ms-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+}
 
 /* ------------------------------------------------------------------- 
  * ## home social 
@@ -1957,7 +1977,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-social span {
-    color: #6f0a0d;
+    color: #00163D;
     right: 4.5rem;
     font-size: 1.5rem;
     opacity: 0;
@@ -1986,7 +2006,7 @@ html.cl-preload .home-content__main {
 }
 
 html.cl-loaded .home-content__main {
-    animation-duration: 2s;
+    animation-duration: 1s;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
 }
@@ -2384,7 +2404,7 @@ html.no-csstransitions .home-content__main {
     padding-top: 16.2rem;
     padding-bottom: 15.2rem;
     background-color: #FFFFFF;
-    color: #757575;
+    color: #000000;
     position: relative;
 }
 
@@ -3047,7 +3067,7 @@ html.no-csstransitions .home-content__main {
 .contact-content h3 {
     margin-top: 0;
     margin-bottom: 6.6rem;
-    color: #6f0a0d;
+    color: #00163D;
 }
 
 .contact-content h5 {
@@ -3144,7 +3164,7 @@ html.no-csstransitions .home-content__main {
     top: 0;
     bottom: 0;
     right: 0;
-    background-color: #6F0A0D;
+    background-color: #00163D;
 }
 
 .contact-secondary .contact-info {
@@ -3257,8 +3277,8 @@ html.no-csstransitions .home-content__main {
     border-radius: 100%;
     display: inline-block;
     margin-right: .9rem;
-    -webkit-animation: bouncedelay 1.4s infinite ease-in-out both;
-    animation: bouncedelay 1.4s infinite ease-in-out both;
+    -webkit-animation: bouncedelay 1s infinite ease-in-out both;
+    animation: bouncedelay 1s infinite ease-in-out both;
 }
 
 .s-loader .bounce1 {
@@ -3891,9 +3911,9 @@ html.no-csstransitions .home-content__main {
 
 .join-btn{
     margin:0 auto;
-    background-color: #6f0a0d;
+    background-color: #00163D;
     border-radius: 5px;
-    color:white;
+    color:#FF914D;
     outline: none;
     border:0px;
 }
@@ -4014,7 +4034,7 @@ html.no-csstransitions .home-content__main {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1.286;
     color: #000;
     line-height: 25px;
