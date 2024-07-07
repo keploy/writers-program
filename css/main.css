@@ -1826,6 +1826,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .home-content__main {
     padding-top: 24rem;
     position: relative;
+    z-index: 60;
 }
 
 .home-content__buttons {
@@ -1922,6 +1923,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-transform: translate3d(0, -50%, 0);
     -ms-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0);
+    z-index: 50;
 }
 
 /* ------------------------------------------------------------------- 
@@ -1937,6 +1939,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-transform: translate3d(0, -50%, 0);
     -ms-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0);
+    z-index: 60;
 }
 
 .home-social a {
@@ -2086,12 +2089,22 @@ html.no-csstransitions .home-content__main {
  * home
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1500px) {
-    .home-content h1 {
-        font-size: 6rem;
+    .bunny{
+        right: 10rem;
+        top: 54%;
+    }
+    .bunny img{
+        transform: scale(1);
     }
     .home-content__main {
         max-width: 1000px;
     }
+    .home-content h1 {
+        font-size: 6rem;
+    }
+    .home-content__main h3 {    
+        width: 60%;
+    } 
 }
 
 @media only screen and (max-width: 1200px) {
@@ -2101,11 +2114,20 @@ html.no-csstransitions .home-content__main {
     .home-content__main {
         max-width: 800px;
     }
+    .bunny{
+        right: 2rem;
+        top: 58%;
+    }
+    .bunny img{
+        transform: scale(0.8);
+    }
+    
 }
 
 @media only screen and (max-width: 1000px) {
     .home-content h1 {
         font-size: 4.6rem;
+        width: 80%;
     }
     .home-content br {
         display: none;
@@ -2115,11 +2137,23 @@ html.no-csstransitions .home-content__main {
         padding-right: 80px;
         max-width: 680px;
     }
+    .home-content__main h3 {    
+        width: 70%;
+    }
+    .bunny {
+        right: -2rem;
+        top: 45%;
+    }
+    .bunny img {
+        transform: scale(0.75);
+    }
 }
 
 @media only screen and (max-width: 800px) {
     .home-content h3 {
         font-size: 1.5rem;
+        width: 80%;
+        white-space: pre-wrap;
     }
     .home-content h1 {
         font-size: 4rem;
@@ -2128,11 +2162,25 @@ html.no-csstransitions .home-content__main {
         padding-right: 70px;
         max-width: 550px;
     }
+    .bunny {
+        right: -4rem;
+        top: 48%;
+    }
+    .bunny img {
+        transform: scale(0.6);
+    }
 }
 
 @media only screen and (max-width: 700px) {
     .home-content__main {
         max-width: 490px;
+    }
+    .home-content__main h3 {
+        width: 100%;
+    }
+    .home-content__main h1 {
+        width: 100%;
+        text-align: center;
     }
     .home-content__buttons {
         padding-top: 1.2rem;
@@ -2151,6 +2199,15 @@ html.no-csstransitions .home-content__main {
     }
     .home-content__line {
         right: 5.5rem;
+    }
+    .bunny {
+        right: -5rem;        
+        position: absolute;
+    }
+
+    .bunny img {
+        transform: scale(1);
+        opacity: 0.7;
     }
 }
 
@@ -2176,6 +2233,12 @@ html.no-csstransitions .home-content__main {
     }
     .home-content__line {
         height: 7.2rem;
+    }
+    .bunny {
+        position: absolute;
+        left: 0;
+        right: 0;
+
     }
 }
 
