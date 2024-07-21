@@ -87,7 +87,45 @@
           grid-column: 2/4;
           grid-row: 2/3;
           }
-          @media only screen and (max-width:791px){
+          @media only screen and (max-width:500px){
+              .home-content__buttons{
+                display: flex;
+                flex-direction: row;
+              }
+              .home-content__buttons .btn{
+                margin: 10px;
+                padding: 3px 5px;
+                border-radius: 5px;
+              }
+          }
+          @media only screen and (min-width:1000px) and (max-width:1500px){
+            .home-content{
+              position: absolute;
+              /* top: 10em; */
+            }
+            .bunny{
+              margin: 0px;
+              position: absolute;
+              /* top:38%; */
+              right: 2rem;
+              z-index: -10;
+            }
+          }
+          
+          @media only screen and (max-width:1000px){
+            .home-content{
+              position: absolute;
+              top: 10em;
+            }
+            .bunny{
+              margin: 0px;
+              position: absolute;
+              /* top:38%; */
+              right: 2rem;
+              z-index: -10;
+            }
+
+
           .outerdiv{
           display: none;
           }
@@ -144,7 +182,7 @@
             <img src="./images/cohort3mob.png" class="modal-img-mob" />
           </div>
         </div> -->
-        <div style="display:relative">
+        <div style="display:block">
         <header class="s-header">
           <div class="header-logo">
             <a class="site-logo" href="index.html">
