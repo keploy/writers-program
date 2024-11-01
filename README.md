@@ -34,7 +34,7 @@ We are seeking individuals who meet the following eligibility criteria:
   <li> Experience in Technical Writing. </li>
   <li> Decent knowledge in the tech domain </li>
   <li> Skills in software testing is a bonus. </li>
-
+</ul>
 ## The Process
 
 1. **Submit your idea:** Submit your idea via our application form with an outline of your content and a previous writing example demonstrating your technical knowledge and writing capabilities. We will only publish unique, first-run content where our blog is the first platform for it to be published.  The Keyword for the blog should have a volume of at least more than_400.
