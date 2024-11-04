@@ -66,6 +66,36 @@ Our compensation amounts are measures in USD (valid for 1 published submission o
 (Compensations might be subject to any updates. Changes will be informed to all onboarded candidates on priority and updates will be made suitably in the guide.)
 
 
+## Terms and Conditions
+
+Keploy Community Writing Program Standard Terms & Conditions (“Writing Program Terms”):
+
+- Submissions do not establish an employment relationship; you are an independent contractor.
+- You grant Keploy a perpetual, non-revocable license for your submitted content.
+- All content is licensed under Creative Commons Attribution-Noncommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0).
+- You must comply with all applicable laws, including copyright laws, and Keploy's Terms of Service.
+- Keploy is not liable for any damages related to this agreement.
+- You warrant that your content does not infringe on third-party intellectual property rights.
+
+
+## Plagiarism Policy
+Keploy blog requires original content. Any copied or reproduced work will result in immediate cessation of collaboration, potentially without notice. This includes:
+
+Rewording existing posts as your own.
+Copying and pasting external documentation without proper attribution.
+Modifying someone else's code without significant original contributions.
+Using copyrighted images without permission.
+If unsure about plagiarism concerns, consult with the Keploy content team before submission.
+
+
+## Screenshots
+Screenshots can enhance your article by visually representing instructions. Ensure all content in the images is your original work and does not include copyrighted material. For clarity:
+
+- Increase font size for readability.
+- Crop to focus on relevant elements.
+- Remove unnecessary details.
+
+
 ## FAQs
 
 ### How do I get involved?
@@ -81,33 +111,3 @@ Our editorial staff will reach out to let you know if we want to publish your co
 ### How do you evaluate content ideas?
 
 Our team reviews every submission, and we look for technical content that comprehensively covers software development topics with clear explanations. Explain as much detail as possible and leave no concepts out.
-
-## Terms and Conditions
-
-Keploy Community Writing Program Standard Terms & Conditions (“Writing Program Terms”):
-
-1. Your submission of content to Keploy does not in any way establish any sort of employment relationship between you and Keploy. Your relationship with Keploy is that of an independent contractor, not an employee.
-2. You agree to grant Keploy a perpetual, non-revocable, license to the content you submit to Keploy.
-3. All content submitted to Keploy under this program shall be licensed under the Creative Commons Attribution-Noncommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license.
-4. You agree to comply with all applicable laws and regulations, including copyright laws.
-5. You agree to comply with the terms and conditions of the Keploy Terms of Service.
-6. In no event shall Keploy be liable concerning any subject matter relating to this agreement under any contract, negligence, strict liability, or other legal or equitable theory for special, incidental, consequential, or direct damages.
-7. Keploy makes no representation or warranty of any kind. You represent and warrant that your content will not infringe upon or misappropriate the intellectual property rights of any third party.
-
-## Plagiarism Policy
-
-The Keploy blog produces original, first-run content that has never been published previously in any form, digital or physical. All code, copy, images, and other content should be the result of the author's original thought, work, research, and self-expression. At our discretion, Keploy will cease all work — possibly without notice — with any author that reproduces, copies, or claims someone else's work as their own. This policy extends to content that has been published or is in the process of being published, by the author elsewhere without prior permission from Keploy. This policy includes borrowing content, wording, code, documentation, or organizational structure from any other person or organization's prior work.
-Some examples of plagiarism include:
-
-1. Rewording existing blog posts to pass the content as your own.
-2. Copy and paste external documentation without directly referencing the documentation source.
-3. Modifying someone else's code to change variable and/or function names, comments, or other elements.
-4. Using images from another source, even if you make modifications to that image.
-5. Failing to attribute content or datasets published under permissive licenses like the Creative Commons License.
-If you're unsure about a question or concern related to plagiarism, please consult with the Keploy content team before submission.
-
-## Screenshots
-
-Screenshots can be a great way to show visual representations of the instructions in your article. You might want to include screenshots of terminal output, tool configurations, or other items related to your content. If you have screenshots in your content, ensure that all content that appears in the image is your unique work and doesn’t include copyrighted images or other content from other sources.
-
-To get the best screenshot, increase the font size of the text displayed in the image to something easily readable from a distance, crop screenshots to focus on elements relevant to the text, and remove unnecessary details when possible.
