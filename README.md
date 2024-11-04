@@ -9,7 +9,7 @@ Writers Program
 </b>
 </h1 >
 
-At Keploy, we're always looking for new ways for our community to get involved in what we do. And so this time, we introduce a new writer's program to pay writers from the community to write technical content for software developers. Through this program, authors can now either **earn or get swags worth up to 100$** for publishing content on our blog.
+At Keploy, we're always looking for new ways for our community to get involved in what we do. Keploy Writer's program is focused to acknowledge the creativity, skills, and talent of various writers in the technical ecosystem, and pay them for writing developer-centric content. Through this program, authors can now either **earn or get swags worth up to $100** for publishing content with Keploy🧡
 
 <p style='font-size: 20px;'> We seek a broad range of technical content from experienced writers to produce content for software developers that provides rich detail about using popular tools. We’re looking for content that targets beginner to intermediate software developers. </p>
 
@@ -38,41 +38,33 @@ We are seeking individuals who meet the following eligibility criteria:
 
 ## The Process
 
-1. **Submit your idea:** Submit your idea via our application form with an outline of your content and a previous writing example demonstrating your technical knowledge and writing capabilities. We will only publish unique, first-run content where our blog is the first platform for it to be published.  The Keyword for the blog should have a volume of at least more than_400.
-2. **Refine:** Our editorial team reviews all submissions once every 3 months to identify topics we want to publish. We will reach out to you to provide feedback on the idea and make any structural change requests.
-3. **Write your content:** Once we’ve approved your topic, it’s time to write the content. We'll provide additional guidelines and expectations to help you get started.
-4. **Revise:** Submit your initial draft to our editors, and we’ll collaborate with you to copy edit, design a hero image, and prepare the article for publication. You should expect 1-2 rounds of revisions over the next 1-2 weeks.
-5. **Publish:** Once revisions are complete, we’ll send your compensation, publish the article, and promote it across all of our channels.
-6. **Let's do it again:** There’s no limit to the number of articles you can publish through this program. We love to build long-term relationships with our community and would love for you to be a repeat author on our blog. Start at step 1 again and keep going!
+1. **Register Yourself:** Fill out [this form](https://forms.gle/ZP72SpWdNyjg4gbu8) and register to the writers program. We'll be earger to have you along.
+2. **Onboarding Starts:** Get onboard with us, learn about Keploy's ecosystem, connect with the team & mentors.
+3. **Research your Idea** You'll start by choosing and researching about your write-up. Get access to mentorship & resources by the team.
+4. **Craft your Work:** Start crafting your ideas into words. This part includes you working on the approved ideas and topics.
+5. **Revision & Submissions:** This includes copy editing, hero image design, and revision of your article. Yes, we got to help you revise it before submitting.
+6. **Publication** Once the content meets all the guidlines, you're all set to publish your content with Keploy, earn and redeem your benefits.
 
 ## Technical Writing Guidelines
 
 ### Conditions
 
-As stated in our publishing policy, we only accept new articles. I’m afraid we cannot republish existing work. We are not accepting agency work, promotional material, or sponsored posts of any kind.
-
-### Writing Instructions
-
-1. **Be Certain**: Make sure you are confident in your topic and presenting factual information. If you are not sure, please reach out to us and we can help you refine your idea.
-2. **Cut the fluff**: Don't use unnecessary words or contextless words. Make sure all the words in a sentence have a contextual relevance and meaning.
-3. **Use numeric values**: Use specific numeric values. Instead of writing there are many reasons or some reasons for X, write there are 5(or any specific numbers) main reasons for X.
-4. **Optimize subordinate text first sentence**: Optimizing subordinate text means optimizing the first sentence after a heading. When search engines process a content they don't check the entire content. If the subordinate text is not responsive enough search engines can skip the whole content. That's why give the answer early and make it clear as much as possible with the correct format. <br>
-<u>Example: </u><br>
-Heading: How to do X <br>
-Wrong Subordinate Text: X is... <br>
-Correct Subordinate Text: To do X... <br>
-
-5. **Match the Anchor text with the Targeted Web page's title**: If you want to use "X" as your anchor text ensure "X" is used in the Title tag of the targeted web page and the source page's Heading. It will provide the best possible responsiveness if you're able to match them providing contextual relevance.
-
+1. As stated in the publishing policy, we only accept 100% fresh write-ups(of any kind). We strictly do not encourage republishing any existing work or even a portion of it. Keploy doesn't accept agency work, promotional material, or sponsored posts of any kind.
+2. Submitted entries must have a volume of more than 500 words, & chosen keywords (will be shared after topic submission).
+3. Adhere strictly to the plagiarism policy. 
+4. Understand and comply with the Terms and Conditions of the Keploy Community Writing Program.
 
 ### Rewards
 
-We pay $ for an article which translates into a choice of:
+Our compensation amounts are measures in USD (valid for 1 published submission of minimum word count of 500 words)
 
-- 25$ for 500 views
-- 50$ for 1000 views
-- 100$ for 2000 views
-Payment is made after your article has been published. We also run regular events that offer bonuses for writing about specific topics.
+- $10 for 350 views on article.
+- $20 for 500 views on article.
+- $50 for 1000 views on article.
+- $100 for 2000 views on article.
+
+(Compensations might be subject to any updates. Changes will be informed to all onboarded candidates on priority and updates will be made suitably in the guide.)
+
 
 ## FAQs
 
