@@ -11,7 +11,9 @@ Writers Program
 
 At Keploy, we're always looking for new ways for our community to get involved in what we do. And so this time, we introduce a new writer's program to pay writers from the community to write technical content for software developers. Through this program, authors can now either **earn or get swags worth up to 100$** for publishing content on our blog.
 
-<p style='font-size: 20px;'> We seek a broad range of technical content from experienced writers to produce content for software developers that provides rich detail about using popular tools. We’re looking for content that targets beginner to intermediate software developers on topics like: </p>
+<p style='font-size: 20px;'> We seek a broad range of technical content from experienced writers to produce content for software developers that provides rich detail about using popular tools. We’re looking for content that targets beginner to intermediate software developers. </p>
+
+Examples of some preferred topics might include:
 
 <ul style='font-size: 20px; margin-left:100px;'>
     <li> Software testing productivity hacks. </li>
@@ -22,11 +24,17 @@ At Keploy, we're always looking for new ways for our community to get involved i
 
 ## How to submit?
 
-To submit your idea, please complete our [Write for Us](https://forms.gle/643QLb78zpRjkJ6s7) which contains either an article outline or a draft of your article.
+If you're a fit for this program, [Write for Us](https://forms.gle/ZP72SpWdNyjg4gbu8) and earn exciting rewards and compensation by Keploy🧡
 
 ## About you
 
-We're looking for diverse skilled writers with deep technical knowledge to write content for us. You should have experience writing content, be comfortable receiving feedback about your work, and be open to making revisions recommended by our editorial team. We typically prefer content that targets beginner to intermediate software developers, but we are open to a range of technical depth.
+We are seeking individuals who meet the following eligibility criteria:
+
+<ul style='font-size: 20px; margin-left:100px;'>
+  <li> Experience in Technical Writing. </li>
+  <li> Decent knowledge in the tech domain </li>
+  <li> Skills in software testing is a bonus. </li>
+</ul>
 
 ## The Process
 
@@ -70,12 +78,12 @@ Payment is made after your article has been published. We also run regular event
 
 ### How do I get involved?
 
-Review our process for submitting ideas. When you submit a new idea, we’re going to ask you for details like:
+Review our process for submitting ideas. When you submit a new idea, following details must be answered:
 
-- The article title and a summary of its contents.
-- An outline of your article with descriptions of what each section of the article will cover.
+- Article title and content summary.
+- Outline of the article, and descriptions of what each section will cover.
 - Information about prerequisite knowledge the reader will need to have.
-- A link to a previous writing sample that demonstrates your capabilities.
+- Link to previous writing sample that demonstrates your capabilities.
 Our editorial staff will reach out to let you know if we want to publish your content and will make recommendations for revisions. Once we’ve agreed that we’re happy with the idea, we’ll send you a contract that agrees on the scope of the article and the compensation. From there, it’s up to you to write the first draft and submit it for review!
 
 ### How do you evaluate content ideas?
