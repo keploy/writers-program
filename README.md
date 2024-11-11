@@ -50,9 +50,10 @@ We are seeking individuals who meet the following eligibility criteria:
 ### Conditions
 
 1. As stated in the publishing policy, we only accept 100% fresh write-ups(of any kind). We strictly do not encourage republishing any existing work or even a portion of it. Keploy doesn't accept agency work, promotional material, or sponsored posts of any kind.
-2. Submitted entries must have a volume of more than 500 words, & chosen keywords (will be shared after topic submission).
-3. Adhere strictly to the plagiarism policy. 
-4. Understand and comply with the Terms and Conditions of the Keploy Community Writing Program.
+2. Word count must be minimum 500 words.
+3. Chosen keywords must have a search volume greater than 400. [know about search volume here)
+4. Adhere strictly to the plagiarism policy. 
+5. Understand and comply with the Terms and Conditions of the Keploy Community Writing Program.
 
 ### Rewards
 
