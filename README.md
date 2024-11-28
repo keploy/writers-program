@@ -50,13 +50,14 @@ We are seeking individuals who meet the following eligibility criteria:
 ### Conditions
 
 1. As stated in the publishing policy, we only accept 100% fresh write-ups(of any kind). We strictly do not encourage republishing any existing work or even a portion of it. Keploy doesn't accept agency work, promotional material, or sponsored posts of any kind.
-2. Submitted entries must have a volume of more than 500 words, & chosen keywords (will be shared after topic submission).
-3. Adhere strictly to the plagiarism policy. 
-4. Understand and comply with the Terms and Conditions of the Keploy Community Writing Program.
+2. Minimum <u>700</u> word count.
+3. Chosen keywords must have a search volume greater than <u> 400 </u>. [know about search volume [here](https://www.google.com/search?q=what+is+search+volume+in+seo&sca_esv=a07f0383584960a3&ei=XuoxZ7ScHtfhseMPlY-1mAk&ved=0ahUKEwi0w8GzltSJAxXXcGwGHZVHDZMQ4dUDCA8&uact=5&oq=what+is+search+volume+in+seo&gs_lp=Egxnd3Mtd2l6LXNlcnAiHHdoYXQgaXMgc2VhcmNoIHZvbHVtZSBpbiBzZW8yCxAAGIAEGJECGIoFMgYQABgWGB4yCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTIIEAAYgAQYogQyCBAAGIAEGKIESO40UKsHWKMxcAZ4AJABAJgBhQGgAcEZqgEFMTcuMTW4AQPIAQD4AQGYAiWgAusZwgIKEAAYsAMY1gQYR8ICERAuGIAEGJECGNEDGMcBGIoFwgILEAAYgAQYsQMYgwHCAggQABiABBixA8ICIBAuGIAEGJECGNEDGMcBGIoFGJcFGNwEGN4EGOAE2AEBwgIQEAAYgAQYsQMYQxiDARiKBcICBRAAGIAEwgIKEAAYgAQYQxiKBcICCxAAGIAEGLEDGIoFwgIIEC4YgAQYsQPCAg4QABiABBixAxiDARiKBcICDhAAGIAEGJECGLEDGIoFwgIFECEYoAHCAggQABgWGB4YD5gDAIgGAZAGCLoGBggBEAEYFJIHBTE2LjIxoAePvgE&sclient=gws-wiz-serp)]
+4. Adhere strictly to the plagiarism policy. 
+5. Understand and comply with the Terms and Conditions of the Keploy Community Writing Program.
 
 ### Rewards
 
-Our compensation amounts are measures in USD (valid for 1 published submission of minimum word count of 500 words)
+Our compensation amounts are measures in <u>USD</u> (valid for 1 published submission of minimum word count of 800 words)
 
 - $10 for 350 views on article.
 - $20 for 500 views on article.
