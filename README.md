@@ -70,7 +70,7 @@ Valid for 1 published submission per candidate, after 30-days of publishing date
 
 ## Terms and Conditions
 
-Keploy Community Writing Program Standard Terms & Conditions (“Writing Program Terms”):
+Keploy Community Writing Program Standard Terms & Conditions:
 
 - Submissions do not establish an employment relationship; you are an independent contractor.
 - You grant Keploy a perpetual, non-revocable license for your submitted content.
