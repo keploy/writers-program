@@ -9,7 +9,7 @@ Writers Program
 </b>
 </h1 >
 
-At Keploy, we're always looking for new ways for our community to get involved in what we do. Keploy Writer's program is focused to acknowledge the creativity, skills, and talent of various writers in the technical ecosystem, and pay them for writing developer-centric content. Through this program, authors can now either **earn or get swags worth up to $100** for publishing content with Keploy🧡
+At Keploy, we're always looking for new ways for our community to get involved in what we do. Keploy Writer's program is focused to acknowledge the creativity, skills, and talent of various writers in the technical ecosystem, and pay them for writing developer-centric content. Through this program, authors can now either **win swags or earn up to $100** for publishing content with Keploy🧡
 
 <p style='font-size: 20px;'> We seek a broad range of technical content from experienced writers to produce content for software developers that provides rich detail about using popular tools. We’re looking for content that targets beginner to intermediate software developers. </p>
 
