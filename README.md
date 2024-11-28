@@ -57,13 +57,14 @@ We are seeking individuals who meet the following eligibility criteria:
 
 ### Rewards
 
-Our compensation amounts are measures in <u>USD</u> (valid for 1 published submission of minimum word count of 800 words)
+Our compensation amounts are measures in <u>USD</u> 
 
 - $10 for 350 views on article.
 - $20 for 500 views on article.
 - $50 for 1000 views on article.
 - $100 for 2000 views on article.
 
+Valid for 1 published submission per candidate, after 30-days of publishing date. The Submitted work must fulfill all the given criteria.
 (Compensations might be subject to any updates. Changes will be informed to all onboarded candidates on priority and updates will be made suitably in the guide.)
 
 
