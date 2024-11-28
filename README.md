@@ -57,7 +57,7 @@ We are seeking individuals who meet the following eligibility criteria:
 
 ### Rewards
 
-Our compensation amounts are measures in <u>USD</u> 
+Our compensation amounts are measures in <u>USD</u> $
 
 - $10 for 350 views on article.
 - $20 for 500 views on article.
