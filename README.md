@@ -9,7 +9,7 @@ Writers Program
 </b>
 </h1 >
 
-At Keploy, we're always looking for new ways for our community to get involved in what we do. Keploy Writer's program is focused to acknowledge the creativity, skills, and talent of various writers in the technical ecosystem, and pay them for writing developer-centric content. Through this program, authors can now either **earn or get swags worth up to $100** for publishing content with Keploy🧡
+At Keploy, we're always looking for new ways for our community to get involved in what we do. Keploy Writer's program is focused to acknowledge the creativity, skills, and talent of various writers in the technical ecosystem, and pay them for writing developer-centric content. Through this program, authors can now either **win swags or earn up to $100** for publishing content with Keploy🧡
 
 <p style='font-size: 20px;'> We seek a broad range of technical content from experienced writers to produce content for software developers that provides rich detail about using popular tools. We’re looking for content that targets beginner to intermediate software developers. </p>
 
@@ -57,19 +57,20 @@ We are seeking individuals who meet the following eligibility criteria:
 
 ### Rewards
 
-Our compensation amounts are measures in <u>USD</u> (valid for 1 published submission of minimum word count of 800 words)
+Our compensation amounts are measures in <u>USD</u> ($)
 
 - $10 for 350 views on article.
 - $20 for 500 views on article.
 - $50 for 1000 views on article.
 - $100 for 2000 views on article.
 
+Valid for 1 published submission per candidate, after 30-days of publishing date. The Submitted work must fulfill all the given criteria.
 (Compensations might be subject to any updates. Changes will be informed to all onboarded candidates on priority and updates will be made suitably in the guide.)
 
 
 ## Terms and Conditions
 
-Keploy Community Writing Program Standard Terms & Conditions (“Writing Program Terms”):
+Keploy Community Writing Program Standard Terms & Conditions:
 
 - Submissions do not establish an employment relationship; you are an independent contractor.
 - You grant Keploy a perpetual, non-revocable license for your submitted content.
