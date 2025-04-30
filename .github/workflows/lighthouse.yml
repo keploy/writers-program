@@ -43,7 +43,6 @@ jobs:
         with:
           gitAuthor: ${{ github.actor }}
           gitBranch: ${{ github.head_ref }}
-          gitHubAccessToken: ${{ secrets.GITHUB_TOKEN }}
           outputDirectory: ${{ github.workspace }}/tmp/artifacts
           urls: 'http://localhost:3000/?branch=main,http://localhost:3001/?branch=pr'
           sha: ${{ github.sha }}
