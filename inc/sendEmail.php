@@ -1,8 +1,7 @@
 ﻿<?php
 
-// Replace this with your own email address
-$siteOwnersEmail = 'user@website.com';
-
+// Replace this with your own email address or set the SITE_OWNERS_EMAIL environment variable
+$siteOwnersEmail = getenv('SITE_OWNERS_EMAIL') ?: 'user@website.com';
 
 if($_POST) {
 

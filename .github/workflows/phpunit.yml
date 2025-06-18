@@ -1,0 +1,19 @@
+name: PHP Tests
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install PHP and PHPUnit
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y php phpunit
+      - name: Run PHPUnit
+        run: phpunit
