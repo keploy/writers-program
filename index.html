@@ -895,7 +895,12 @@
           //     event.preventDefault();
           //   }
           // });
-          document.getElementById('current-year').textContent = new Date().getFullYear();
+          document.addEventListener('DOMContentLoaded', function() {
+            var yearElem = document.getElementById('current-year');
+            if (yearElem) {
+              yearElem.textContent = new Date().getFullYear();
+            }
+          });
         </script>  
       </div>
       </body>
