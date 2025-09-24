@@ -789,7 +789,7 @@
               <div class="col-lg-5 col-sm-6">
                 <aside class="f_widget ab_widget">
                   <div class="f_title">
-                    <h3 style="margin-left: -10px;">Copyright © 2023  Keploy Inc.</h3>
+                    <h3 style="margin-left: -10px;">Copyright © <span id="current-year"></span>  Keploy Inc.</h3>
                   </div>
                   <p style="font-family:'Inconsolata', monospace;">Developers experience for e2e testing. Toolkit that creates test-cases and data mocks from API calls, DB queries, etc.</p>
                 </aside>
@@ -895,6 +895,7 @@
           //     event.preventDefault();
           //   }
           // });
+          document.getElementById('current-year').textContent = new Date().getFullYear();
         </script>  
       </div>
       </body>
