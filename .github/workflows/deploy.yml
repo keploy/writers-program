@@ -5,8 +5,7 @@ name: Deploy to AWS S3
 
 on:
   push:
-    branches: 
-      - "main"
+    branches: [ main ]
 
 jobs:
   build:
@@ -16,9 +15,9 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
     - name: Deploy
-      uses: reggionick/s3-deploy@v4
+      uses: reggionick/s3-deploy@v3
       with:
         folder: "."
         bucket: ${{ secrets.S3_BUCKET }}
