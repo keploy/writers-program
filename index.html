@@ -1,901 +1,1186 @@
 <!DOCTYPE html>
-<!--[if lt IE 9 ]>
-<html class="no-js oldie" lang="en">
-  <![endif]-->
-  <!--[if IE 9 ]>
-  <html class="no-js oldie ie9" lang="en">
-    <![endif]-->
-    <!--[if (gte IE 9)|!(IE)]><!-->
-    <html class="no-js" lang="en">
-      <!--<![endif]-->
-      <head>
-        <!--- basic page needs
-          ================================================== -->
-        <meta charset="utf-8">
-        <title>Keploy's Writers Program</title>
-        <meta name="description" content="Keploy's Writers Program">
-        <meta name="author" content="Keploy.io">
-        <!-- mobile specific metas
-          ================================================== -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- CSS
-          ================================================== -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap"/>
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/vendor.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-        <!-- script
-          ================================================== -->
-        <script src="js/modernizr.js"></script>
-        <script src="js/pace.min.js"></script>
-        <!-- favicons
-          ================================================== -->
-          <link rel="canonical" href="https://devrel.keploy.io/" />
-          <link rel="icon" href="./images/favicon.png" type="image/png">
-        <style>
-          ::-webkit-scrollbar {
-          width: 12px;
-          height: 8px;
-          }
-          /* Style the track of the scroll bar */
-          ::-webkit-scrollbar-track {
-          background-color: #FFFFFF; /* set background color */
-          }
-          /* Style the thumb of the scroll bar */
-          ::-webkit-scrollbar-thumb {
-          background-color: #00163D; /* set thumb color */
-          }
-          .innerdiv {
-          transform: scale(0.9);
-          /* margin: 1rem; */
-          display: grid;
-          grid-gap: 1.5rem;
-          grid-template-rows: repeat(2, 36rem);
-          grid-template-columns: repeat(4, 33rem);
-          color:white;
-          }
-          .eachdiv {
-          padding: 4rem 5rem;
-          border-radius: 0.8rem;
-          color: white!important;
-          }
-          .div1 {
-          background: #E35134;
-          grid-column: 1/3;
-          grid-row: 1/2;
-          }
-          .div2 {
-          background: #E35134;
-          grid-column: 1/2;
-          grid-row: 2/3;
-          }
-          .div3 {
-          background: #E35134;
-          grid-column: 4/5;
-          grid-row: 1/3;
-          color: black;
-          }
-          .div4 {
-          background: #E35134;
-          grid-column: 3/4;
-          grid-row: 1/2;
-          color: black;
-          }
-          .div5 {
-          background: #E35134;
-          grid-column: 2/4;
-          grid-row: 2/3;
-          }
-          @media only screen and (max-width:500px){
-              .home-content__buttons{
-                display: flex;
-                flex-direction: row;
-              }
-              .home-content__buttons .btn{
-                margin: 10px;
-                padding: 3px 5px;
-                border-radius: 5px;
-              }
-          }
-          @media only screen and (min-width:1000px) and (max-width:1500px){
-            .home-content{
-              position: absolute;
-              /* top: 10em; */
-            }
-            .bunny{
-              margin: 0px;
-              position: absolute;
-              /* top:38%; */
-              right: 2rem;
-              z-index: -10;
-            }
-          }
-          
-          @media only screen and (max-width:1000px){
-            .home-content{
-              position: absolute;
-              top: 10em;
-            }
-            .bunny{
-              margin: 0px;
-              position: absolute;
-              /* top:38%; */
-              right: 2rem;
-              z-index: -10;
-            }
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Keploy's Writers Program - Professional Technical Writing Community</title>
+  <meta name="description" content="Join Keploy's Writers Program - A professional community for technical writers offering recognition, growth, networking, and rewards in the open-source ecosystem.">
+  <meta name="author" content="Keploy.io">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Modern CSS Framework -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="canonical" href="https://writers.keploy.io/" />
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+  
+  <style>
+    /* Modern CSS Reset and Base Styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
+    :root {
+      /* Keploy Brand Colors */
+      --primary: #F89559;
+      --primary-dark: #E35134;
+      --secondary: #00163D;
+      --accent: #ff904d;
+      --background: #ffffff;
+      --surface: #f8fafc;
+      --text-primary: #1a202c;
+      --text-secondary: #4a5568;
+      --text-muted: #718096;
+      --border: #e2e8f0;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      --radius: 8px;
+      --radius-lg: 12px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-          .outerdiv{
-          display: none;
-          }
-          }
-          .userdetails {
-          display: flex;
-          }
-          .imgbox {
-          margin-right: 1rem;
-          }
-          .imgbox img {
-          border-radius: 50%;
-          max-width: 70px;
-          height: 70px;
-          width:70px;
-          }
-          .detbox {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          text-align: justify;
-          }
-          .detbox p {
-          margin: 0;
-          }
-          .detbox .name {
-          color: white;
-          font-size: 2rem;
-          margin-bottom: 0.1rem;
-          font-family: "montserrat-medium", sans-serif;
-          font-weight: 600;
-          }
-          .detbox .designation {
-          color: white;
-          font-size: 15px;
-          font-family: "montserrat-medium", sans-serif;
-          text-decoration: none;
-          }
-          .review {
-          display: flex;
-          text-align: left;
-          margin-top:-50px;
-          }
-        </style>
-      </head>
-      <body id="top">
-        <!-- <div class="modal" data-aos="fade-up">
-          <div class="modal-body">
-            <div class="modal-close">
-              <button onclick="modalClose()">Close</button>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--text-primary);
+      background: var(--background);
+      scroll-behavior: smooth;
+    }
 
-            </div>
-            <img src="./images/cohort3.png" class="modal-img" />
-            <img src="./images/cohort3mob.png" class="modal-img-mob" />
-          </div>
-        </div> -->
-        <div style="display:block">
-        <header class="s-header">
-          <div class="header-logo">
-            <a class="site-logo" href="index.html">
-            <img src="./images/keploy-logo.png" style="transform: scale(2); margin-left:20px" alt="Homepage">
-            </a>
-          </div>
-          <nav class="header-nav">
-            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
-            <div class="header-nav__content">
-              <h3>Navigation</h3>
-              <ul class="header-nav__list">
-                <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                <li><a class="smoothscroll"  href="#program" title="program">Program</a></li>
-                <li><a class="smoothscroll"  href="#writers-program" title="next">Process</a></li>
-                <li><a class="smoothscroll"  href="#criteria" title="criteria">Criteria</a></li>
-                <li><a class="smoothscroll"  href="#community" title="community">Community</a></li>
-                <!-- <li><a class="smoothscroll"  href="#join" title="join">Join</a></li> -->
-              </ul>
-              <ul class="header-nav__social">
-                <li><a href="https://keploy.slack.com/"><i class="fa fa-slack"></i></a></li>
-                <li><a href="https://twitter.com/Keployio"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg"><i class="fa fa-youtube"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/keploy/"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://keploy.hashnode.dev"><i class="fa fa-rss"></i></a></li>
-              </ul>
-            </div>
-          </nav>
-          <a class="header-menu-toggle" href="#0">
-          <span class="header-menu-text">Menu</span>
-          <span class="header-menu-icon"></span>
+    /* Modern Header */
+    .modern-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      transition: var(--transition);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .logo img {
+      height: 40px;
+      width: auto;
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 500;
+      font-size: 0.95rem;
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius);
+      transition: var(--transition);
+    }
+
+    .nav-link:hover {
+      background: var(--surface);
+      color: var(--primary);
+    }
+
+    .cta-button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .cta-button:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 140px 0 100px;
+      background: linear-gradient(135deg, var(--surface) 0%, #f1f5f9 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('./images/dot-background.svg') repeat;
+      opacity: 0.1;
+      pointer-events: none; /* Ensure background doesn't block clicks */
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      z-index: 10; /* Ensure content is above background */
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      color: var(--text-primary);
+    }
+
+    .hero-content h1 .highlight {
+      color: var(--primary);
+      text-decoration: underline;
+      text-decoration-color: var(--primary);
+      text-decoration-thickness: 4px;
+      text-underline-offset: 8px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 20; /* Higher z-index for buttons */
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white !important;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-decoration: none !important;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer !important;
+      pointer-events: auto !important;
+      position: relative;
+      z-index: 30;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--secondary) !important;
+      border: 2px solid var(--secondary);
+      padding: 1rem 2rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-decoration: none !important;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer !important;
+      pointer-events: auto !important;
+      position: relative;
+      z-index: 30;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      color: white !important;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-secondary:hover {
+      background: var(--secondary);
+      color: white !important;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    /* Force clickability for hero buttons */
+    .hero-buttons a {
+      pointer-events: auto !important;
+      cursor: pointer !important;
+      user-select: none;
+    }
+
+    .hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    /* Modern Sections */
+    .section {
+      padding: 100px 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-title {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* What Program Offers Section */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 2.5rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+      border: 1px solid var(--border);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .feature-icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1.5rem;
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .feature-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .feature-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var (--secondary);
+      margin-bottom: 1rem;
+    }
+
+    .feature-description {
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Process Timeline */
+    .process-timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .process-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+
+    .process-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 2rem;
+      top: 5rem;
+      width: 2px;
+      height: 3rem;
+      background: linear-gradient(to bottom, var(--primary), transparent);
+    }
+
+    .step-number {
+      width: 4rem;
+      height: 4rem;
+      background: var(--primary);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .step-content {
+      flex: 1;
+      background: white;
+      padding: 2rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .step-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--secondary);
+      margin-bottom: 0.5rem;
+    }
+
+    .step-description {
+      color: var(--text-secondary);
+    }
+
+    .step-icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 1rem;
+    }
+
+    .step-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* Evaluation Criteria */
+    .criteria-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .criteria-item {
+      background: white;
+      padding: 2rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      margin-bottom: 1.5rem;
+      transition: var(--transition);
+    }
+
+    .criteria-item:hover {
+      box-shadow: var(--shadow-lg);
+    }
+
+    .criteria-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--secondary);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .criteria-icon {
+      width: 24px;
+      height: 24px;
+      color: var(--primary);
+    }
+
+    .criteria-description {
+      color: var(--text-secondary);
+    }
+
+    /* Guidelines Section */
+    .guidelines-section {
+      background: var(--surface);
+    }
+
+    .guidelines-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .guideline-card {
+      background: white;
+      padding: 2rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      transition: var(--transition);
+    }
+
+    .guideline-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .guideline-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--secondary);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .guideline-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--primary);
+      color: white;
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .guideline-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .guideline-list li {
+      padding: 0.5rem 0;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .guideline-list li::before {
+      content: '✓';
+      color: var(--primary);
+      font-weight: 700;
+      margin-top: 0.1rem;
+    }
+
+    /* Community Section */
+    .community-section {
+      background: url('./images/dot-background.svg') repeat;
+      color: #8B4513;
+    }
+
+    .community-content {
+      text-align: center;
+    }
+
+    .community-title {
+      color: #8B4513;
+      margin-bottom: 1rem;
+    }
+
+    .community-description {
+      font-size: 1.2rem;
+      color: #8B4513;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 1.5rem;
+      background: var(--primary);
+      border-radius: var(--radius);
+      color: white;
+      text-decoration: none;
+      transition: var(--transition);
+      border: 1px solid var(--primary);
+      font-weight: 500;
+    }
+
+    .social-link:hover {
+      background: var(--primary-dark);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    /* Footer */
+    .footer {
+      background: url('./images/dot-background.svg') repeat;
+      color: #8B4513;
+      padding: 3rem 0 2rem;
+    }
+
+    .footer .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 1rem;
+      color: #8B4513;
+    }
+
+    .footer-section p, .footer-section a {
+      color: #8B4513;
+      text-decoration: none;
+      line-height: 1.6;
+    }
+
+    .footer-section a {
+      color: #8B4513;
+    }
+
+    .footer-section a:hover {
+      color: #D2691E;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(139, 69, 19, 0.3);
+      color: #8B4513;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+
+      .nav-menu {
+        display: none;
+      }
+
+      .section-title {
+        font-size: 2.5rem;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-step {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .process-step::after {
+        display: none;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+    }
+
+    /* Accessibility */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* Focus states */
+    *:focus {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+    }
+
+    /* Animation utilities */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.6s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Scroll indicator */
+    .scroll-indicator {
+      position: fixed;
+      top: 72px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: rgba(248, 149, 89, 0.2);
+      z-index: 999;
+    }
+
+    .scroll-progress {
+      height: 100%;
+      background: var(--primary);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-indicator">
+    <div class="scroll-progress" id="scrollProgress"></div>
+  </div>
+
+  <!-- Modern Header -->
+  <header class="modern-header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="./images/keploy-logo.png" alt="Keploy Logo">
+      </div>
+      <nav aria-label="Main navigation">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#program" class="nav-link">Program</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#criteria" class="nav-link">Criteria</a></li>
+          <li><a href="#guidelines" class="nav-link">Guidelines</a></li>
+          <li><a href="#community" class="nav-link">Community</a></li>
+        </ul>
+      </nav>
+      <a href="https://forms.gle/R7RbuL39sc1TFW449" class="cta-button" target="_blank" rel="noopener">
+        Register Now
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>
+          Keploy's <span class="highlight">Writers Program</span>
+        </h1>
+        <p class="hero-subtitle">
+          Join a thriving community of technical writers where you get the right Recognition, Growth, Networking, Earning & Rewards in the open-source ecosystem.
+        </p>
+        <div class="hero-buttons">
+          <a href="https://forms.gle/R7RbuL39sc1TFW449" class="btn-primary" target="_blank" rel="noopener">
+            <i class="fas fa-rocket"></i>
+            Register Now
           </a>
-        </header>
-        <!-- end s-header -->
-        <!-- home
-          ================================================== -->
-        <section id="home" class="s-home target-section" data-parallax="scroll"  data-natural-width=3000 data-natural-height=2000 data-position-y=center>
-          <div class="overlay" ></div>
-          <div class="shadow-overlay"></div>
-          <div class="home-content">
-            <div class="row home-content__main">
-              <h1>
-                Keploy's <br/><u>Writers Program</u>
-              </h1>
-              <h3>Get into a community of Technical Writers where <br/> you get the right Recognition | <br/> Growth | Networking | Earning & Rewards </h3>
-              <h3> An Open-Source Prorgam for Students, Professionals, and Freelancers</h3>
-              <div class="home-content__buttons">
-                <a href="https://forms.gle/R7RbuL39sc1TFW449" class=" btn btn--stroke" style="background: #F89559; border: 0.2rem solid #ff904d; color: #00163D;">
-                Register Now!
-                </a>
-                <a href="https://join.slack.com/t/keploy/shared_invite/zt-357qqm9b5-PbZRVu3Yt2rJIa6ofrwWNg" class="btn btn--stroke" style="background: #00163D; border: 0.2rem solid #00163D; color: #FFFFFF;">
-                Join Community
-                </a>
-              </div>
-            </div>
-            <div class="home-content__scroll">
-              <a href="#about" class="scroll-link smoothscroll">
-              <span>Scroll Down</span>
-              </a>
-            </div>
-            <!-- <div class="home-content__line"></div> -->
-          </div>
+          <a href="https://join.slack.com/t/keploy/shared_invite/zt-357qqm9b5-PbZRVu3Yt2rJIa6ofrwWNg" class="btn-secondary" target="_blank" rel="noopener">
+            <i class="fab fa-slack"></i>
+            Join Community
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./images/bunny.png" alt="Keploy Mascot" width="400" height="400">
+      </div>
+    </div>
+  </section>
 
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">We Are Keploy</h2>
+        <p class="section-subtitle">
+          Keploy is a developer-centric backend testing tool. As an open source organisation, we believe everything should be community-driven. Join us on a journey into the domain of technical writing and experience the growth and knowledge that accompanies this opportunity.
+        </p>
+      </div>
+      <div style="text-align: center;">
+        <a href="https://keploy.io/blog" class="btn-secondary" target="_blank" rel="noopener">
+          <i class="fas fa-blog"></i>
+          Read Our Blogs
+        </a>
+      </div>
+    </div>
+  </section>
 
-          <div class="bunny">
-            <img src="images/bunny.png" alt="Bugs Bunny">
+  <!-- What Program Offers Section -->
+  <section id="program" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">What this program offers you?</h2>
+        <p class="section-subtitle">
+          Discover the amazing benefits and opportunities that await you in our comprehensive writers program.
+        </p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="./images/bubble-gum-content-marketing.gif" alt="Recognition illustration">
           </div>
+          <h3 class="feature-title">Get Recognized</h3>
+          <p class="feature-description">
+            Expand your technical writing horizon by earning compensations, swags, and personal brand visibility in the developer community.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="./images/handy-line-machine-learning.gif" alt="Learning illustration">
+          </div>
+          <h3 class="feature-title">Learn & Grow</h3>
+          <p class="feature-description">
+            Access to mentorship, weekly sync-ups, and community support. Work directly with Keploy's editorial team to enhance your skills.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="./images/bloom-online-video-conference-for-employees.gif" alt="Community illustration">
+          </div>
+          <h3 class="feature-title">Flourish & Network</h3>
+          <p class="feature-description">
+            Gain valuable experience and network with like-minded individuals. Be part of a global community of technical writers and developers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <!-- end home-content -->
-          <ul class="home-social">
-            <li>
-              <a href="https://keploy.slack.com/"><i class="fa fa-slack" aria-hidden="true"></i><span>Slack</span></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/Keployio"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg"><i class="fa fa-youtube" aria-hidden="true"></i><span>Youtube</span></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/keploy/"><i class="fa fa-linkedin" aria-hidden="true"></i><span>Linkedin</span></a>
-            </li>
-            <li>
-              <a href="https://keploy.hashnode.dev"><i class="fa fa-rss" aria-hidden="true"></i><span>Hashnode</span></a>
-            </li>
-          </ul>
-          <!-- end home-social -->
-        </section>
-        <!-- end s-home -->
-        <!-- about
-          ================================================== -->
-        <section id='about' class="s-about" data-aos="fade-up">
-          <div class="row section-header has-bottom-sep">
-            <div class="col-full">
-              <!-- <h3 class="subhead subhead--dark">Hello There</h3> -->
-              <h1 class="display-1 display-1--light" style="
-              margin-bottom: -20px; font-weight: 800;">We Are Keploy</h1>
+  <!-- Process Section -->
+  <section id="process" class="section" style="background: var(--surface);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Here's how the Program works</h2>
+        <p class="section-subtitle">
+          A structured 6-step process designed to guide you from registration to publication.
+        </p>
+      </div>
+      <div class="process-timeline">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <div class="step-icon">
+              <img src="./images/handy-folder-with-idea-bulb.gif" alt="Registration">
             </div>
-          </div>
-          <!-- end section-header -->
-          <div class="row about-desc">
-            <div class="col-full">
-              <p style="font-size: 2rem; letter-spacing: .3rem; font-weight: normal;">
-                Keploy is a developer-centric backend testing tool. As an open source organisation, we believe everything should be  community-driven. Join us on a journey into the domain of technical writing and experience the growth and knowledge that accompanies this opportunity.
-              </p>
-            </div>
-          </div>
-          
-          <div class="home-content__buttons" style="padding-top: 0rem; text-align:center">
-            <a href="https://keploy.io/blog" class="btn btn--stroke" style="background: #00163D; border: 0.2rem solid #00163D; color: #FFFFFF;">
-            Read our Blogs
-            </a>
-          </div>
-          <!-- end about-desc -->
-          <!-- <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
-            <div class="col-block stats__col ">
-              <div class="stats__count">3</div>
-              <h5>Cohorts</h5>
-            </div>
-            <div class="col-block stats__col">
-              <div class="stats__count">1000</div>
-              <h5>Applications</h5>
-            </div>
-            <div class="col-block stats__col">
-              <div class="stats__count">150</div>
-              <h5>Contributors</h5>
-            </div>
-            <div class="col-block stats__col">
-              <div class="stats__count">12</div>
-              <h5>Interns</h5>
-            </div>
-          </div> -->
-          <!-- end about-stats -->
-          <!-- <div class="about__line"></div> -->
-        </section>
-        <!-- end s-about -->
-        <!-- services
-          ================================================== -->
-        <section id='program' class="s-services"  data-aos="fade-up">
-          <div class="row section-header has-bottom-sep">
-            <div class="col-full">
-              <!-- <h3 class="subhead">Writers Program</h3> -->
-              <h1 class="display-2" style="font-weight: 800;">What this program offers you?</h1>
-            </div>
-          </div>
-          <!-- end section-header -->
-          <div class="row services-list block-1-2 block-tab-full">
-            <div class="col-block service-item">
-              <div class="service-icon">
-                <img src="./images/bubble-gum-content-marketing.gif" alt="Learn gif"/>
-              </div>
-              <div class="service-text">
-                <h3 class="h2" style="color: #00163D;">Get Recognized</h3>
-                <p>Expand your technical writing horizon by earning compensations, swags, and personal brand visibility.</p>
-              </div>
-            </div>
-            <div class="col-block service-item">
-              <div class="service-icon">
-                <img src="./images/handy-line-machine-learning.gif" alt="Content gif"/>
-              </div>
-              <div class="service-text">
-                <h3 class="h2" style="color: #00163D;">Learn</h3>
-                <p>Access to mentorship, weekly synch-ups, and community. Work with Keploy's editorial team.</p>
-              </div>
-            </div>
-            <div class="col-block service-item">
-              <div class="service-icon">
-                <img src="./images/bloom-online-video-conference-for-employees.gif" alt="Grow gif"/>
-              </div>
-              <div class="service-text">
-                <h3 class="h2" style="color: #00163D;"">Flourish</h3>
-                <p>Gain experience & network with like-minded individuals. Be a part of a global community.</p>
-              </div>
-            </div>
-          </div>
-          <!-- end services-list -->
-        </section>
-        <!-- end s-services -->
-        <!-- NEXT DEVREL COHORT -->
-        <!-- <section id="next" class="s-services" style="margin-top:-200px">
-          <div class="intro-wrap">
-            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
-              <div class="col-full">
-                <h3 class="subhead">DevRel Cohort 3.0</h3>
-                <h1 class="display-2 display-2--dark">Applications Close In</h1>
-              </div>
-            </div>
-<script src="https://cdn.logwork.com/widget/countdown.js"></script>
-<div>
-<a href="https://logwork.com/countdown-yt11" class="countdown-timer" style="margin-top:-130px" data-timezone="Asia/Kolkata" data-textcolor="#fff" data-date="2023-04-30 12:00" data-background="#644a3c" data-digitscolor="#ff904d" data-unitscolor="#ff904d"><span style="color:white">.</span></a>
-          </div>
-        </section> -->
-        <!-- works
-          ================================================== -->
-        <!-- <section id='community' class="s-works"> -->
-          <!-- <div class="intro-wrap">
-            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
-              <div class="col-full">
-                <h3 class="subhead">Community❤️</h3>
-                <h1 class="display-2 display-2--light">This is what the folks from other programs have to say!</h1>
-              </div>
-            </div>
-          </div> -->
-          <!-- end intro-wrap -->
-          <!-- <div class="row works-content">
-            <div class="outerdiv">
-              <div class="innerdiv">
-                <div class="eachdiv div1">
-                  <div class="userdetails">
-                    <div class="imgbox">
-                      <img src="./images/testimonials/sanskriti.jpg" alt="">
-                    </div>
-                    <div class="detbox">
-                      <p class="name">Sanskriti Harmukh (GCE)</p>
-                      <p class="designation">DevRel Program Mentee</p>
-                    </div>
-                  </div>
-                  <div class="review">
-                    <p>
-                    <h4>If you are someone who is looking forward to stepping into the domain of DevRel and is eager to learn its goals in an open source organization then we have a space created for you called Keploy's DevRel Cohort, to boost up your learning and enhance your way of approaching a solution to a problem being a DevRel.</h4>
-                    </p>
-                  </div>
-                </div>
-                <div class="eachdiv div2">
-                  <div class="userdetails" style="margin-top:-10px !important">
-                    <div class="imgbox">
-                      <img src="./images/testimonials/animesh.jpg" alt="">
-                    </div>
-                    <div class="detbox">
-                      <p class="name" style="font-size:16px; text-align: left;">Animesh Pathak (Gold MLSA)</p>
-                      <p class="designation" style="margin-top:-4px">DevRel Program Mentee</p>
-                    </div>
-                  </div>
-                  <div class="review" >
-                    <p >
-                    <h5 style="line-height:1.6 !important" >My experience of DevRel Cohort 1.0 will forever resonate in my heart. I am able to improve my skills. All in all, the virtual atmosphere is simply uplifting and I am enjoying this work with such a great and impressive team!</h5>
-                    </p>
-                  </div>
-                </div>
-                <div class="eachdiv div3">
-                  <div class="userdetails" >
-                    <div class="imgbox">
-                      <img src="./images/testimonials/roy.jpg" alt="">
-                    </div>
-                    <div class="detbox">
-                      <p class="name" style="font-size:16px; text-align: left;">Jyotirmoy Roy</p>
-                      <p class="designation">IRLamigo</p>
-                    </div>
-                  </div>
-                  <div class="review" >
-                    <p>
-                    <h4>Participating in Keploy's DevRel Cohort as a mentee was an exceptional journey that enriched my knowledge and skills about DevRel role in an open-source company. The program helped me to effectively communicate with diverse stakeholders and understand the accountability of a DevRel. I'm grateful for the mentors' constant support and constructive feedback that aided me in making progress.</h4>
-                    </p>
-                  </div>
-                </div>
-                <div class="eachdiv div4">
-                  <div class="userdetails">
-                    <div class="imgbox">
-                      <img src="https://avatars.githubusercontent.com/u/65999534?v=4" alt="">
-                    </div>
-                    <div class="detbox">
-                      <p class="name" style="font-size:16px; text-align: left;">Diganta Kr Banik</p>
-                      <p class="designation" style="margin-top:-4px">Web Developer</p>
-                    </div>
-                  </div>
-                  <div class="review">
-                    <p>
-                    <h5>DevRel was something new to me. I had a great experience during the cohort as a mentee and learnt a lot during the contribution period. If you want to experience what a DevRel is, this program is a really great opportunity to understand the roles and responsibilites of a devrel.</h5>
-                    </p>
-                  </div>
-                </div>
-                <div class="eachdiv div5">
-                  <div class="userdetails">
-                    <div class="imgbox">
-                      <img src="./images/testimonials/shashwat.jpg" alt="">
-                    </div>
-                    <div class="detbox">
-                      <p class="name">Shashwat Gupta</p>
-                      <p class="designation">Backend Developer</p>
-                    </div>
-                  </div>
-                  <div class="review">
-                    <p>
-                    <h4>Keploy's DevRel Cohort has been a game-changer. Immersed in Developer Relations within open-source, I learned effective communication and the key role DevRel plays. Expert mentorship and collaborative peers enriched the journey. For those curious about DevRel's role in open-source, this program is an ideal gateway to explore and learn.</h4>
-                    </p>
-                  </div>
-                </div>
-              </div> -->
-              <!-- <div class="masonry">
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        
-                        <div class="item-folio__thumb">
-                            <p href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
-                                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Getting into the world of DevRel🥑 with <a href="https://twitter.com/Keployio?ref_src=twsrc%5Etfw">@Keployio</a>. Looking to learn and network with wonderful folks! Excited for the next 25 days! Had a lot fun discussing about Keploy and DevRel today! Thanks to <a href="https://twitter.com/sonichigo1219?ref_src=twsrc%5Etfw">@sonichigo1219</a> <a href="https://twitter.com/Senzkriti?ref_src=twsrc%5Etfw">@Senzkriti</a> <a href="https://t.co/eIpbu2Tmy1">pic.twitter.com/eIpbu2Tmy1</a></p>&mdash; Diganta Kr Banik🥑 (@banik_diganta) <a href="https://twitter.com/banik_diganta/status/1603458303253544960?ref_src=twsrc%5Etfw">December 15, 2022</a></blockquote> 
-                            </p>
-                        </div>
-                
-                        <div class="item-folio__thumb">
-                            <p href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
-                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">DevRel cohort 2.0 🥑 orientation call done and dusted 🫰<br>Looking forward to learning about Keploy and DevRel with <a href="https://twitter.com/Keployio?ref_src=twsrc%5Etfw">@Keployio</a> as a contributor for the next 25 days 🔥<br>Special thanks to <a href="https://twitter.com/sonichigo1219?ref_src=twsrc%5Etfw">@sonichigo1219</a> <a href="https://twitter.com/Senzkriti?ref_src=twsrc%5Etfw">@Senzkriti</a> for the awesome session ❤️ <a href="https://t.co/QJs6b7lo0S">pic.twitter.com/QJs6b7lo0S</a></p>&mdash; Barkatul Mujauddin🥑 (@barkatul_twt) <a href="https://twitter.com/barkatul_twt/status/1603673015061188608?ref_src=twsrc%5Etfw">December 16, 2022</a></blockquote>
-                        </p>
-                        </div>
-                
-                    </div>
-                </div> 
-                                    <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        
-                        <div class="item-folio__thumb">
-                            <p href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
-                                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Getting into the world of DevRel🥑 with <a href="https://twitter.com/Keployio?ref_src=twsrc%5Etfw">@Keployio</a>. Looking to learn and network with wonderful folks! Excited for the next 25 days! Had a lot fun discussing about Keploy and DevRel today! Thanks to <a href="https://twitter.com/sonichigo1219?ref_src=twsrc%5Etfw">@sonichigo1219</a> <a href="https://twitter.com/Senzkriti?ref_src=twsrc%5Etfw">@Senzkriti</a> <a href="https://t.co/eIpbu2Tmy1">pic.twitter.com/eIpbu2Tmy1</a></p>&mdash; Diganta Kr Banik🥑 (@banik_diganta) <a href="https://twitter.com/banik_diganta/status/1603458303253544960?ref_src=twsrc%5Etfw">December 15, 2022</a></blockquote> 
-                            </p>
-                        </div>
-                
-                        <div class="item-folio__thumb">
-                            <p href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
-                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">DevRel cohort 2.0 🥑 orientation call done and dusted 🫰<br>Looking forward to learning about Keploy and DevRel with <a href="https://twitter.com/Keployio?ref_src=twsrc%5Etfw">@Keployio</a> as a contributor for the next 25 days 🔥<br>Special thanks to <a href="https://twitter.com/sonichigo1219?ref_src=twsrc%5Etfw">@sonichigo1219</a> <a href="https://twitter.com/Senzkriti?ref_src=twsrc%5Etfw">@Senzkriti</a> for the awesome session ❤️ <a href="https://t.co/QJs6b7lo0S">pic.twitter.com/QJs6b7lo0S</a></p>&mdash; Barkatul Mujauddin🥑 (@barkatul_twt) <a href="https://twitter.com/barkatul_twt/status/1603673015061188608?ref_src=twsrc%5Etfw">December 16, 2022</a></blockquote>
-                        </p>
-                        </div>
-                
-                    </div>
-                </div>
-                </div>  -->
-          <!--  </div> -->
-            <!-- end col-full -->
-        <!--  </div> -->
-          <!-- end works-content -->
-       <!-- </section> -->
-        <!-- end s-works -->
-        <!-- clients
-          ================================================== -->
-        <!-- <section id="clients" class="s-clients">
-          <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-              <h3 class="subhead">COMMUNITY❤️</h3>
-              <h1 class="display-2">Look at what the previous folks have to say!</h1>
-            </div>
-          </div>
-          <div class="row clients-testimonials" data-aos="fade-up">
-            <div class="col-full">
-              <div class="testimonials">
-                <div class="testimonials__slide">
-                  <p>If you are someone who is looking forward to stepping into the domain of DevRel and is eager to learn its goals in an open source organization then we have a space created for you called Keploy's DevRel Cohort, to boost up your learning and enhance your way of approaching a solution to a problem being a DevRel.</p>
-                  <img src="./images/testimonials/sanskriti.jpg" alt="Author image" class="testimonials__avatar">
-                  <div class="testimonials__info">
-                    <span class="testimonials__name">Sanskriti Harmukh</span> 
-                    <span class="testimonials__pos">GitHub Campus Expert</span>
-                  </div>
-                </div>
-                <div class="testimonials__slide">
-                  <p>My experience of DevRel Cohort 1.0 will forever resonate in my heart. I am able to improve my skills. All in all, the virtual atmosphere is simply uplifting and I am enjoying this work with such a great and impressive team!</p>
-                  <img src="./images/testimonials/animesh.jpg" alt="Author image" class="testimonials__avatar">
-                  <div class="testimonials__info">
-                    <span class="testimonials__name">Animesh Pathak</span> 
-                    <span class="testimonials__pos">Gold MLSA</span>
-                  </div>
-                </div>
-                <div class="testimonials__slide">
-                  <p>Participating in Keploy's DevRel Cohort as a mentee was an exceptional journey that enriched my knowledge and skills about the DevRel role in an open-source company. The program helped me to effectively communicate with diverse stakeholders and understand the accountability of a DevRel. I'm grateful for the mentors' constant support and constructive feedback that aided me in making progress. The collaboration with other mentees was also an enjoyable experience that added to the learning curve.</p>
-                  <img src="./images/testimonials/roy.jpg" alt="Author image" class="testimonials__avatar">
-                  <div class="testimonials__info">
-                    <span class="testimonials__name">Jyotirmoy Roy</span> 
-                    <span class="testimonials__pos">IRLamigo</span>
-                  </div>
-                </div>
-                <div class="testimonials__slide">
-                  <p>DevRel was something new to me. I had a great experience during the cohort as a mentee and learnt a lot during the contribution period. If you want to experience what a DevRel is, this program is a really great opportunity to understand the roles and responsibilites of a devrel.</p>
-                  <img src="./images/testimonials/diganta.jpg" alt="Author image" class="testimonials__avatar">
-                  <div class="testimonials__info">
-                    <span class="testimonials__name">Diganta Kr Banik</span> 
-                    <span class="testimonials__pos">Web Developer</span>
-                  </div>
-                </div>
-                <div class="testimonials__slide">
-                  <p>Being a mentee of Keploy's DevRel Cohort was a great experience for me. I learned a lot about the role and responsibilities of a DevRel in an open-source organization, and how to communicate effectively with different stakeholders. The mentors were very supportive and helpful, and they gave me valuable feedback and guidance throughout the program. I also enjoyed collaborating with other mentees.</p>
-                  <img src="./images/testimonials/barkatul.jpg" alt="Author image" class="testimonials__avatar">
-                  <div class="testimonials__info">
-                    <span class="testimonials__name">Barkatul Mujauddin</span> 
-                    <span class="testimonials__pos">Founder HackForCode</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> -->
-        <!-- end s-clients -->
-        <!-- contact
-          ================================================== -->
-
-        <section id="writers-program" style="padding-bottom: 6rem;" data-aos="fade-up">
-          <h2 class="process-section-title" style="text-align: center; font-size: 6.3rem; color: #F89559; margin-bottom: 6rem; font-weight: 800;">
-           Here's how the Program works
-          </h2>
-          <div class="process-wrapper" style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: space-evenly;">
-            <div class="process-item">
-              <div class="process-div" style="display: flex; flex-direction: row; ">
-                <h3 style="font-size: 3rem; color: #00163D;">01</h3>
-                <img src="./images/handy-folder-with-idea-bulb.gif" alt="Content gif" style="height:130px"/>
-              </div>
-              <h2 style="padding-left: 4rem; margin-top: -1rem; color: #00163D;">Register yourself</h2>
-              <p style="width: 36rem; padding-left: 4rem;">Fill out the form and register to the writers program. We'll be earger to have you along.</p>
-            </div>
-            <div class="process-item">
-              <div class="process-div" style="display: flex; flex-direction: row; color: #00163D;">
-                <h3 style="font-size: 3rem;">02</h3>
-                <img src="./images/dazzle-man-programmer-writing-code-on-a-laptop.gif" alt="Content gif" style="height:130px"/>
-              </div>
-              <h2 style="padding-left: 4rem; margin-top: -1rem; color: #00163D;">Onboarding starts</h2>
-              <p style="width: 36rem; padding-left: 4rem;"> Get onboard with us, know about Keploy's ecosystem, connect to the team & mentors.</p>
-            </div>
-            <div class="process-item">
-              <div class="process-div" style="display: flex; flex-direction: row;">
-                <h3 style="font-size: 3rem;  color: #00163D;">03</h3>
-                <img src="./images/juicy-woman-is-looking-for-perfect-candidate-1.gif" alt="Content gif" style="height:130px"/>
-              </div>
-              <h2 style="padding-left: 4rem; margin-top: -1rem;  color: #00163D;">Research your Idea</h2>
-              <p style="width: 36rem; padding-left: 4rem;">You'll start by choosing and researching about your write-up. Get access to mentorship & resources by the team.</p>
-            </div>
-            <div class="process-item">
-              <div class="process-div" style="display: flex; flex-direction: row;">
-                <h3 style="font-size: 3rem; color: #00163D;">04</h3>
-                <img src="./images/dizzy-education.gif" alt="Content gif" style="height:130px"/>
-              </div>
-              <h2 style="padding-left: 4rem; margin-top: -1rem; color: #00163D;">Craft your Work</h2>
-              <p style="width: 36rem; padding-left: 4rem;">Start crafting your ideas into words. This part includes you working on the approved ideas and topics.</p>
-            </div>
-            <div class="process-item">
-              <div class="process-div" style="display: flex; flex-direction: row;">
-                <h3 style="font-size: 3rem; color: #00163D;">05</h3>
-                <img src="./images/dazzle-blog-post-article.gif" alt="Content gif" style="height:130px"/>
-              </div>
-              <h2 style="padding-left: 4rem; margin-top: -1rem; color: #00163D;">Revision & Submissions</h2>
-              <p style="width: 36rem; padding-left: 4rem;"> This includes copy editing, hero image design, and revision of your article. Yes, we got to help you revise it before submitting.</p>
-            </div>
-            <div class="process-item">
-              <div class="process-div" style="display: flex; flex-direction: row;">
-                <h3 style="font-size: 3rem; color: #00163D;">06</h3>
-                <img src="./images/juicy-man-programmer-writing-code-and-make-web-design-on-a-pc.gif" alt="Content gif" style="height:130px"/>
-              </div>
-              <h2 style="padding-left: 4rem; margin-top: -1rem; color: #00163D;">Publication</h2>
-              <p style="width: 36rem; padding-left: 4rem;">Once the content meets all the guidlines, you're all set to publish your content with Keploy, and earn your benefits</p>
-            </div>
-          </div>
-
-          <!-- <div class="home-content__buttons" style="padding-top: 0rem; text-align:center">
-            <a href="https://github.com/keploy/writers-program/blob/main/README.md#technical-writing-guidelines" class="btn btn--stroke">
-            Guidelines
-            </a>
-          </div> -->
-        </section>
-
-        <section id="criteria" style="padding-bottom: 6rem;"  data-aos="fade-up">
-          <h2 id="process-section-title" style="text-align: center; font-size: 6.3rem; color: #F89559; margin-bottom: 6rem; font-weight: 800;">
-            Evaluation Criteria
-           </h2>
-          <!-- <div class="based-on-application">
-            Based on the application, we will review the following:
-          </div> -->
-          <div class="listed-criteria">
-            <ol>
-              <li class="criteria-list" style="color: #00163D;"><h2 style="line-height: 0.7; color: #00163D;">Originality: </h2><p style="color: #000000;">Submissions should be entirely original, showcasing your unique perspective and insights.</p></li>
-              <li class="criteria-list" style="color: #00163D;"><h2 style="line-height: 0.7; color: #00163D;">Relevance to Software Developers: </h2><p style="color: #000000;">Content should be tailored for a target audience of beginner to intermediate software developers.</p></li>
-              <li class="criteria-list" style="color: #00163D;"><h2 style="line-height: 0.7; color: #00163D;">Keyword Volume Requirement: </h2><p style="color: #000000;">Ensure the chosen keyword for the blog has a volume of at least more than 400.</p></li>
-              <li class="criteria-list" style="color: #00163D;"><h2 style="line-height: 0.7; color: #00163D;">Conformity to Plagiarism: </h2><p style="color: #000000;">Adhere strictly to the plagiarism policy. Avoid any form of reproducing or claiming someone else's work.</p></li>
-              <li class="criteria-list" style="color: #00163D;"><h2 style="line-height: 0.7; color: #00163D;">Compliance with Terms & Conditions: </h2><p style="color: #000000;">Understand and comply with the terms and conditions of the Keploy Community Writing Program.</p></li>
-            </ol>
-          </div>
-
-          <div class="home-content__buttons" style="padding-top: 0rem; text-align:center">
-            <a href="https://github.com/keploy/writers-program/blob/main/README.md" class="btn btn--stroke" style="background: #00163D; border: 0.2rem solid #00163D; color: #FFFFFF;">
-            Know More!
-            </a>
-          </div>
-        </section>
-
-
-        <!-- <section id="necessity">
-
-          <div>
-            <h1 style="text-align: center; color: #F76B1C; font-size: 6.3rem; margin-bottom: 6rem;">Necessities</h1>
-          </div>
-
-          <div id="points">
-            <div>
-              <p style="font-family: 'Inconsolata', monospace; font-size: 30px; margin-left: 13.8%; margin-top: 60px; color: #121212;">Originality</p>
-            </div>
-            <div style="flex-shrink: 0; stroke: #000; margin-left: 18%; margin-top: -40px; border: 1px;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="133" height="89" viewBox="0 0 133 89" fill="none">
-                <path d="M132.248 85L126.856 82.9368L127.765 88.6383L132.248 85ZM127.73 85.2144C104.212 88.638 71.3229 88.376 45.0172 76.8554C31.8732 71.099 20.3902 62.5397 12.527 50.2405C4.66562 37.9439 0.396535 21.8686 1.74703 1.03234L0.749125 0.96766C-0.612742 21.9793 3.68985 38.2742 11.6845 50.7791C19.6774 63.2814 31.3348 71.9549 44.6161 77.7714C71.1608 89.3968 104.261 89.6414 127.874 86.2039L127.73 85.2144Z" fill="black"/>
-                </svg>
-            </div>
-            <div style="text-align: center;">
-              <p style="font-family: 'Inconsolata', monospace; font-size: 30px; margin-left: 24.7%; margin-top: -29px; color: #121212; font-style: normal; line-height: normal; width: 260px;">Keywords volume more than 400</p>
-            </div>
-            <div  style="flex-shrink: 0; stroke: #000; margin-left: 38.2%; margin-top: -120px; border: 1px;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="195" height="85" viewBox="0 0 195 85" fill="none">
-                <path d="M192 84.5212L194.823 79.4849L189.05 79.5583L192 84.5212ZM1.2461 37.9565C32.6614 20.1929 79.5417 1.24374 118.905 1.50262C138.576 1.63199 156.313 6.5572 169.321 18.7607C182.325 30.9603 190.682 50.5077 191.443 80.049L192.443 80.0232C191.677 50.3092 183.263 30.4697 170.005 18.0314C156.751 5.59688 138.734 0.633005 118.912 0.502643C79.2889 0.242056 32.225 19.2908 0.753896 37.086L1.2461 37.9565Z" fill="black"/>
-              </svg>
-            </div>
-            <div style="text-align: center; margin-top: -10px; display: flex; align-items: center; justify-content: center;">
-              <p style="font-family: 'Inconsolata', monospace; font-size: 30px; color: #121212; font-style: normal; line-height: normal; margin-bottom: 0px; width: 300px;">Relevance to Software Developers</p>
-            </div>
-            <div  style="flex-shrink: 0; stroke: #000; margin-left: 48.8%; margin-top: 5px; border: 1px;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="162" height="131" viewBox="0 0 162 131" fill="none">
-                <path d="M161.993 119L156.371 117.687L158.044 123.212L161.993 119ZM2.49899 0.921442C-2.13188 30.0297 0.113404 70.7837 21.8553 98.887C43.6492 127.058 84.882 142.342 157.811 120.789L157.527 119.83C84.8182 141.318 44.0917 125.995 22.6462 98.2751C1.14881 70.4878 -1.12521 30.0669 3.48657 1.07856L2.49899 0.921442Z" fill="black"/>
-              </svg>
-            </div>
-            <div style="text-align: center; margin-top: -40px; margin-left: 53.6%;">
-              <p style="font-family: 'Inconsolata', monospace; font-size: 30px; color: #121212; font-style: normal; line-height: normal; margin-bottom: 0px; width: 355px;">Conformity to Plagiarism Policy</p>
-            </div>
-            <div  style="flex-shrink: 0; stroke: #000; margin-left: 895px; margin-top: -65px; margin-left: 69%; border: 1px;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="190" height="102" viewBox="0 0 190 102" fill="none">
-                <path d="M186 101.168L189.266 96.4075L183.51 95.9589L186 101.168ZM1.16591 17.6398C33.8865 6.13001 82.0358 -3.54007 121.012 4.40074C140.49 8.36895 157.635 16.7261 169.44 31.4071C181.242 46.084 187.759 67.1468 185.852 96.6334L186.85 96.6979C188.768 67.0323 182.218 45.7011 170.22 30.7804C158.225 15.8638 140.839 7.41964 121.212 3.42087C81.9786 -4.57227 33.6274 5.16107 0.834086 16.6964L1.16591 17.6398Z" fill="black"/>
-              </svg>
-            </div>
-            <div style="text-align: center; margin-top: -10px; margin-left: 70.6%;">
-              <p style="font-family: 'Inconsolata', monospace; font-size: 30px; color: #121212; font-style: normal; line-height: normal; margin-bottom: 0px; width: 300px;">Compliance with Terms & Conditions</p>
-            </div>
-          </div>
-
-
-          <div class="home-content__buttons" style="padding-top: 5rem; text-align:center">
-            <a href="https://github.com/keploy/writers-program/blob/main/README" class="btn btn--stroke">
-            Know More!
-            </a>
-
-        </section> -->
-
-
-
-
-
-        <section id="join" class="s-contact" data-aos="fade-up">
-          <div class="overlay"></div>
-          <!-- <div class="contact__line"></div> -->
-          <div class="row section-header">
-            <div class="col-full">
-              <!-- <h3 class="subhead">Join Our API Community Today!</h3> -->
-              <h1 class="display-2 display-2--light" style="font-weight: 800;">Join Our Community Today!</h1>
-            </div>
-          </div>
-          <div class="row contact-content" >
-            <div class="contact-primary">
-              <h3 class="h6" style="font-size: 2rem; font-family: 'Inconsolata', monospace; text-transform: none;">Get Involved In The Community Today!</h3>
-              <img src="./images/slack.png" alt="Slack Image"/>
-              <!-- <img src="./images/slack2.png"/> -->
-              <button class="join-btn"><a href="https://join.slack.com/t/keploy/shared_invite/zt-357qqm9b5-PbZRVu3Yt2rJIa6ofrwWNg">Join Slack</a></button>
-            </div>
-            <!-- end contact-primary -->
-            <div class="contact-secondary">
-              <div class="contact-info">
-                <!-- <h3 class="h6 hide-on-fullwidth">Contact Info</h3> -->
-                <div class="cinfo">
-                  <h2 style="color:#ffffff;">Connect with writers, mentors, and enthusiasts worldwide who share a passion for crafting content and exploring the layers of technology!</h5>
-                </div>
-                <ul class="contact-social">
-                  <li><a href="https://keploy.slack.com/" style="color: white;"><i class="fa fa-slack"></i></a></li>
-                  <li><a href="https://twitter.com/Keployio" style="color: white;"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg" style="color: white;"><i class="fa fa-youtube"></i></a></li>
-                  <li><a href="https://www.linkedin.com/company/keploy/" style="color: white;"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="https://keploy.hashnode.dev" style="color: white;"><i class="fa fa-rss"></i></a></li>
-                </ul>
-                <!-- end contact-social -->
-              </div>
-              <!-- end contact-info -->
-            </div>
-            <!-- end contact-secondary -->
-          </div>
-          <!-- end contact-content -->
-        </section>
-        <!-- end s-contact -->
-        <!-- <section>
-          <div style="width: 100%; height:200px;background:orange; display: flex; flex-direction: column; justify-content: center;align-items: center;"><button style="margin:0 auto;">Join The Next Cohort Today!</button></div>
-          </section> -->
-        <!-- footer
-          ================================================== -->
-        <!--================Impress Area =================-->
-        <!-- <section class="impress_area">
-          <div class="container">
-            <div class="impress_inner">
-              <h2 class="mb-30">Sign-up for the newsletter!</h2>
-              <aside class="f_widget">
-                <div id="mc_embed_signup">
-                  <form id="newsletter" target="" action="" method="post"  class="subscribe_form relative ">
-                    <div class="input-group d-flex flex-row justify-content-center ">
-                      <input name="email" class="input" placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" required="" type="email">
-                      <button class="btn sub-btn submit-btn" style="border:1px;"><span class="lnr lnr-arrow-right"></span></button>
-                    </div>
-                    <div class="mt-10 info"></div>
-                  </form>
-                  <div class="alert alert-warning alert-msg text-hide" role="alert">
-                  </div>
-                </div>
-              </aside>
-            </div>
-          </div>
-        </section> -->
-        <!--================End Impress Area =================-->
-        <!--================Footer Area =================-->
-        <footer class="footer_area">
-          <div class="container">
-            <div class="row footer_inner">
-              <div class="col-lg-5 col-sm-6">
-                <aside class="f_widget ab_widget">
-                  <div class="f_title">
-                    <h3 style="margin-left: -10px;">Copyright © 2023  Keploy Inc.</h3>
-                  </div>
-                  <p style="font-family:'Inconsolata', monospace;">Developers experience for e2e testing. Toolkit that creates test-cases and data mocks from API calls, DB queries, etc.</p>
-                </aside>
-              </div>
-              <div class="col-lg-5 col-sm-6">
-                <aside class="f_widget news_widget">
-                  <div class="f_title">
-                    <h3>Newsletter</h3>
-                  </div>
-                  <p style="font-family:'Inconsolata', monospace;">Stay updated with our latest trends</p>
-                  <div id="mc_embed_signup-impress">
-                    <form id="newsletter-1" target="" action="" method="post" class="subscribe_form relative">
-                      <div class="input-group d-flex flex-row justify-content-center">
-                        <input name="email" class="input" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                        <button class="btn sub-btn submit-btn" style="border:1px; right:0px;"><span class="lnr lnr-arrow-right"></span></button>
-                      </div>
-                      <div class="mt-10 info"></div>
-                    </form>
-                    <div class="alert alert-warning alert-msg text-hide" role="alert"></div>
-                  </div>
-                </aside>
-              </div>
-              <div class="col-lg-2">
-                <aside class="f_widget social_widget">
-                  <div class="f_title">
-                    <h3>Find us on</h3>
-                  </div>
-                  <p style="font-family:'Inconsolata', monospace;">Let us be social</p>
-                  <ul class="list" style="margin-left:0">
-                    <li><a href="https://keploy.slack.com/"><i class="fa fa-slack"></i></a></li>
-                    <li><a href="https://twitter.com/Keployio"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/keploy/"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://keploy.hashnode.dev"><i class="fa fa-rss"></i></a></li>
-                  </ul>
-                </aside>
-              </div>
-            </div>
-          </div>
-        </footer>
-        <!-- photoswipe background
-          ================================================== -->
-        <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-          <div class="pswp__bg"></div>
-          <div class="pswp__scroll-wrap">
-            <div class="pswp__container">
-              <div class="pswp__item"></div>
-              <div class="pswp__item"></div>
-              <div class="pswp__item"></div>
-            </div>
-            <div class="pswp__ui pswp__ui--hidden">
-              <div class="pswp__top-bar">
-                <div class="pswp__counter"></div>
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                  "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                  "Zoom in/out"></button>
-                <div class="pswp__preloader">
-                  <div class="pswp__preloader__icn">
-                    <div class="pswp__preloader__cut">
-                      <div class="pswp__preloader__donut"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-              </div>
-              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-              <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-              </div>
-            </div>
+            <h3 class="step-title">Register Yourself</h3>
+            <p class="step-description">
+              Fill out the application form and register for the writers program. We'll be eager to have you along on this journey.
+            </p>
           </div>
         </div>
-        <!-- end photoSwipe background -->
-        <!-- preloader
-          ================================================== -->
-        <!-- <div id="preloader">
-          <div id="loader">
-            <div class="line-scale-pulse-out">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <div class="step-icon">
+              <img src="./images/dazzle-man-programmer-writing-code-on-a-laptop.gif" alt="Onboarding">
             </div>
+            <h3 class="step-title">Onboarding Starts</h3>
+            <p class="step-description">
+              Get onboarded with us, learn about Keploy's ecosystem, connect with the team and mentors.
+            </p>
           </div>
-        </div> -->
-        <!-- Java Script
-          ================================================== -->
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <script>
-          // function modalClose(){
-          //   $('.modal:first').css('display','none');
-          //   $('body').css('overflow','auto');
-          // }
-          // $(document).on('keydown scroll mousewheel touchmove', function(event) {
-          //   if ($('#modal').is(':visible')) {
-          //     event.preventDefault();
-          //   }
-          // });
-        </script>  
+        </div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <div class="step-icon">
+              <img src="./images/juicy-woman-is-looking-for-perfect-candidate-1.gif" alt="Research">
+            </div>
+            <h3 class="step-title">Research Your Idea</h3>
+            <p class="step-description">
+              Choose and research your write-up topic. Get access to mentorship and resources from our experienced team.
+            </p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <div class="step-icon">
+              <img src="./images/dizzy-education.gif" alt="Writing">
+            </div>
+            <h3 class="step-title">Craft Your Work</h3>
+            <p class="step-description">
+              Start transforming your ideas into words. Work on approved topics with guidance from our editorial team.
+            </p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">05</div>
+          <div class="step-content">
+            <div class="step-icon">
+              <img src="./images/dazzle-blog-post-article.gif" alt="Review">
+            </div>
+            <h3 class="step-title">Revision & Submission</h3>
+            <p class="step-description">
+              Collaborate on copy editing, hero image design, and content revision. We'll help perfect your article before submission.
+            </p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">06</div>
+          <div class="step-content">
+            <div class="step-icon">
+              <img src="./images/juicy-man-programmer-writing-code-and-make-web-design-on-a-pc.gif" alt="Publication">
+            </div>
+            <h3 class="step-title">Publication</h3>
+            <p class="step-description">
+              Once your content meets all guidelines, you're ready to publish with Keploy and earn your well-deserved benefits.
+            </p>
+          </div>
+        </div>
       </div>
-      </body>
-    </html>
+    </div>
+  </section>
+
+  <!-- Evaluation Criteria Section -->
+  <section id="criteria" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Evaluation Criteria</h2>
+        <p class="section-subtitle">
+          Our comprehensive evaluation process ensures high-quality content that meets industry standards.
+        </p>
+      </div>
+      <div class="criteria-list">
+        <div class="criteria-item">
+          <h3 class="criteria-title">
+            <i class="fas fa-lightbulb criteria-icon"></i>
+            Originality
+          </h3>
+          <p class="criteria-description">
+            Submissions should be entirely original, showcasing your unique perspective and insights into technical topics.
+          </p>
+        </div>
+        <div class="criteria-item">
+          <h3 class="criteria-title">
+            <i class="fas fa-users criteria-icon"></i>
+            Relevance to Software Developers
+          </h3>
+          <p class="criteria-description">
+            Content should be tailored for beginner to intermediate software developers, addressing real-world challenges and solutions.
+          </p>
+        </div>
+        <div class="criteria-item">
+          <h3 class="criteria-title">
+            <i class="fas fa-search criteria-icon"></i>
+            Keyword Volume Requirement
+          </h3>
+          <p class="criteria-description">
+            Ensure the chosen keyword for your blog has a search volume of at least 400+ to maximize reach and impact.
+          </p>
+        </div>
+        <div class="criteria-item">
+          <h3 class="criteria-title">
+            <i class="fas fa-shield-alt criteria-icon"></i>
+            Conformity to Plagiarism Policy
+          </h3>
+          <p class="criteria-description">
+            Adhere strictly to our plagiarism policy. Avoid any form of reproducing or claiming someone else's work as your own.
+          </p>
+        </div>
+        <div class="criteria-item">
+          <h3 class="criteria-title">
+            <i class="fas fa-file-contract criteria-icon"></i>
+            Compliance with Terms & Conditions
+          </h3>
+          <p class="criteria-description">
+            Understand and comply with all terms and conditions of the Keploy Community Writing Program.
+          </p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="https://github.com/keploy/writers-program/blob/main/README.md" class="btn-primary" target="_blank" rel="noopener">
+          <i class="fas fa-book"></i>
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guidelines Section -->
+  <section id="guidelines" class="section guidelines-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Guidelines for Creating Content</h2>
+        <p class="section-subtitle">
+          Follow our comprehensive guidelines for creating blogs and social media carousels that align with Keploy's quality standards.
+        </p>
+      </div>
+      <div class="guidelines-grid">
+        <div class="guideline-card">
+          <h3 class="guideline-title">
+            <div class="guideline-icon">
+              <i class="fas fa-blog"></i>
+            </div>
+            Blog Writing Guidelines
+          </h3>
+          <ul class="guideline-list">
+            <li>Minimum 700 words with clear structure</li>
+            <li>Include primary keyword in first paragraph</li>
+            <li>Use H1, H2, H3 hierarchy properly</li>
+            <li>Keep paragraphs under 4 lines</li>
+            <li>Include relevant internal/external links</li>
+            <li>Optimize images (WebP format preferred)</li>
+          </ul>
+        </div>
+        <div class="guideline-card">
+          <h3 class="guideline-title">
+            <div class="guideline-icon">
+              <i class="fab fa-instagram"></i>
+            </div>
+            Social Media Carousels
+          </h3>
+          <ul class="guideline-list">
+            <li>Create Instagram carousel for every blog</li>
+            <li>Educational and engaging content</li>
+            <li>Follow brand color scheme</li>
+            <li>Include clear call-to-action</li>
+            <li>Use reusable templates</li>
+            <li>Tools: Canva or Figma preferred</li>
+          </ul>
+        </div>
+        <div class="guideline-card">
+          <h3 class="guideline-title">
+            <div class="guideline-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            SEO Best Practices
+          </h3>
+          <ul class="guideline-list">
+            <li>Research keywords with 400+ volume</li>
+            <li>Keep URLs under 75 characters</li>
+            <li>Write compelling meta descriptions</li>
+            <li>Use descriptive alt text for images</li>
+            <li>Ensure mobile responsiveness</li>
+            <li>Focus on page load speed</li>
+          </ul>
+        </div>
+        <div class="guideline-card">
+          <h3 class="guideline-title">
+            <div class="guideline-icon">
+              <i class="fas fa-clipboard-check"></i>
+            </div>
+            Quality Standards
+          </h3>
+          <ul class="guideline-list">
+            <li>Accurate and up-to-date information</li>
+            <li>Authoritative and credible sources</li>
+            <li>Clear and contextual content</li>
+            <li>Proper grammar and spelling</li>
+            <li>Engaging and educational tone</li>
+            <li>Original and plagiarism-free</li>
+          </ul>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="https://github.com/keploy/keploy/wiki/Keploy-SEO-Guidelines" class="btn-primary" target="_blank" rel="noopener">
+          <i class="fas fa-external-link-alt"></i>
+          View Complete SEO Guidelines
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section id="community" class="section community-section">
+    <div class="container">
+      <div class="community-content">
+        <h2 class="community-title section-title">Join Our Community Today!</h2>
+        <div style="text-align: center; margin-bottom: 1.5rem;">
+          <img src="./images/slack.png" alt="Slack Community" style="max-width: 500px; height: auto;">
+        </div>
+        <p class="community-description">
+          Connect with writers, mentors, and enthusiasts worldwide who share a passion for crafting content and exploring the layers of technology!
+        </p>
+        <div class="social-links">
+          <a href="https://join.slack.com/t/keploy/shared_invite/zt-357qqm9b5-PbZRVu3Yt2rJIa6ofrwWNg" class="social-link" target="_blank" rel="noopener">
+            <i class="fab fa-slack"></i>
+            Join Slack
+          </a>
+          <a href="https://twitter.com/Keployio" class="social-link" target="_blank" rel="noopener">
+            <i class="fab fa-twitter"></i>
+            Follow Twitter
+          </a>
+          <a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg" class="social-link" target="_blank" rel="noopener">
+            <i class="fab fa-youtube"></i>
+            Subscribe YouTube
+          </a>
+          <a href="https://www.linkedin.com/company/keploy/" class="social-link" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin"></i>
+            Connect LinkedIn
+          </a>
+          <a href="https://keploy.hashnode.dev" class="social-link" target="_blank" rel="noopener">
+            <i class="fas fa-rss"></i>
+            Read Blog
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Keploy</h3>
+          <p>
+            Developers experience for e2e testing. Toolkit that creates test-cases and data mocks from API calls, DB queries, etc.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <p><a href="https://keploy.io">Main Website</a></p>
+          <p><a href="https://docs.keploy.io">Documentation</a></p>
+          <p><a href="https://github.com/keploy/keploy">GitHub</a></p>
+          <p><a href="https://keploy.io/blog">Blog</a></p>
+        </div>
+        <div class="footer-section">
+          <h3>Writers Program</h3>
+          <p><a href="https://github.com/keploy/writers-program">Program Repository</a></p>
+          <p><a href="https://github.com/keploy/keploy/wiki/Keploy-SEO-Guidelines">SEO Guidelines</a></p>
+          <p><a href="https://forms.gle/R7RbuL39sc1TFW449">Apply Now</a></p>
+        </div>
+        <div class="footer-section">
+          <h3>Community</h3>
+          <p><a href="https://join.slack.com/t/keploy/shared_invite/zt-357qqm9b5-PbZRVu3Yt2rJIa6ofrwWNg">Slack Community</a></p>
+          <p><a href="https://twitter.com/Keployio">Twitter</a></p>
+          <p><a href="https://www.linkedin.com/company/keploy/">LinkedIn</a></p>
+          <p><a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg">YouTube</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Keploy Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Smooth scrolling ONLY for internal navigation links (starting with #)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      // Only add smooth scroll to internal links WITHOUT target="_blank"
+      if (!anchor.hasAttribute('target')) {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      }
+    });
+
+    // Scroll progress indicator
+    window.addEventListener('scroll', () => {
+      const scrollProgress = document.getElementById('scrollProgress');
+      if (scrollProgress) {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = (scrollTop / scrollHeight) * 100;
+        scrollProgress.style.width = progress + '%';
+      }
+    });
+
+    // Header background on scroll
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('.modern-header');
+      if (header) {
+        if (window.scrollY > 50) {
+          header.style.background = 'rgba(255, 255, 255, 0.98)';
+          header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+        } else {
+          header.style.background = 'rgba(255, 255, 255, 0.95)';
+          header.style.boxShadow = 'none';
+        }
+      }
+    });
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all cards and sections
+    document.querySelectorAll('.feature-card, .process-step, .criteria-item, .guideline-card').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Add accessibility improvements
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.activeElement.blur();
+      }
+    });
+  </script>
+</body>
+</html>
