@@ -1,13 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-lato: 'Lato', sans-serif;
-  --font-inconsolata: 'Inconsolata', monospace;
-  --font-montserrat: 'Montserrat', sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --font-inconsolata: "Inconsolata", monospace;
+  --font-montserrat: "Montserrat", sans-serif;
 }
 
 * {
@@ -34,15 +32,9 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #00163D;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  background-color: #00163d;
 }
