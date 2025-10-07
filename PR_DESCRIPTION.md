@@ -9,12 +9,14 @@ This PR migrates the Keploy Writers Program website from static HTML/CSS/JavaScr
 ## 🎯 Changes Made
 
 ### Core Stack Migration
+
 - ✅ **Next.js 15**: Migrated to Next.js with App Router
 - ✅ **TypeScript**: Full TypeScript support throughout the codebase
 - ✅ **Tailwind CSS**: Utility-first CSS framework (v4)
 - ✅ **React Server Components**: Leveraging Next.js 15's server components
 
 ### Architecture & Structure
+
 - ✅ Created modern component-based architecture
 - ✅ Organized components into logical sections:
   - `components/sections/` - Page sections (Hero, About, Program, Process, Criteria, Community)
@@ -24,6 +26,7 @@ This PR migrates the Keploy Writers Program website from static HTML/CSS/JavaScr
 - ✅ Moved static assets to `public/` directory
 
 ### Features Implemented
+
 - ✅ **Responsive Design**: Mobile-first approach with Tailwind CSS
 - ✅ **SEO Optimization**: Proper metadata, OpenGraph tags, and sitemap
 - ✅ **Image Optimization**: Using Next.js Image component
@@ -33,13 +36,16 @@ This PR migrates the Keploy Writers Program website from static HTML/CSS/JavaScr
 - ✅ **Social Media Integration**: All social links maintained
 
 ### UI Components
+
 - ✅ Shadcn/ui inspired Button component with variants
 - ✅ Radix UI primitives for accessibility
 - ✅ Lucide React for modern icons
 - ✅ Custom utility functions (cn helper)
 
 ### Content Migration
+
 All sections migrated with content intact:
+
 1. **Hero Section**: Main landing with CTA buttons
 2. **About Section**: Company information
 3. **Program Section**: What the program offers (3 cards)
@@ -52,18 +58,21 @@ All sections migrated with content intact:
 ## 🚀 Technical Improvements
 
 ### Performance
+
 - Server-side rendering for faster initial loads
 - Automatic code splitting
 - Optimized images and fonts
 - Minimal JavaScript bundle size
 
 ### Developer Experience
+
 - Type safety with TypeScript
 - Hot module reloading
 - Better error messages
 - Modern tooling (ESLint, Prettier-ready)
 
 ### Maintainability
+
 - Component-based architecture
 - Reusable UI components
 - Clear folder structure
@@ -143,6 +152,7 @@ writers-program/
 ## 🌐 Deployment Ready
 
 The application is ready to be deployed on:
+
 - Vercel (recommended)
 - Netlify
 - AWS Amplify
@@ -151,6 +161,7 @@ The application is ready to be deployed on:
 ## 📸 Screenshots
 
 Development server running successfully:
+
 - ✅ Build: Compiled successfully
 - ✅ No TypeScript errors
 - ✅ No build warnings
@@ -169,6 +180,7 @@ Development server running successfully:
 ## 🔮 Future Enhancements (Not in this PR)
 
 Potential improvements for future PRs:
+
 - Add animation libraries (Framer Motion, Aceternity UI)
 - Implement dark mode
 - Add more shadcn/ui components

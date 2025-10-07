@@ -23,8 +23,15 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Keploy's Writers Program",
-  description: "Get into a community of Technical Writers where you get the right Recognition | Growth | Networking | Earning & Rewards. An Open-Source Program for Students, Professionals, and Freelancers",
-  keywords: ["Keploy", "Writers Program", "Technical Writing", "Open Source", "Developer Content"],
+  description:
+    "Get into a community of Technical Writers where you get the right Recognition | Growth | Networking | Earning & Rewards. An Open-Source Program for Students, Professionals, and Freelancers",
+  keywords: [
+    "Keploy",
+    "Writers Program",
+    "Technical Writing",
+    "Open Source",
+    "Developer Content",
+  ],
   authors: [{ name: "Keploy.io" }],
   openGraph: {
     title: "Keploy's Writers Program",

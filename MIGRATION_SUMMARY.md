@@ -59,6 +59,7 @@ public/              → Static assets (images, fonts)
 ## What's Included
 
 ### Pages & Sections
+
 1. Hero Section (with CTA buttons)
 2. About Section
 3. Program Offerings (3 cards)
@@ -69,6 +70,7 @@ public/              → Static assets (images, fonts)
 8. Footer (newsletter + social links)
 
 ### Features
+
 - Smooth scrolling navigation
 - Mobile responsive menu
 - Custom scrollbar
@@ -107,6 +109,7 @@ public/              → Static assets (images, fonts)
 ## Deployment
 
 Ready to deploy on:
+
 - **Vercel** (recommended - one-click deploy)
 - Netlify
 - AWS Amplify
@@ -121,6 +124,7 @@ Ready to deploy on:
 ## Support
 
 For issues or questions:
+
 1. Check README-NEXTJS.md
 2. Review PR_DESCRIPTION.md
 3. Open a GitHub issue
