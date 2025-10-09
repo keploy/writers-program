@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resources for Writers</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: 'Lato', Arial, sans-serif; background: #fff; margin: 0; }
+    .resources-container { max-width: 740px; margin: 40px auto; padding: 32px; background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.03); }
+    h1 { font-size: 2.2rem; font-weight: bold; margin-bottom: 24px; color: #ac2a2a; }
+    .resources-description { font-size: 1rem; margin-bottom: 32px; color: #444; }
+    .resources-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 20px; }
+    .resource-card { background: #fff9f4; border: 1px solid #ffd0a2; border-radius: 8px; padding: 22px 20px; text-align: left; box-shadow: 0 2px 8px rgba(255,180,70,0.066); transition: box-shadow 0.15s; display: flex; gap: 14px; align-items: center; text-decoration: none; color: #ac2a2a; font-size: 1.08rem; font-weight: 500; }
+    .resource-card:hover { box-shadow: 0 4px 14px #eb9a3d77; background: #fff3e4; }
+    .resource-icon { font-size: 2rem; }
+    @media (max-width:600px){ .resources-grid { grid-template-columns: 1fr; } .resources-container { padding: 12px; } }
+  </style>
+</head>
+<body>
+  <div class="resources-container">
+    <h1>Resources for Writers</h1>
+    <div class="resources-description">
+      Guidelines and references to help writers maintain consistency and quality standards.
+    </div>
+    <div class="resources-grid">
+      <a class="resource-card" href="https://github.com/keploy/keploy/wiki/Keploy-SEO-Guidelines" target="_blank">
+        <span class="resource-icon">🔍</span>
+        <span>Keploy SEO Guidelines</span>
+      </a>
+      <a class="resource-card" href="#" target="_blank">
+        <span class="resource-icon">🖼</span>
+        <span>Carousel Design Guide (coming soon)</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
