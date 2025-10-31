@@ -1,0 +1,19 @@
+{
+  "name": "keploy-contribution",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <img align=\"center\" src=\"https://docs.keploy.io/img/keploy-logo-dark.svg?s=200&v=4\" height=\"40%\" width=\"40%\"  alt=\"keploy logo\"/> </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx postcss css/tailwind.css -o css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^3.4.18"
+  }
+}
