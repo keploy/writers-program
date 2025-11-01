@@ -22,7 +22,22 @@
     ================================================== -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
+    <!-- font-awesome (icons used by the toggle and social links) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <!-- Load legacy styles first, then Tailwind utilities to avoid layout overrides -->
+    <link rel="stylesheet" href="css/main.css?v=dlm1">
+    <link rel="stylesheet" href="css/tw.css?v=dlm1">
+        <script>
+            (function () {
+                try {
+                    var stored = localStorage.getItem('theme');
+                    // Default to light unless user explicitly chose dark
+                    var theme = stored ? stored : 'light';
+                    if (theme === 'dark') document.documentElement.classList.add('dark');
+                    else document.documentElement.classList.remove('dark');
+                } catch (e) {}
+            })();
+        </script>
 
     <style type="text/css" media="screen">
         .s-styles { 
@@ -76,8 +91,19 @@
     
                 <ul class="header-nav__social">
                     <li>
-                        <a href="#0"><i class="fa fa-facebook"></i></a>
+                        <button id="theme-toggle"
+                                class="inline-flex items-center gap-2 px-3 py-2 rounded border border-transparent hover:border-slate-300 dark:hover:border-slate-600 bg-transparent text-slate-700 dark:text-slate-200"
+                                type="button"
+                                aria-label="Toggle theme"
+                                aria-pressed="false">
+                          <i class="fa-solid fa-moon hidden dark:inline"></i>
+                          <i class="fa-solid fa-sun inline dark:hidden"></i>
+                          <span class="sr-only">Toggle dark mode</span>
+                        </button>
                     </li>
+                     <li>
+                         <a href="#0"><i class="fa fa-facebook"></i></a>
+                     </li>
                     <li>
                         <a href="#0"><i class="fa fa-twitter"></i></a>
                     </li>
@@ -769,7 +795,7 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
+    <script src="js/theme-toggle.js?v=dlm1"></script>
 </body>
 
 </html>

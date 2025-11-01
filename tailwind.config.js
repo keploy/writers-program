@@ -7,7 +7,15 @@ module.exports = {
     "./js/**/*.js"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        // Keploy brand helpers
+        keploy: {
+          navy: "#00163D",
+          orange: "#F89559",
+        }
+      }
+    },
   },
   plugins: [],
-}
+};

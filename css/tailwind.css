@@ -1,3 +1,78 @@
-@tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Dark mode overrides - scoped to body and specific elements */
+.dark body {
+  background-color: #0b1220 !important;
+  color: #e5e7eb !important;
+}
+
+/* Dark mode for sections and major containers */
+.dark .s-home,
+.dark .s-about,
+.dark .s-services,
+.dark .s-contact {
+  background-color: #0b1220 !important;
+  color: #e5e7eb !important;
+}
+
+.dark .s-header {
+  background-color: rgba(11, 18, 32, 0.95) !important;
+}
+
+/* Override inline dark text colors for readability in dark mode */
+.dark [style*="color: #00163D"],
+.dark [style*="color:#00163D"],
+.dark [style*="color: #121212"],
+.dark [style*="color:#121212"],
+.dark [style*="color: #000000"],
+.dark [style*="color:#000000"] {
+  color: #e5e7eb !important;
+}
+
+/* Headings in dark mode */
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #e5e7eb !important;
+}
+
+/* Paragraphs without specific classes */
+.dark p {
+  color: #d1d5db !important;
+}
+
+/* Make sure links are visible in dark mode */
+.dark a:not(.btn) {
+  color: #93c5fd !important;
+}
+
+.dark a:not(.btn):hover {
+  color: #bfdbfe !important;
+}
+
+/* Buttons in dark mode */
+.dark .btn--stroke {
+  background: transparent !important;
+  border-color: #e5e7eb !important;
+  color: #e5e7eb !important;
+}
+
+.dark .btn--stroke:hover {
+  background-color: #e5e7eb !important;
+  color: #0b1220 !important;
+}
+
+/* Keep hero overlay adjusted for dark mode */
+.dark .overlay {
+  background: rgba(0, 0, 0, 0.85) !important;
+}
+
+/* Footer in dark mode */
+.dark .footer_area {
+  background-color: #050a14 !important;
+  color: #e5e7eb !important;
+}
