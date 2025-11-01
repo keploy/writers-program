@@ -221,17 +221,6 @@
                 <!-- <li><a class="smoothscroll"  href="#join" title="join">Join</a></li> -->
               </ul>
               <ul class="header-nav__social">
-                <li>
-                  <button id="theme-toggle"
-                          class="inline-flex items-center gap-2 px-3 py-2 rounded border border-transparent hover:border-slate-300 dark:hover:border-slate-600 bg-transparent text-slate-700 dark:text-slate-200"
-                          type="button"
-                          aria-label="Toggle theme"
-                          aria-pressed="false">
-                    <i class="fa-solid fa-moon hidden dark:inline"></i>
-                    <i class="fa-solid fa-sun inline dark:hidden"></i>
-                    <span class="sr-only">Toggle dark mode</span>
-                  </button>
-                </li>
                 <li><a href="https://keploy.slack.com/"><i class="fa-brands fa-slack"></i></a></li>
                 <li><a href="https://twitter.com/Keployio"><i class="fa-brands fa-x-twitter"></i></a></li>
                 <li><a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg"><i class="fa-brands fa-youtube"></i></a></li>
@@ -240,10 +229,21 @@
               </ul>
             </div>
           </nav>
-          <a class="header-menu-toggle" href="#0">
-          <span class="header-menu-text">Menu</span>
-          <span class="header-menu-icon"></span>
-          </a>
+          <div class="header-controls">
+            <button id="theme-toggle"
+                    class="header-theme-toggle"
+                    type="button"
+                    aria-label="Toggle theme"
+                    aria-pressed="false">
+              <i class="fa-solid fa-moon hidden dark:inline"></i>
+              <i class="fa-solid fa-sun inline dark:hidden"></i>
+              <span class="sr-only">Toggle dark mode</span>
+            </button>
+            <a class="header-menu-toggle" href="#0">
+              <span class="header-menu-text">Menu</span>
+              <span class="header-menu-icon"></span>
+            </a>
+          </div>
         </header>
         <!-- end s-header -->
         <!-- home
@@ -277,7 +277,7 @@
 
 
           <div class="bunny">
-            <img src="images/bunny.png" alt="Bugs Bunny">
+            <img src="images/bunnytransparent.png" alt="Bunny (transparent)" />
           </div>
 
           <!-- end home-content -->
