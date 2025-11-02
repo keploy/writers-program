@@ -76,3 +76,35 @@
   background-color: #050a14 !important;
   color: #e5e7eb !important;
 }
+
+/* Custom footer tweaks (kept here so they survive Tailwind builds)
+   - Structure, newsletter styling, horizontal social icons */
+@layer components {
+  .footer_area .f_widget.ab_widget .f_title h3 { margin: 0 0 0.25rem 0; font-size: 2rem; }
+  .footer_area .f_widget.ab_widget p { margin: 0; color: rgba(255,255,255,0.8); font-size: 1.2rem; }
+
+  .footer_area .news_widget .input-group { display: flex; gap: 0.5rem; align-items: center; }
+  .footer_area .news_widget .input-group input[type="email"] {
+    flex: 1 1 auto; padding: 0.7rem 0.9rem; border-radius: 0.4rem; border: 1px solid rgba(255,255,255,0.08);
+    background: transparent; color: inherit; font-size: 1rem;
+  }
+  .footer_area .news_widget .input-group input[type="email"]::placeholder { color: rgba(255,255,255,0.6); }
+  .footer_area .news_widget .input-group .submit-btn {
+    padding: 0.6rem 0.9rem; border-radius: 0.45rem; border: none; background: #ff904d; color: #00163D;
+    display: inline-flex; align-items: center; justify-content: center;
+  }
+  .footer_area .news_widget .input-group .submit-btn i,
+  .footer_area .news_widget .input-group .submit-btn span { color: inherit; font-size: 1rem; }
+
+  .footer_area .social_widget .list { display: flex; gap: 0.8rem; padding: 0; margin: 0; align-items: center; }
+  .footer_area .social_widget .list li { display: inline-block; margin: 0; }
+  .footer_area .social_widget .list li a { color: inherit; font-size: 1.6rem; display: inline-flex; align-items: center; justify-content: center; }
+
+  .dark .footer_area .news_widget .input-group input[type="email"] { border-color: rgba(255,255,255,0.06); }
+  .dark .footer_area .news_widget .input-group .submit-btn { background: #ff904d; color: #00163D; }
+
+  @media (max-width: 420px) {
+    .footer_area .news_widget .input-group { flex-direction: column; align-items: stretch; }
+    .footer_area .news_widget .input-group .submit-btn { width: 100%; }
+  }
+}
