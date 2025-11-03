@@ -27,8 +27,22 @@
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         />
-        <link rel="stylesheet" href="css/main.css">
+        <!-- Load legacy styles first, then Tailwind utilities to avoid layout overrides -->
+  <link rel="stylesheet" href="css/main.css?v=dlm2">
+  <link rel="stylesheet" href="css/tw.css?v=dlm2">
         <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+        
+        <script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('theme');
+      // Default to light unless user explicitly chose dark
+      var theme = stored ? stored : 'light';
+      if (theme === 'dark') document.documentElement.classList.add('dark');
+      else document.documentElement.classList.remove('dark');
+    } catch (e) {}
+  })();
+</script>
         <!-- script
           ================================================== -->
         <script src="js/modernizr.js"></script>
@@ -215,10 +229,21 @@
               </ul>
             </div>
           </nav>
-          <a class="header-menu-toggle" href="#0">
-          <span class="header-menu-text">Menu</span>
-          <span class="header-menu-icon"></span>
-          </a>
+          <div class="header-controls">
+            <button id="theme-toggle"
+                    class="header-theme-toggle"
+                    type="button"
+                    aria-label="Toggle theme"
+                    aria-pressed="false">
+              <i class="fa-solid fa-moon hidden dark:inline"></i>
+              <i class="fa-solid fa-sun inline dark:hidden"></i>
+              <span class="sr-only">Toggle dark mode</span>
+            </button>
+            <a class="header-menu-toggle" href="#0">
+              <span class="header-menu-text">Menu</span>
+              <span class="header-menu-icon"></span>
+            </a>
+          </div>
         </header>
         <!-- end s-header -->
         <!-- home
@@ -252,7 +277,7 @@
 
 
           <div class="bunny">
-            <img src="images/bunny.png" alt="Bugs Bunny">
+            <img src="images/bunnytransparent.png" alt="Bunny (transparent)" />
           </div>
 
           <!-- end home-content -->
@@ -793,7 +818,7 @@
               <div class="col-lg-5 col-sm-6">
                 <aside class="f_widget ab_widget">
                   <div class="f_title">
-                    <h3 style="margin-left: -10px;">Copyright © 2025  Keploy Inc.</h3>
+                    <h3>Copyright © 2025  Keploy Inc.</h3>
                   </div>
                   <p style="font-family:'Inconsolata', monospace;">Developers experience for e2e testing. Toolkit that creates test-cases and data mocks from API calls, DB queries, etc.</p>
                 </aside>
@@ -808,7 +833,7 @@
                     <form id="newsletter-1" target="" action="" method="post" class="subscribe_form relative">
                       <div class="input-group d-flex flex-row justify-content-center">
                         <input name="email" class="input" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                        <button class="btn sub-btn submit-btn" style="border:1px; right:0px;"><span class="lnr lnr-arrow-right"></span></button>
+                        <button class="btn sub-btn submit-btn" style="border:1px; right:0px;"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
                       </div>
                       <div class="mt-10 info"></div>
                     </form>
@@ -825,7 +850,8 @@
                   <ul class="list" style="margin-left:0">
                     <li><a href="https://keploy.slack.com/"><i class="fa-brands fa-slack"></i></a></li>
                     <li><a href="https://twitter.com/Keployio"><i class="fa-brands fa-x-twitter"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
                     <li><a href="https://www.linkedin.com/company/keploy/"><i class="fa-brands fa-linkedin"></i></a></li>
                     <li><a href="https://keploy.hashnode.dev"><i class="fa-brands fa-hashnode"></i></a></li>
                   </ul>
@@ -888,6 +914,7 @@
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+  <script src="js/theme-toggle.js?v=dlm2"></script>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <script>
           // function modalClose(){

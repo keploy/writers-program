@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark mode overrides - scoped to body and specific elements */
+.dark body {
+  background-color: #0b1220 !important;
+  color: #e5e7eb !important;
+}
+
+/* Dark mode for sections and major containers */
+.dark .s-home,
+.dark .s-about,
+.dark .s-services,
+.dark .s-contact {
+  background-color: #0b1220 !important;
+  color: #e5e7eb !important;
+}
+
+.dark .s-header {
+  background-color: rgba(11, 18, 32, 0.95) !important;
+}
+
+/* Override inline dark text colors for readability in dark mode */
+.dark [style*="color: #00163D"],
+.dark [style*="color:#00163D"],
+.dark [style*="color: #121212"],
+.dark [style*="color:#121212"],
+.dark [style*="color: #000000"],
+.dark [style*="color:#000000"] {
+  color: #e5e7eb !important;
+}
+
+/* Headings in dark mode */
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #e5e7eb !important;
+}
+
+/* Paragraphs without specific classes */
+.dark p {
+  color: #d1d5db !important;
+}
+
+/* Make sure links are visible in dark mode */
+.dark a:not(.btn) {
+  color: #93c5fd !important;
+}
+
+.dark a:not(.btn):hover {
+  color: #bfdbfe !important;
+}
+
+/* Buttons in dark mode */
+.dark .btn--stroke {
+  background: transparent !important;
+  border-color: #e5e7eb !important;
+  color: #e5e7eb !important;
+}
+
+.dark .btn--stroke:hover {
+  background-color: #e5e7eb !important;
+  color: #0b1220 !important;
+}
+
+/* Keep hero overlay adjusted for dark mode */
+.dark .overlay {
+  background: rgba(0, 0, 0, 0.85) !important;
+}
+
+/* Footer in dark mode */
+.dark .footer_area {
+  background-color: #050a14 !important;
+  color: #e5e7eb !important;
+}
+
+/* Custom footer tweaks (kept here so they survive Tailwind builds)
+   - Structure, newsletter styling, horizontal social icons */
+@layer components {
+  .footer_area .f_widget.ab_widget .f_title h3 { margin: 0 0 0.25rem 0; font-size: 2rem; }
+  .footer_area .f_widget.ab_widget p { margin: 0; color: rgba(255,255,255,0.8); font-size: 1.2rem; }
+
+  .footer_area .news_widget .input-group { position: relative; display: block; max-width: 28rem; width: 100%; margin: 0 auto; }
+  .footer_area .news_widget .input-group input[type="email"] {
+    width: 100%; min-height: 42px; padding: 0.8rem 1.2rem; padding-right: 4.2rem; border-radius: 9999px; border: 1px solid rgba(0,22,61,0.20);
+    background: rgba(0,22,61,0.06); color: #00163D; font-size: 1.4rem;
+  }
+  .footer_area .news_widget .input-group input[type="email"]::placeholder { color: rgba(0,22,61,0.55); }
+  .footer_area .news_widget .input-group .submit-btn {
+    width: 44px; height: 44px; padding: 0; border-radius: 9999px; border: none; background: #ff904d; color: #00163D;
+    display: inline-flex; align-items: center; justify-content: center; position: absolute; top: 50%; right: 0.6rem; transform: translateY(-50%);
+  }
+  .footer_area .news_widget .input-group .submit-btn i,
+  .footer_area .news_widget .input-group .submit-btn span { color: inherit; font-size: 1.4rem; }
+
+  .footer_area .social_widget .list { display: flex; gap: 0.8rem; padding: 0; margin: 0; align-items: center; }
+  .footer_area .social_widget .list li { display: inline-block; margin: 0; }
+  .footer_area .social_widget .list li a { color: inherit; font-size: 1.6rem; display: inline-flex; align-items: center; justify-content: center; }
+
+  .dark .footer_area .news_widget .input-group input[type="email"] { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.18); color: #e5e7eb; }
+  .dark .footer_area .news_widget .input-group input[type="email"]::placeholder { color: rgba(229,231,235,0.6); }
+  .dark .footer_area .news_widget .input-group .submit-btn { background: #ff904d; color: #00163D; }
+
+  @media (max-width: 420px) {
+    .footer_area .news_widget .input-group { display: flex !important; flex-direction: column; align-items: stretch; gap: 0.6rem; max-width: 100%; }
+    .footer_area .news_widget .input-group .submit-btn { position: static; transform: none; width: 100%; height: 44px; }
+  }
+}
