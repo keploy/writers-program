@@ -1746,7 +1746,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 /* When dark theme is active, don't show the opaque white chip — keep it transparent/dark */
 .dark .header-menu-toggle.opaque {
-    background-color: rgba(255,255,255,0.0); /* subtle translucent so it doesn't pop as white */
+    background-color: transparent; /* subtle translucent so it doesn't pop as white */
 }
 .dark .header-menu-toggle.opaque .header-menu-text {
     background-color: transparent;

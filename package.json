@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "npx postcss css/tailwind.css -o css/main.css",
     "build:tw": "npx postcss css/tailwind.css -o css/tw.css",
     "dev:tw": "npx postcss css/tailwind.css -o css/tw.css --watch"
   },
