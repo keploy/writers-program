@@ -3853,52 +3853,76 @@ html.no-csstransitions .home-content__main {
 
 /* -------------------------------------------------------------------
  * Footer tweaks for theme compatibility and layout
- * - ensure copyright description sits below heading
+ * - consistent heading size & spacing across footer columns
+ * - align columns from the top
  * - style newsletter input/button to match site palette and show arrow
  * - make social icons horizontal
  * - keep rules intentionally scoped to footer_area
  * ------------------------------------------------------------------- */
-.footer_area .f_widget.ab_widget .f_title h3 {
-    margin: 0 0 0.25rem 0;
-    font-size: 2rem;
+/* Make the footer columns align from the top and wrap on small screens */
+.footer_area .row.footer_inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 2.8rem; /* add comfortable top breathing space */
 }
+
+/* Standardize footer section headings (Copyright, Newsletter, Find us on) */
+.footer_area .f_title h3 {
+    margin: 20px 0 1rem 0; /* remove large global top margin for uniform alignment */
+    font-size: 2.4rem;  /* match global h3 size used elsewhere */
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Copyright block paragraph: match size with other footer paragraphs */
 .footer_area .f_widget.ab_widget p {
-    margin: 0;
-    color: rgba(255,255,255,0.8);
-    font-size: 1.2rem;
+    margin: 0; /* keep tight with heading like other sections */
+    color: inherit; /* inherit current theme color */
+    font-size: 2rem; /* match base body size used site-wide */
 }
 
 .footer_area .news_widget .input-group {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
+    position: relative;
+    display: block; /* override flex utility classes */
+    max-width: 25rem;
+    width: 100%;
+    margin: 0 auto;
 }
 .footer_area .news_widget .input-group input[type="email"] {
-    flex: 1 1 auto;
-    padding: 0.7rem 0.9rem;
-    border-radius: 0.4rem;
-    border: 1px solid rgba(255,255,255,0.08);
-    background: transparent;
-    color: inherit;
-    font-size: 1rem;
+    width: 100%;
+    min-height: 42px;
+    padding: 0.8rem 1.2rem;
+    padding-right: 4.2rem; /* leave space for circular button */
+    border-radius: 9999px; /* pill */
+    border: 1px solid rgba(0,22,61,0.20); /* visible in light theme */
+    background: rgba(0,22,61,0.06); /* subtle tinted bg for light theme */
+    color: #00163D; /* dark text for light theme */
+    font-size: 1.4rem;
 }
 .footer_area .news_widget .input-group input[type="email"]::placeholder{
-    color: rgba(255,255,255,0.6);
+    color: rgba(0,22,61,0.55); /* readable in light theme */
 }
 .footer_area .news_widget .input-group .submit-btn {
-    padding: 0.6rem 0.9rem;
-    border-radius: 0.45rem;
+    width: 44px;
+    height: 44px;
+    padding: 0; /* circular button */
+    border-radius: 9999px; /* circle */
     border: none;
     background: #ff904d; /* primary accent */
-    color: #00163D; /* dark text on accent */
+    color: #00163D; /* dark icon on accent */
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 33%;
+    right: 0.6rem;
+    transform: translateY(-50%);
 }
 .footer_area .news_widget .input-group .submit-btn i,
 .footer_area .news_widget .input-group .submit-btn span {
     color: inherit;
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 
 .footer_area .social_widget .list {
@@ -3922,7 +3946,12 @@ html.no-csstransitions .home-content__main {
 
 /* Dark mode tweaks: keep contrast for inputs/buttons */
 .dark .footer_area .news_widget .input-group input[type="email"] {
-    border-color: rgba(255,255,255,0.06);
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.18);
+    color: #e5e7eb;
+}
+.dark .footer_area .news_widget .input-group input[type="email"]::placeholder {
+    color: rgba(229,231,235,0.6);
 }
 .dark .footer_area .news_widget .input-group .submit-btn {
     background: #ff904d;
@@ -3931,6 +3960,17 @@ html.no-csstransitions .home-content__main {
 
 /* small screens: stack input & button for usability */
 @media only screen and (max-width: 420px) {
-    .footer_area .news_widget .input-group { flex-direction: column; align-items: stretch; }
-    .footer_area .news_widget .input-group .submit-btn { width: 100%; }
+    .footer_area .news_widget .input-group {
+        display: flex !important;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.6rem;
+        max-width: 100%;
+    }
+    .footer_area .news_widget .input-group .submit-btn {
+        position: static;
+        transform: none;
+        width: 100%;
+        height: 44px;
+    }
 }
