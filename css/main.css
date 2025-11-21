@@ -2502,6 +2502,16 @@ html.no-csstransitions .home-content__main {
         float: none;
         margin-top: 0;
     }
+    .services-list .service-text {
+        /* 1. Force reset the negative pull */
+        margin-top: 1rem !important; 
+        
+        /* 2. Reset left margin so it centers perfectly */
+        margin-left: 0 !important; 
+        
+        /* 3. Ensure text doesn't get squashed */
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -4043,4 +4053,37 @@ html.no-csstransitions .home-content__main {
 .criteria-list {
     /* margin-top: 20px; */
     margin-bottom: 40px;
+}
+
+/* ---FIX FOR ISSUE #3294: Responsive Layout--- */
+
+@media only screen and (max-width: 900px) {
+    
+    .home-social {
+        position: relative; 
+        top: auto;
+        right: auto;
+        transform: none; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100%;
+        margin-top: 3rem; 
+        padding: 0;
+    }
+
+    .home-social li {
+        padding: 0 1.5rem; 
+    }
+
+    .home-content {
+        padding-right: 0 !important;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .home-content h1 {
+        font-size: clamp(2rem, 5vw, 4rem); 
+    }
 }
