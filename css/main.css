@@ -4055,8 +4055,7 @@ html.no-csstransitions .home-content__main {
     margin-bottom: 40px;
 }
 
-/* ---FIX FOR ISSUE #3294: Responsive Layout--- */
-
+/* ---FIX FOR ISSUE #3294--- */
 @media only screen and (max-width: 900px) {
     
     .home-social {
@@ -4067,7 +4066,6 @@ html.no-csstransitions .home-content__main {
         display: flex;
         justify-content: center;
         align-items: center;
-        
         width: 100%;
         margin-top: 3rem; 
         padding: 0;
@@ -4080,9 +4078,17 @@ html.no-csstransitions .home-content__main {
     .home-content {
         padding-right: 0 !important;
         text-align: center;
-        width: 100%;
     }
     
+    .home-content__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 1rem;
+    }
+
     .home-content h1 {
         font-size: clamp(2rem, 5vw, 4rem); 
     }
