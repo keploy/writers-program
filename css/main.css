@@ -4055,41 +4055,93 @@ html.no-csstransitions .home-content__main {
     margin-bottom: 40px;
 }
 
-/* ---FIX FOR ISSUE #3294--- */
+/* --- UPDATED MOBILE FIXES (ISSUE: 3294) --- */
 @media only screen and (max-width: 900px) {
-    
-    .home-social {
-        position: relative; 
-        top: auto;
-        right: auto;
-        transform: none; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-top: 3rem; 
-        padding: 0;
+
+    #home, .home {
+        height: auto !important;
+        min-height: 100vh; 
+        padding-bottom: 5rem !important; 
     }
 
-    .home-social li {
-        padding: 0 1.5rem; 
-    }
 
     .home-content {
         padding-right: 0 !important;
         text-align: center;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.85); 
+        padding: 2rem !important;
+        border-radius: 15px;
+        margin-top: 2rem; 
     }
     
+    .home-content h1 {
+        font-size: clamp(2rem, 8vw, 3.5rem);
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+
     .home-content__buttons {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
+        margin-top: 2rem;
         gap: 1rem;
     }
 
-    .home-content h1 {
-        font-size: clamp(2rem, 5vw, 4rem); 
+
+    .btn, .button {
+        padding: 12px 24px !important;
+        height: auto !important; 
+        line-height: normal !important;
+        white-space: normal !important; 
+    }
+
+    .services-list, .card, .service-item {
+        height: auto !important;
+        min-height: auto !important;
+        overflow: visible !important;
+    }
+    
+
+    li, p {
+        word-wrap: break-word;
+    }
+
+
+    .listed-criteria h2,
+    .criteria-list h2 {
+        line-height: 1.4 !important; 
+        height: auto !important;    
+        display: block !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+
+    .bunny img {
+        opacity: 1.0 !important;
+    }
+    .overlay, .shadow-overlay {
+        display: none !important;
+    }
+
+    .home-social {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0.8rem !important;
+        
+        position: absolute !important;
+        
+        top: 22.0rem !important;
+        right: 2.5rem !important;
+        left: auto !important;
+        
+        width: auto !important;
+        margin-top: 0 !important;
+        padding: 0 !important;
+        z-index: 100 !important; 
     }
 }
