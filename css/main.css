@@ -4076,9 +4076,15 @@ html.no-csstransitions .home-content__main {
     #home, .home {
         height: auto !important;
         min-height: 100vh; 
-        padding-top: 10rem !important;
-        padding-bottom: 5rem !important; 
+        padding-top: 10rem !important; 
+        padding-bottom: 5rem !important;
         overflow: visible !important;
+    }
+
+    #about, .s-about {
+        margin-top: 20rem !important; 
+        position: relative !important;
+        z-index: 20 !important; 
     }
 
     .header-menu-text {
@@ -4090,21 +4096,22 @@ html.no-csstransitions .home-content__main {
         flex-direction: column !important;
         align-items: center !important; 
         text-align: center !important;
+        
         width: 100% !important;
         max-width: 100% !important;
         box-sizing: border-box !important;
+        
         margin: 1rem auto !important; 
         padding: 2rem !important;
+        
         background: rgba(255, 255, 255, 0.85); 
         border-radius: 15px;
     }
     
-    .home-content__main,
-    .row.home-content__main {
+    .home-content__main {
         width: 100% !important;
         text-align: center !important;
-        margin: 0 !important;
-        padding: 0 !important;
+        margin: 0 !important; 
     }
     
     .home-content h1 {
@@ -4132,6 +4139,7 @@ html.no-csstransitions .home-content__main {
         flex-direction: column !important;
         align-items: center !important;
         justify-content: flex-start !important;
+        
         height: auto !important;
         min-height: auto !important;
         margin-bottom: 3rem !important;
@@ -4140,7 +4148,7 @@ html.no-csstransitions .home-content__main {
 
     .service-icon {
         display: block !important;
-        position: static !important;
+        position: static !important; 
         margin-bottom: 1.5rem !important;
         height: auto !important;
         max-width: 100% !important;
@@ -4238,6 +4246,16 @@ html.no-csstransitions .home-content__main {
         box-sizing: border-box !important;
         margin: 0 auto !important;        
     }
-    
+
+    .home-content__scroll {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        position: static !important; 
+        transform: none !important;
+        
+        margin-top: 2rem !important; 
+        margin-bottom: 1rem !important;
+    }
     li, p { word-wrap: break-word; }
 }
