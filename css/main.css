@@ -4058,90 +4058,188 @@ html.no-csstransitions .home-content__main {
 /* --- UPDATED MOBILE FIXES (ISSUE: 3294) --- */
 @media only screen and (max-width: 900px) {
 
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        position: relative;
+    }
+
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
     #home, .home {
         height: auto !important;
         min-height: 100vh; 
+        padding-top: 10rem !important; 
         padding-bottom: 5rem !important; 
+        overflow: visible !important;
     }
 
+    .header-menu-text {
+        display: none !important;
+    }
 
     .home-content {
-        padding-right: 0 !important;
-        text-align: center;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.85); 
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important; 
+        text-align: center !important;
+        
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        
+        margin: 1rem auto !important; 
         padding: 2rem !important;
+        
+        background: rgba(255, 255, 255, 0.85); 
         border-radius: 15px;
-        margin-top: 2rem; 
+    }
+    
+    .home-content__main {
+        width: 100% !important;
+        text-align: center !important;
+        margin: 0 !important; 
     }
     
     .home-content h1 {
         font-size: clamp(2rem, 8vw, 3.5rem);
         line-height: 1.2;
         margin-bottom: 1rem;
-    }
-
-
-    .home-content__buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 2rem;
-        gap: 1rem;
-    }
-
-
-    .btn, .button {
-        padding: 12px 24px !important;
-        height: auto !important; 
-        line-height: normal !important;
-        white-space: normal !important; 
-    }
-
-    .services-list, .card, .service-item {
-        height: auto !important;
-        min-height: auto !important;
-        overflow: visible !important;
+        text-decoration: none !important; 
+        border-bottom: none !important;
+        width: 100% !important;
     }
     
-
-    li, p {
-        word-wrap: break-word;
+    .home-content h1 span, 
+    .home-content h1 u, 
+    .home-content__main u {
+        text-decoration: none !important;
+        border-bottom: none !important;
     }
 
+    .home-social, .overlay, .shadow-overlay {
+        display: none !important; 
+    }
 
-    .listed-criteria h2,
-    .criteria-list h2 {
-        line-height: 1.4 !important; 
-        height: auto !important;    
+    .service-item {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        
+        height: auto !important;
+        min-height: auto !important;
+        margin-bottom: 3rem !important;
+        width: 100% !important;
+    }
+
+    .service-icon {
+        display: block !important;
+        position: static !important; 
+        margin-bottom: 1.5rem !important;
+        height: auto !important;
+        max-width: 100% !important;
+    }
+    
+    .service-text {
+        display: block !important;
+        position: static !important;
+        width: 100% !important;
+        margin-top: 0 !important;
+    }
+
+    .services-list, .card {
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    .listed-criteria h2, .criteria-list h2 {
+        line-height: 1.4 !important;
+        height: auto !important;
         display: block !important;
         margin-bottom: 0.5rem !important;
     }
 
-
     .bunny img {
-        opacity: 1.0 !important;
-    }
-    .overlay, .shadow-overlay {
-        display: none !important;
+        opacity: 1.0 !important; 
     }
 
-    .home-social {
+    footer, .footer, .s-footer {
+        text-align: center !important;
+    }
+    
+    footer ul, .footer ul, .footer-social {
+        justify-content: center !important;
+        display: flex !important;
+        width: 100% !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+    
+    footer form, .footer form {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center !important;
+        width: 100%;
+    }
+
+    .footer-copyright, .copyright {
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .process-div h3 {
+        margin-right: 1.5rem !important; 
+        padding-right: 0.5rem !important;
+    }
+
+    .contact-secondary, .contact-info, .cinfo {
         display: flex !important;
         flex-direction: column !important;
-        gap: 0.8rem !important;
-        
-        position: absolute !important;
-        
-        top: 22.0rem !important;
-        right: 2.5rem !important;
-        left: auto !important;
-        
-        width: auto !important;
-        margin-top: 0 !important;
-        padding: 0 !important;
-        z-index: 100 !important; 
+        align-items: center !important; 
+        text-align: center !important;
+        width: 100% !important;
     }
+
+    .contact-social {
+        display: flex !important;
+        justify-content: center !important; 
+        width: 100% !important;
+        padding: 0 !important;
+        margin-top: 1.5rem !important;
+        gap: 1rem !important;
+    }
+
+    .home-content__buttons {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important; 
+        justify-content: center !important;
+        width: 100% !important;
+        gap: 1rem !important;
+        margin-top: 1.5rem !important;
+    }
+
+    .btn, .button {
+        display: inline-flex !important; 
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;  
+        padding: 12px 24px !important;
+        height: auto !important;
+        min-height: 44px !important;    
+        white-space: normal !important;  
+        max-width: 90% !important;       
+        box-sizing: border-box !important;
+        margin: 0 auto !important;        
+    }
+    
+    li, p { word-wrap: break-word; }
 }
