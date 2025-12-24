@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Font Imports - Local Montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+        url('/fonts/montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat/montserrat-medium-webfont.woff2') format('woff2'),
+        url('/fonts/montserrat/montserrat-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat/montserrat-semibold-webfont.woff2') format('woff2'),
+        url('/fonts/montserrat/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+        url('/fonts/montserrat/montserrat-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat/montserrat-extrabold-webfont.woff2') format('woff2'),
+        url('/fonts/montserrat/montserrat-extrabold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat/montserrat-black-webfont.woff2') format('woff2'),
+        url('/fonts/montserrat/montserrat-black-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Lora font */
+@font-face {
+    font-family: 'Lora';
+    src: url('/fonts/lora/lora-regular-webfont.woff2') format('woff2'),
+        url('/fonts/lora/lora-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@layer base {
+    :root {
+        /* Keploy Brand Colors - Clean White/Orange Theme */
+        --background: 0 0% 100%;
+        --foreground: 218 35% 15%;
+        --card: 0 0% 100%;
+        --card-foreground: 218 35% 15%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 218 35% 15%;
+        --primary: 24 93% 66%;
+        --primary-foreground: 218 100% 12%;
+        --secondary: 30 6% 95%;
+        --secondary-foreground: 218 35% 15%;
+        --muted: 30 6% 96%;
+        --muted-foreground: 218 15% 45%;
+        --accent: 24 93% 66%;
+        --accent-foreground: 218 100% 12%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 30 10% 90%;
+        --input: 30 10% 90%;
+        --ring: 24 93% 66%;
+        --radius: 0.75rem;
+
+        /* Custom Keploy Variables */
+        --keploy-orange: #F89559;
+        --keploy-orange-dark: #E87B3A;
+        --keploy-navy: #00163D;
+        --keploy-navy-light: #1a2d4a;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-white text-foreground antialiased;
+        font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Keploy Design System */
+.text-keploy-orange {
+    color: var(--keploy-orange);
+}
+
+.bg-keploy-orange {
+    background-color: var(--keploy-orange);
+}
+
+.text-keploy-navy {
+    color: var(--keploy-navy);
+}
+
+.bg-keploy-navy {
+    background-color: var(--keploy-navy);
+}
+
+/* Clean card style matching Keploy */
+.keploy-card {
+    @apply bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300;
+}
+
+/* Orange underline accent like in screenshot */
+.orange-underline {
+    position: relative;
+}
+
+.orange-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 4px;
+    background: var(--keploy-orange);
+    border-radius: 2px;
+}
+
+/* Subtle hover effects */
+.hover-lift:hover {
+    transform: translateY(-4px);
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+    @apply outline-2 outline-offset-2;
+    outline-color: var(--keploy-orange);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
