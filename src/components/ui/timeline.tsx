@@ -98,7 +98,8 @@ function TimelineItem({ step, index, isLast }: TimelineItemProps) {
  * @param className - Optional additional CSS classes
  * @param ariaLabel - Optional aria-label for accessibility (defaults to "Workflow steps")
  */
-export function HorizontalTimeline({ steps, className, ariaLabel = "Workflow steps" }: { steps: TimelineStep[], className?: string, ariaLabel?: string }) {
+export function HorizontalTimeline({ steps, className, ariaLabel = "Workflow steps" }: TimelineProps) {
+
     return (
         <div className={cn("relative", className)}>
             {/* Connector line */}
