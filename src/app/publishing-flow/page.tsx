@@ -43,8 +43,9 @@ export default function PublishingFlowPage() {
                             />
                         </div>
                         <p className="text-sm text-gray-500 text-center">
-                            Copyright © 2025 Keploy Inc. • Developer experience for e2e testing
+                            Copyright © {new Date().getFullYear()} Keploy Inc. • Developer experience for e2e testing
                         </p>
+
                         <div className="flex items-center gap-5">
                             <a
                                 href="https://keploy.slack.com/"
