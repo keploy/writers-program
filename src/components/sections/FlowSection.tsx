@@ -90,7 +90,7 @@ export function FlowSection() {
 
                             <CardContent className="pt-16 pb-6 px-6">
                                 <div className="flex items-center justify-center mb-4">
-                                    <div className="relative w-24 h-24">
+                                    <div className="relative w-44 h-44">
                                         <Image
                                             src={step.image}
                                             alt={step.title}

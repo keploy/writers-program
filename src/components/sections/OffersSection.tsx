@@ -57,7 +57,7 @@ export function OffersSection() {
                             tabIndex={0}
                         >
                             <CardHeader className="pb-2 pt-8 px-6">
-                                <div className="relative w-28 h-28 mx-auto mb-4">
+                                <div className="relative w-40 h-40 mx-auto mb-4">
                                     <Image
                                         src={offer.image}
                                         alt={offer.title}
