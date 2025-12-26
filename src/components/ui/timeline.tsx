@@ -92,7 +92,11 @@ function TimelineItem({ step, index, isLast }: TimelineItemProps) {
 }
 
 /**
- * Horizontal Timeline for desktop - Clean card-based design
+ * Horizontal Timeline variant for desktop displays.
+ * Clean card-based design optimized for wider screens.
+ * @param steps - Array of timeline steps to display
+ * @param className - Optional additional CSS classes
+ * @param ariaLabel - Optional aria-label for accessibility (defaults to "Workflow steps")
  */
 export function HorizontalTimeline({ steps, className, ariaLabel = "Workflow steps" }: { steps: TimelineStep[], className?: string, ariaLabel?: string }) {
     return (
