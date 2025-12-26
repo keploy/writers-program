@@ -28,53 +28,6 @@ export function CommunitySection() {
         <div className="absolute bottom-1/3 right-1/3 w-72 h-72 bg-blue-500/5 rounded-full blur-[80px] animate-pulse" style={{ animationDelay: '1.5s' }} />
       </div>
 
-      {/* CSS for stars */}
-      <style jsx>{`
-        .stars-layer-1, .stars-layer-2, .stars-layer-3 {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          width: 100%;
-          height: 100%;
-        }
-        .stars-layer-1 {
-          background-image: 
-            radial-gradient(2px 2px at 30px 50px, white, transparent),
-            radial-gradient(2px 2px at 80px 120px, rgba(255,255,255,0.8), transparent),
-            radial-gradient(1px 1px at 150px 80px, white, transparent),
-            radial-gradient(2px 2px at 220px 160px, rgba(255,255,255,0.6), transparent),
-            radial-gradient(1px 1px at 300px 100px, white, transparent),
-            radial-gradient(2px 2px at 380px 200px, rgba(255,255,255,0.7), transparent);
-          background-size: 450px 300px;
-          animation: twinkle 4s ease-in-out infinite;
-        }
-        .stars-layer-2 {
-          background-image: 
-            radial-gradient(1px 1px at 60px 180px, rgba(255,255,255,0.6), transparent),
-            radial-gradient(2px 2px at 140px 100px, white, transparent),
-            radial-gradient(1px 1px at 240px 240px, rgba(255,255,255,0.8), transparent),
-            radial-gradient(2px 2px at 320px 70px, rgba(255,255,255,0.5), transparent);
-          background-size: 400px 320px;
-          animation: twinkle 5s ease-in-out infinite;
-          animation-delay: 1s;
-        }
-        .stars-layer-3 {
-          background-image: 
-            radial-gradient(1px 1px at 100px 130px, rgba(248,149,89,0.5), transparent),
-            radial-gradient(2px 2px at 200px 280px, rgba(248,149,89,0.4), transparent),
-            radial-gradient(1px 1px at 350px 180px, rgba(248,149,89,0.5), transparent);
-          background-size: 500px 380px;
-          animation: twinkle 6s ease-in-out infinite;
-          animation-delay: 2s;
-        }
-        @keyframes twinkle {
-          0%, 100% { opacity: 0.4; }
-          50% { opacity: 1; }
-        }
-      `}</style>
-
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full mb-8 backdrop-blur-sm">

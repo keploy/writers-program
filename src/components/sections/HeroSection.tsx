@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { ArrowRight, Users } from "lucide-react";
 
 export function HeroSection() {
     return (

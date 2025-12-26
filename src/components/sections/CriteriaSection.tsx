@@ -79,58 +79,6 @@ export function CriteriaSection() {
                 <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-500/5 rounded-full blur-[80px] animate-pulse" style={{ animationDelay: '2s' }} />
             </div>
 
-            {/* CSS for stars - inline styles */}
-            <style jsx>{`
-        .stars-layer-1, .stars-layer-2, .stars-layer-3 {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          width: 100%;
-          height: 100%;
-        }
-        .stars-layer-1 {
-          background-image: 
-            radial-gradient(2px 2px at 20px 30px, white, transparent),
-            radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
-            radial-gradient(1px 1px at 90px 40px, white, transparent),
-            radial-gradient(2px 2px at 160px 120px, rgba(255,255,255,0.6), transparent),
-            radial-gradient(1px 1px at 230px 80px, white, transparent),
-            radial-gradient(2px 2px at 300px 150px, rgba(255,255,255,0.7), transparent),
-            radial-gradient(1px 1px at 370px 60px, white, transparent),
-            radial-gradient(2px 2px at 440px 200px, rgba(255,255,255,0.5), transparent);
-          background-size: 500px 300px;
-          animation: twinkle 4s ease-in-out infinite;
-        }
-        .stars-layer-2 {
-          background-image: 
-            radial-gradient(1px 1px at 50px 150px, rgba(255,255,255,0.6), transparent),
-            radial-gradient(2px 2px at 120px 80px, white, transparent),
-            radial-gradient(1px 1px at 200px 200px, rgba(255,255,255,0.8), transparent),
-            radial-gradient(2px 2px at 280px 50px, rgba(255,255,255,0.5), transparent),
-            radial-gradient(1px 1px at 360px 180px, white, transparent),
-            radial-gradient(2px 2px at 420px 100px, rgba(255,255,255,0.7), transparent);
-          background-size: 450px 350px;
-          animation: twinkle 5s ease-in-out infinite;
-          animation-delay: 1s;
-        }
-        .stars-layer-3 {
-          background-image: 
-            radial-gradient(1px 1px at 80px 100px, rgba(248,149,89,0.6), transparent),
-            radial-gradient(2px 2px at 180px 250px, rgba(248,149,89,0.4), transparent),
-            radial-gradient(1px 1px at 320px 150px, rgba(248,149,89,0.5), transparent),
-            radial-gradient(2px 2px at 450px 80px, rgba(248,149,89,0.3), transparent);
-          background-size: 550px 400px;
-          animation: twinkle 6s ease-in-out infinite;
-          animation-delay: 2s;
-        }
-        @keyframes twinkle {
-          0%, 100% { opacity: 0.5; }
-          50% { opacity: 1; }
-        }
-      `}</style>
-
             <div className="max-w-5xl mx-auto relative z-10">
                 <div className="text-center mb-16">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full mb-6 backdrop-blur-sm">
