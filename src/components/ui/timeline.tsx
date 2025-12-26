@@ -30,7 +30,7 @@ export function Timeline({ steps, className }: TimelineProps) {
         <div
             className={cn("relative", className)}
             role="list"
-            aria-label="Timeline steps"
+            aria-label="Blog publishing workflow steps"
         >
             {steps.map((step, index) => (
                 <TimelineItem
@@ -104,7 +104,7 @@ export function HorizontalTimeline({ steps, className }: { steps: TimelineStep[]
             <div
                 className="grid grid-cols-5 gap-4"
                 role="list"
-                aria-label="Timeline steps"
+                aria-label="Blog publishing workflow steps"
             >
                 {steps.map((step, index) => (
                     <div

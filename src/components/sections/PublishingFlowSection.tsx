@@ -39,11 +39,12 @@ const publishingSteps: TimelineStep[] = [
     },
     {
         id: "add-to-lineup",
-        title: "Add to Lineup (Approved)",
+        title: "Add to Publication Lineup",
         description:
             "Once approved, your blog is added to our publishing queue. We'll schedule it for publication and prepare any final formatting touches.",
         icon: <ListChecks className="w-full h-full" />,
     },
+
     {
         id: "final-publish",
         title: "Final Publish",
