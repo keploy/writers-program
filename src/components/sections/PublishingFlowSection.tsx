@@ -92,14 +92,15 @@ export function PublishingFlowSection() {
                 <div className="mb-20">
                     {/* Desktop Horizontal Timeline */}
                     <div className="hidden lg:block">
-                        <HorizontalTimeline steps={publishingSteps} />
+                        <HorizontalTimeline steps={publishingSteps} ariaLabel="Blog publishing workflow steps" />
                     </div>
 
                     {/* Mobile/Tablet Vertical Timeline */}
                     <div className="lg:hidden max-w-xl mx-auto">
-                        <Timeline steps={publishingSteps} />
+                        <Timeline steps={publishingSteps} ariaLabel="Blog publishing workflow steps" />
                     </div>
                 </div>
+
 
                 {/* CTA Section - Keploy Theme with Stars */}
                 <div className="max-w-4xl mx-auto">

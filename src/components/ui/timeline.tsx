@@ -13,6 +13,7 @@ export interface TimelineStep {
 interface TimelineProps {
     steps: TimelineStep[];
     className?: string;
+    ariaLabel?: string;
 }
 
 interface TimelineItemProps {
@@ -25,12 +26,12 @@ interface TimelineItemProps {
  * Clean, professional Timeline component for displaying step-by-step workflows.
  * Uses white theme with orange accents.
  */
-export function Timeline({ steps, className }: TimelineProps) {
+export function Timeline({ steps, className, ariaLabel = "Workflow steps" }: TimelineProps) {
     return (
         <div
             className={cn("relative", className)}
             role="list"
-            aria-label="Blog publishing workflow steps"
+            aria-label={ariaLabel}
         >
             {steps.map((step, index) => (
                 <TimelineItem
@@ -43,6 +44,7 @@ export function Timeline({ steps, className }: TimelineProps) {
         </div>
     );
 }
+
 
 function TimelineItem({ step, index, isLast }: TimelineItemProps) {
     return (
@@ -92,7 +94,7 @@ function TimelineItem({ step, index, isLast }: TimelineItemProps) {
 /**
  * Horizontal Timeline for desktop - Clean card-based design
  */
-export function HorizontalTimeline({ steps, className }: { steps: TimelineStep[], className?: string }) {
+export function HorizontalTimeline({ steps, className, ariaLabel = "Workflow steps" }: { steps: TimelineStep[], className?: string, ariaLabel?: string }) {
     return (
         <div className={cn("relative", className)}>
             {/* Connector line */}
@@ -104,8 +106,9 @@ export function HorizontalTimeline({ steps, className }: { steps: TimelineStep[]
             <div
                 className="grid grid-cols-5 gap-4"
                 role="list"
-                aria-label="Blog publishing workflow steps"
+                aria-label={ariaLabel}
             >
+
                 {steps.map((step, index) => (
                     <div
                         key={step.id}

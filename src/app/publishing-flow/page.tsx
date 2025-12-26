@@ -59,7 +59,7 @@ export default function PublishingFlowPage() {
                                 </svg>
                             </a>
                             <a
-                                href="https://twitter.com/Keployio"
+                                href="https://twitter.com/keaboratory"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-[#F89559] transition-colors"
