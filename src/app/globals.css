@@ -190,6 +190,68 @@ html {
     }
 }
 
+/* Premium UI Utilities */
+.glass-effect {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+}
+
+.glass-effect-dark {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.glow-orange {
+    box-shadow: 0 0 20px rgba(248, 149, 89, 0.3);
+}
+
+.glow-orange-strong {
+    box-shadow: 0 0 30px rgba(248, 149, 89, 0.5);
+}
+
+.text-gradient-orange {
+    background: linear-gradient(to right, #F89559, #E87B3A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bg-mesh-gradient {
+    background-color: #000000;
+    background-image:
+        radial-gradient(at 0% 0%, hsla(24, 93%, 66%, 0.05) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, hsla(262, 83%, 58%, 0.05) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, hsla(24, 93%, 66%, 0.05) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, hsla(262, 83%, 58%, 0.05) 0px, transparent 50%);
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
 /* Star Animation Layers - Used in CriteriaSection and CommunitySection */
 .stars-layer-1,
 .stars-layer-2,
