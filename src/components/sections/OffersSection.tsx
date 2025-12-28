@@ -8,7 +8,7 @@ const offers = [
         image: "/images/bubble-gum-content-marketing.gif",
         title: "Get Recognized",
         description:
-            "Expand your technical writing horizon by earning compensations, swags, and personal brand visibility across the developer community.",
+            "Expand your technical writing horizon by earning compensation, swags, and personal brand visibility across the developer community.",
     },
     {
         image: "/images/handy-line-machine-learning.gif",

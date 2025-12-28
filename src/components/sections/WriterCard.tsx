@@ -62,9 +62,11 @@ export function WriterCard({ writer }: WriterCardProps) {
                                 /* Placeholder avatar with initials */
                                 <span
                                     className="text-3xl font-bold bg-gradient-to-br from-[#F89559] to-[#E87B3A] bg-clip-text text-transparent select-none"
-                                    aria-label={`${writer.name}'s initials`}
+                                    aria-label={writer.name ? `${writer.name}'s initials` : 'Writer initials'}
                                 >
-                                    {writer.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
+                                    {writer.name && writer.name.trim()
+                                        ? writer.name.split(' ').filter(Boolean).map(n => n[0]).join('').slice(0, 2).toUpperCase()
+                                        : '??'}
                                 </span>
                             )}
                         </div>

@@ -1,7 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import { Users, MessageCircle, Heart } from "lucide-react";
+import { Users } from "lucide-react";
 
 export function CommunitySection() {
   return (

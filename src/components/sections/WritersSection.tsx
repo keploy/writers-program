@@ -140,7 +140,9 @@ export function WritersSection() {
                                 for your contributions to the developer community.
                             </p>
                             <a
-                                href="/#apply"
+                                href="https://forms.gle/R7RbuL39sc1TFW449"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-[#F89559] to-[#E87B3A] text-[#00163D] font-bold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#F89559]/40 focus:outline-none focus:ring-4 focus:ring-[#F89559]/50"
                             >
                                 Join the Program

@@ -21,12 +21,30 @@ function formatStarCount(count: number): string {
     return count.toString();
 }
 
-// Custom hook to fetch GitHub stars
+// Custom hook to fetch GitHub stars with caching and rate limit handling
 function useGitHubStars(owner: string, repo: string): string {
     const [stars, setStars] = useState<string>(DEFAULT_GITHUB_STARS);
+    const cacheKey = `github_stars_${owner}_${repo}`;
+    const cacheExpiry = 60 * 60 * 1000; // 1 hour cache
 
     useEffect(() => {
         const fetchStars = async () => {
+            // Check cache first (only in browser environment)
+            if (typeof window !== 'undefined') {
+                try {
+                    const cached = localStorage.getItem(cacheKey);
+                    if (cached) {
+                        const { value, timestamp } = JSON.parse(cached);
+                        if (Date.now() - timestamp < cacheExpiry) {
+                            setStars(value);
+                            return;
+                        }
+                    }
+                } catch {
+                    // Ignore cache errors
+                }
+            }
+
             try {
                 const response = await fetch(
                     `https://api.github.com/repos/${owner}/${repo}`,
@@ -37,12 +55,34 @@ function useGitHubStars(owner: string, repo: string): string {
                     }
                 );
 
+                // Handle rate limiting
+                if (response.status === 403) {
+                    const rateLimitRemaining = response.headers.get('X-RateLimit-Remaining');
+                    if (rateLimitRemaining === '0') {
+                        console.warn('GitHub API rate limit exceeded, using cached/default value');
+                        return;
+                    }
+                }
+
                 if (!response.ok) {
                     throw new Error('Failed to fetch GitHub stars');
                 }
 
                 const data = await response.json();
-                setStars(formatStarCount(data.stargazers_count));
+                const formattedStars = formatStarCount(data.stargazers_count);
+                setStars(formattedStars);
+
+                // Cache the result (only in browser environment)
+                if (typeof window !== 'undefined') {
+                    try {
+                        localStorage.setItem(cacheKey, JSON.stringify({
+                            value: formattedStars,
+                            timestamp: Date.now()
+                        }));
+                    } catch {
+                        // Ignore storage errors
+                    }
+                }
             } catch (error) {
                 console.error('Error fetching GitHub stars:', error);
                 // Keep default value on error
@@ -50,7 +90,7 @@ function useGitHubStars(owner: string, repo: string): string {
         };
 
         fetchStars();
-    }, [owner, repo]);
+    }, [owner, repo, cacheKey, cacheExpiry]);
 
     return stars;
 }
