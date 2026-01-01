@@ -2,181 +2,204 @@
 <!--[if lt IE 9 ]>
 <html class="no-js oldie" lang="en">
   <![endif]-->
-  <!--[if IE 9 ]>
+<!--[if IE 9 ]>
   <html class="no-js oldie ie9" lang="en">
     <![endif]-->
-    <!--[if (gte IE 9)|!(IE)]><!-->
-    <html class="no-js" lang="en">
-      <!--<![endif]-->
-      <head>
-        <!--- basic page needs
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <!--- basic page needs
           ================================================== -->
-        <meta charset="utf-8">
-        <title>Keploy's Writers Program</title>
-        <meta name="description" content="Keploy's Writers Program">
-        <meta name="author" content="Keploy.io">
-        <!-- mobile specific metas
+  <meta charset="utf-8">
+  <title>Keploy's Writers Program</title>
+  <meta name="description" content="Keploy's Writers Program">
+  <meta name="author" content="Keploy.io">
+  <!-- mobile specific metas
           ================================================== -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- CSS
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS
           ================================================== -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap"/>
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/vendor.css">
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        />
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-        <!-- script
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" />
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <!-- script
           ================================================== -->
-        <script src="js/modernizr.js"></script>
-        <script src="js/pace.min.js"></script>
-        <!-- favicons
+  <script src="js/modernizr.js"></script>
+  <script src="js/pace.min.js"></script>
+  <!-- favicons
           ================================================== -->
-          <link rel="canonical" href="https://devrel.keploy.io/" />
-          <link rel="icon" href="./images/favicon.png" type="image/png">
-        <style>
-          ::-webkit-scrollbar {
-          width: 12px;
-          height: 8px;
-          }
-          /* Style the track of the scroll bar */
-          ::-webkit-scrollbar-track {
-          background-color: #FFFFFF; /* set background color */
-          }
-          /* Style the thumb of the scroll bar */
-          ::-webkit-scrollbar-thumb {
-          background-color: #00163D; /* set thumb color */
-          }
-          .innerdiv {
-          transform: scale(0.9);
-          /* margin: 1rem; */
-          display: grid;
-          grid-gap: 1.5rem;
-          grid-template-rows: repeat(2, 36rem);
-          grid-template-columns: repeat(4, 33rem);
-          color:white;
-          }
-          .eachdiv {
-          padding: 4rem 5rem;
-          border-radius: 0.8rem;
-          color: white!important;
-          }
-          .div1 {
-          background: #E35134;
-          grid-column: 1/3;
-          grid-row: 1/2;
-          }
-          .div2 {
-          background: #E35134;
-          grid-column: 1/2;
-          grid-row: 2/3;
-          }
-          .div3 {
-          background: #E35134;
-          grid-column: 4/5;
-          grid-row: 1/3;
-          color: black;
-          }
-          .div4 {
-          background: #E35134;
-          grid-column: 3/4;
-          grid-row: 1/2;
-          color: black;
-          }
-          .div5 {
-          background: #E35134;
-          grid-column: 2/4;
-          grid-row: 2/3;
-          }
-          @media only screen and (max-width:500px){
-              .home-content__buttons{
-                display: flex;
-                flex-direction: row;
-              }
-              .home-content__buttons .btn{
-                margin: 10px;
-                padding: 3px 5px;
-                border-radius: 5px;
-              }
-          }
-          @media only screen and (min-width:1000px) and (max-width:1500px){
-            .home-content{
-              position: absolute;
-              /* top: 10em; */
-            }
-            .bunny{
-              margin: 0px;
-              position: absolute;
-              /* top:38%; */
-              right: 2rem;
-              z-index: -10;
-            }
-          }
-          
-          @media only screen and (max-width:1000px){
-            .home-content{
-              position: absolute;
-              top: 10em;
-            }
-            .bunny{
-              margin: 0px;
-              position: absolute;
-              /* top:38%; */
-              right: 2rem;
-              z-index: -10;
-            }
+  <link rel="canonical" href="https://devrel.keploy.io/" />
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+  <style>
+    ::-webkit-scrollbar {
+      width: 12px;
+      height: 8px;
+    }
+
+    /* Style the track of the scroll bar */
+    ::-webkit-scrollbar-track {
+      background-color: #FFFFFF;
+      /* set background color */
+    }
+
+    /* Style the thumb of the scroll bar */
+    ::-webkit-scrollbar-thumb {
+      background-color: #00163D;
+      /* set thumb color */
+    }
+
+    .innerdiv {
+      transform: scale(0.9);
+      /* margin: 1rem; */
+      display: grid;
+      grid-gap: 1.5rem;
+      grid-template-rows: repeat(2, 36rem);
+      grid-template-columns: repeat(4, 33rem);
+      color: white;
+    }
+
+    .eachdiv {
+      padding: 4rem 5rem;
+      border-radius: 0.8rem;
+      color: white !important;
+    }
+
+    .div1 {
+      background: #E35134;
+      grid-column: 1/3;
+      grid-row: 1/2;
+    }
+
+    .div2 {
+      background: #E35134;
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+    .div3 {
+      background: #E35134;
+      grid-column: 4/5;
+      grid-row: 1/3;
+      color: black;
+    }
+
+    .div4 {
+      background: #E35134;
+      grid-column: 3/4;
+      grid-row: 1/2;
+      color: black;
+    }
+
+    .div5 {
+      background: #E35134;
+      grid-column: 2/4;
+      grid-row: 2/3;
+    }
+
+    @media only screen and (max-width:500px) {
+      .home-content__buttons {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .home-content__buttons .btn {
+        margin: 10px;
+        padding: 3px 5px;
+        border-radius: 5px;
+      }
+    }
+
+    @media only screen and (min-width:1000px) and (max-width:1500px) {
+      .home-content {
+        position: absolute;
+        /* top: 10em; */
+      }
+
+      .bunny {
+        margin: 0px;
+        position: absolute;
+        /* top:38%; */
+        right: 2rem;
+        z-index: -10;
+      }
+    }
+
+    @media only screen and (max-width:1000px) {
+      .home-content {
+        position: absolute;
+        top: 10em;
+      }
+
+      .bunny {
+        margin: 0px;
+        position: absolute;
+        /* top:38%; */
+        right: 2rem;
+        z-index: -10;
+      }
 
 
-          .outerdiv{
-          display: none;
-          }
-          }
-          .userdetails {
-          display: flex;
-          }
-          .imgbox {
-          margin-right: 1rem;
-          }
-          .imgbox img {
-          border-radius: 50%;
-          max-width: 70px;
-          height: 70px;
-          width:70px;
-          }
-          .detbox {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          text-align: justify;
-          }
-          .detbox p {
-          margin: 0;
-          }
-          .detbox .name {
-          color: white;
-          font-size: 2rem;
-          margin-bottom: 0.1rem;
-          font-family: "montserrat-medium", sans-serif;
-          font-weight: 600;
-          }
-          .detbox .designation {
-          color: white;
-          font-size: 15px;
-          font-family: "montserrat-medium", sans-serif;
-          text-decoration: none;
-          }
-          .review {
-          display: flex;
-          text-align: left;
-          margin-top:-50px;
-          }
-        </style>
-      </head>
-      <body id="top">
-        <!-- <div class="modal" data-aos="fade-up">
+      .outerdiv {
+        display: none;
+      }
+    }
+
+    .userdetails {
+      display: flex;
+    }
+
+    .imgbox {
+      margin-right: 1rem;
+    }
+
+    .imgbox img {
+      border-radius: 50%;
+      max-width: 70px;
+      height: 70px;
+      width: 70px;
+    }
+
+    .detbox {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: justify;
+    }
+
+    .detbox p {
+      margin: 0;
+    }
+
+    .detbox .name {
+      color: white;
+      font-size: 2rem;
+      margin-bottom: 0.1rem;
+      font-family: "montserrat-medium", sans-serif;
+      font-weight: 600;
+    }
+
+    .detbox .designation {
+      color: white;
+      font-size: 15px;
+      font-family: "montserrat-medium", sans-serif;
+      text-decoration: none;
+    }
+
+    .review {
+      display: flex;
+      text-align: left;
+      margin-top: -50px;
+    }
+  </style>
+</head>
+
+<body id="top">
+  <!-- <div class="modal" data-aos="fade-up">
           <div class="modal-body">
             <div class="modal-close">
               <button onclick="modalClose()">Close</button>
@@ -186,122 +209,135 @@
             <img src="./images/cohort3mob.png" class="modal-img-mob" />
           </div>
         </div> -->
-        <div style="display:block">
-        <header class="s-header">
-          <div class="header-logo">
-            <a class="site-logo" href="index.html">
-            <img src="./images/keploy-logo.png" style="transform: scale(2); margin-left:20px" alt="Homepage">
-            </a>
-          </div>
-          <nav class="header-nav">
-            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
-            <div class="header-nav__content">
-              <h3>Navigation</h3>
-              <ul class="header-nav__list">
-                <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                <li><a class="smoothscroll"  href="#program" title="program">Program</a></li>
-                <li><a class="smoothscroll"  href="#writers-program" title="next">Process</a></li>
-                <li><a class="smoothscroll"  href="#criteria" title="criteria">Criteria</a></li>
-                <li><a class="smoothscroll"  href="#community" title="community">Community</a></li>
-                <!-- <li><a class="smoothscroll"  href="#join" title="join">Join</a></li> -->
-              </ul>
-              <ul class="header-nav__social">
-                <li><a href="https://keploy.slack.com/"><i class="fa-brands fa-slack"></i></a></li>
-                <li><a href="https://twitter.com/Keployio"><i class="fa-brands fa-x-twitter"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg"><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/keploy/"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://keploy.hashnode.dev"><i class="fa-brands fa-hashnode"></i></a></li>
-              </ul>
-            </div>
-          </nav>
-          <a class="header-menu-toggle" href="#0">
-          <span class="header-menu-text">Menu</span>
-          <span class="header-menu-icon"></span>
-          </a>
-        </header>
-        <!-- end s-header -->
-        <!-- home
-          ================================================== -->
-        <section id="home" class="s-home target-section" data-parallax="scroll"  data-natural-width=3000 data-natural-height=2000 data-position-y=center>
-          <div class="overlay" ></div>
-          <div class="shadow-overlay"></div>
-          <div class="home-content">
-            <div class="row home-content__main">
-              <h1>
-                Keploy's <br/><u>Writers Program</u>
-              </h1>
-              <h3>Get into a community of Technical Writers where <br/> you get the right Recognition | <br/> Growth | Networking | Earning & Rewards </h3>
-              <h3> An Open-Source Prorgam for Students, Professionals, and Freelancers</h3>
-              <div class="home-content__buttons">
-                <a href="https://forms.gle/R7RbuL39sc1TFW449" class=" btn btn--stroke" style="background: #F89559; border: 0.2rem solid #ff904d; color: #00163D;">
-                Register Now!
-                </a>
-                <a href="https://join.slack.com/t/keploy/shared_invite/zt-357qqm9b5-PbZRVu3Yt2rJIa6ofrwWNg" class="btn btn--stroke" style="background: #00163D; border: 0.2rem solid #00163D; color: #FFFFFF;">
-                Join Community
-                </a>
-              </div>
-            </div>
-            <div class="home-content__scroll">
-              <a href="#about" class="scroll-link smoothscroll">
-              <span>Scroll Down</span>
-              </a>
-            </div>
-            <!-- <div class="home-content__line"></div> -->
-          </div>
-
-
-          <div class="bunny">
-            <img src="images/bunny.png" alt="Bugs Bunny">
-          </div>
-
-          <!-- end home-content -->
-          <ul class="home-social">
-            <li>
-              <a href="https://keploy.slack.com/"><i class="fa-brands fa-slack" aria-hidden="true"></i><span>Slack</span></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/Keployio"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i><span>Twitter</span></a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg"><i class="fa-brands fa-youtube" aria-hidden="true"></i><span>Youtube</span></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/keploy/"><i class="fa-brands fa-linkedin" aria-hidden="true"></i><span>Linkedin</span></a>
-            </li>
-            <li>
-              <a href="https://keploy.hashnode.dev"><i class="fa-brands fa-hashnode" aria-hidden="true"></i><span>Hashnode</span></a>
-            </li>
+  <div style="display:block">
+    <header class="s-header">
+      <div class="header-logo">
+        <a class="site-logo" href="index.html">
+          <img src="./images/keploy-logo.png" style="transform: scale(2); margin-left:20px" alt="Homepage">
+        </a>
+      </div>
+      <nav class="header-nav">
+        <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+        <div class="header-nav__content">
+          <h3>Navigation</h3>
+          <ul class="header-nav__list">
+            <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
+            <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+            <li><a class="smoothscroll" href="#program" title="program">Program</a></li>
+            <li><a class="smoothscroll" href="#writers-program" title="next">Process</a></li>
+            <li><a class="smoothscroll" href="#criteria" title="criteria">Criteria</a></li>
+            <li><a class="smoothscroll" href="#community" title="community">Community</a></li>
+            <!-- <li><a class="smoothscroll"  href="#join" title="join">Join</a></li> -->
           </ul>
-          <!-- end home-social -->
-        </section>
-        <!-- end s-home -->
-        <!-- about
+          <ul class="header-nav__social">
+            <li><a href="https://keploy.slack.com/"><i class="fa-brands fa-slack"></i></a></li>
+            <li><a href="https://twitter.com/Keployio"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg"><i
+                  class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/keploy/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://keploy.hashnode.dev"><i class="fa-brands fa-hashnode"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+      <a class="header-menu-toggle" href="#0">
+        <span class="header-menu-text">Menu</span>
+        <span class="header-menu-icon"></span>
+      </a>
+    </header>
+    <!-- end s-header -->
+    <!-- home
           ================================================== -->
-        <section id='about' class="s-about" data-aos="fade-up">
-          <div class="row section-header has-bottom-sep">
-            <div class="col-full">
-              <!-- <h3 class="subhead subhead--dark">Hello There</h3> -->
-              <h1 class="display-1 display-1--light" style="
-              margin-bottom: -20px; font-weight: 800;">We Are Keploy</h1>
-            </div>
-          </div>
-          <!-- end section-header -->
-          <div class="row about-desc">
-            <div class="col-full">
-              <p style="font-size: 2rem; letter-spacing: .3rem; font-weight: normal;">
-                Keploy is a developer-centric backend testing tool. As an open source organisation, we believe everything should be  community-driven. Join us on a journey into the domain of technical writing and experience the growth and knowledge that accompanies this opportunity.
-              </p>
-            </div>
-          </div>
-          
-          <div class="home-content__buttons" style="padding-top: 0rem; text-align:center">
-            <a href="https://keploy.io/blog" class="btn btn--stroke" style="background: #00163D; border: 0.2rem solid #00163D; color: #FFFFFF;">
-            Read our Blogs
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-natural-width=3000
+      data-natural-height=2000 data-position-y=center>
+      <div class="overlay"></div>
+      <div class="shadow-overlay"></div>
+      <div class="home-content">
+        <div class="row home-content__main">
+          <h1>
+            Keploy's <br /><u>Writers Program</u>
+          </h1>
+          <h3>Get into a community of Technical Writers where <br /> you get the right Recognition | <br /> Growth |
+            Networking | Earning & Rewards </h3>
+          <h3> An Open-Source Prorgam for Students, Professionals, and Freelancers</h3>
+          <div class="home-content__buttons">
+            <a href="https://forms.gle/R7RbuL39sc1TFW449" class=" btn btn--stroke"
+              style="background: #F89559; border: 0.2rem solid #ff904d; color: #00163D;">
+              Register Now!
+            </a>
+            <a href="https://join.slack.com/t/keploy/shared_invite/zt-357qqm9b5-PbZRVu3Yt2rJIa6ofrwWNg"
+              class="btn btn--stroke" style="background: #00163D; border: 0.2rem solid #00163D; color: #FFFFFF;">
+              Join Community
             </a>
           </div>
-          <!-- end about-desc -->
-          <!-- <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+        </div>
+        <div class="home-content__scroll">
+          <a href="#about" class="scroll-link smoothscroll">
+            <span>Scroll Down</span>
+          </a>
+        </div>
+        <!-- <div class="home-content__line"></div> -->
+      </div>
+
+
+      <div class="bunny">
+        <img src="images/bunny.png" alt="Bugs Bunny">
+      </div>
+
+      <!-- end home-content -->
+      <ul class="home-social">
+        <li>
+          <a href="https://keploy.slack.com/"><i class="fa-brands fa-slack"
+              aria-hidden="true"></i><span>Slack</span></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/Keployio"><i class="fa-brands fa-x-twitter"
+              aria-hidden="true"></i><span>Twitter</span></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg"><i class="fa-brands fa-youtube"
+              aria-hidden="true"></i><span>Youtube</span></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/keploy/"><i class="fa-brands fa-linkedin"
+              aria-hidden="true"></i><span>Linkedin</span></a>
+        </li>
+        <li>
+          <a href="https://keploy.hashnode.dev"><i class="fa-brands fa-hashnode"
+              aria-hidden="true"></i><span>Hashnode</span></a>
+        </li>
+      </ul>
+      <!-- end home-social -->
+    </section>
+    <!-- end s-home -->
+    <!-- about
+          ================================================== -->
+    <section id='about' class="s-about" data-aos="fade-up">
+      <div class="row section-header has-bottom-sep">
+        <div class="col-full">
+          <!-- <h3 class="subhead subhead--dark">Hello There</h3> -->
+          <h1 class="display-1 display-1--light" style="
+              margin-bottom: -20px; font-weight: 800;">We Are Keploy</h1>
+        </div>
+      </div>
+      <!-- end section-header -->
+      <div class="row about-desc">
+        <div class="col-full">
+          <p style="font-size: 2rem; letter-spacing: .3rem; font-weight: normal;">
+            Keploy is a developer-centric backend testing tool. As an open source organisation, we believe everything
+            should be community-driven. Join us on a journey into the domain of technical writing and experience the
+            growth and knowledge that accompanies this opportunity.
+          </p>
+        </div>
+      </div>
+
+      <div class="home-content__buttons" style="padding-top: 0rem; text-align:center">
+        <a href="https://keploy.io/blog" class="btn btn--stroke"
+          style="background: #00163D; border: 0.2rem solid #00163D; color: #FFFFFF;">
+          Read our Blogs
+        </a>
+      </div>
+      <!-- end about-desc -->
+      <!-- <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
             <div class="col-block stats__col ">
               <div class="stats__count">3</div>
               <h5>Cohorts</h5>
@@ -319,45 +355,45 @@
               <h5>Interns</h5>
             </div>
           </div> -->
-          <!-- end about-stats -->
-          <!-- <div class="about__line"></div> -->
-        </section>
-        <!-- end s-about -->
-        <!-- services
+      <!-- end about-stats -->
+      <!-- <div class="about__line"></div> -->
+    </section>
+    <!-- end s-about -->
+    <!-- services
           ================================================== -->
-        <section id='program' class="s-services"  data-aos="fade-up">
-          <div class="row section-header has-bottom-sep">
-            <div class="col-full">
-              <!-- <h3 class="subhead">Writers Program</h3> -->
-              <h1 class="display-2" style="font-weight: 800;">What this program offers you?</h1>
-            </div>
+    <section id='program' class="s-services" data-aos="fade-up">
+      <div class="row section-header has-bottom-sep">
+        <div class="col-full">
+          <!-- <h3 class="subhead">Writers Program</h3> -->
+          <h1 class="display-2" style="font-weight: 800;">What this program offers you?</h1>
+        </div>
+      </div>
+      <!-- end section-header -->
+      <div class="row services-list block-1-2 block-tab-full">
+        <div class="col-block service-item">
+          <div class="service-icon">
+            <img src="./images/bubble-gum-content-marketing.gif" alt="Learn gif" />
           </div>
-          <!-- end section-header -->
-          <div class="row services-list block-1-2 block-tab-full">
-            <div class="col-block service-item">
-              <div class="service-icon">
-                <img src="./images/bubble-gum-content-marketing.gif" alt="Learn gif"/>
-              </div>
-              <div class="service-text">
-                <h3 class="h2" style="color: #00163D;">Get Recognized</h3>
-                <p>Expand your technical writing horizon by earning compensations, swags, and personal brand visibility.</p>
-              </div>
-            </div>
-            <div class="col-block service-item">
-              <div class="service-icon">
-                <img src="./images/handy-line-machine-learning.gif" alt="Content gif"/>
-              </div>
-              <div class="service-text">
-                <h3 class="h2" style="color: #00163D;">Learn</h3>
-                <p>Access to mentorship, weekly synch-ups, and community. Work with Keploy's editorial team.</p>
-              </div>
-            </div>
-            <div class="col-block service-item">
-              <div class="service-icon">
-                <img src="./images/bloom-online-video-conference-for-employees.gif" alt="Grow gif"/>
-              </div>
-              <div class="service-text">
-                <h3 class="h2" style="color: #00163D;"">Flourish</h3>
+          <div class="service-text">
+            <h3 class="h2" style="color: #00163D;">Get Recognized</h3>
+            <p>Expand your technical writing horizon by earning compensations, swags, and personal brand visibility.</p>
+          </div>
+        </div>
+        <div class="col-block service-item">
+          <div class="service-icon">
+            <img src="./images/handy-line-machine-learning.gif" alt="Content gif" />
+          </div>
+          <div class="service-text">
+            <h3 class="h2" style="color: #00163D;">Learn</h3>
+            <p>Access to mentorship, weekly synch-ups, and community. Work with Keploy's editorial team.</p>
+          </div>
+        </div>
+        <div class="col-block service-item">
+          <div class="service-icon">
+            <img src="./images/bloom-online-video-conference-for-employees.gif" alt="Grow gif" />
+          </div>
+          <div class="service-text">
+            <h3 class="h2" style="color: #00163D;"">Flourish</h3>
                 <p>Gain experience & network with like-minded individuals. Be a part of a global community.</p>
               </div>
             </div>
@@ -366,23 +402,26 @@
         </section>
         <!-- end s-services -->
         <!-- NEXT DEVREL COHORT -->
-        <!-- <section id="next" class="s-services" style="margin-top:-200px">
-          <div class="intro-wrap">
-            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
-              <div class="col-full">
-                <h3 class="subhead">DevRel Cohort 3.0</h3>
-                <h1 class="display-2 display-2--dark">Applications Close In</h1>
-              </div>
-            </div>
-<script src="https://cdn.logwork.com/widget/countdown.js"></script>
-<div>
-<a href="https://logwork.com/countdown-yt11" class="countdown-timer" style="margin-top:-130px" data-timezone="Asia/Kolkata" data-textcolor="#fff" data-date="2023-04-30 12:00" data-background="#644a3c" data-digitscolor="#ff904d" data-unitscolor="#ff904d"><span style="color:white">.</span></a>
-          </div>
-        </section> -->
-        <!-- works
+        <!-- <section id=" next" class="s-services" style="margin-top:-200px">
+              <div class="intro-wrap">
+                <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+                  <div class="col-full">
+                    <h3 class="subhead">DevRel Cohort 3.0</h3>
+                    <h1 class="display-2 display-2--dark">Applications Close In</h1>
+                  </div>
+                </div>
+                <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+                <div>
+                  <a href="https://logwork.com/countdown-yt11" class="countdown-timer" style="margin-top:-130px"
+                    data-timezone="Asia/Kolkata" data-textcolor="#fff" data-date="2023-04-30 12:00"
+                    data-background="#644a3c" data-digitscolor="#ff904d" data-unitscolor="#ff904d"><span
+                      style="color:white">.</span></a>
+                </div>
+    </section> -->
+    <!-- works
           ================================================== -->
-        <!-- <section id='community' class="s-works"> -->
-          <!-- <div class="intro-wrap">
+    <!-- <section id='community' class="s-works"> -->
+    <!-- <div class="intro-wrap">
             <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
               <div class="col-full">
                 <h3 class="subhead">Community❤️</h3>
@@ -390,8 +429,8 @@
               </div>
             </div>
           </div> -->
-          <!-- end intro-wrap -->
-          <!-- <div class="row works-content">
+    <!-- end intro-wrap -->
+    <!-- <div class="row works-content">
             <div class="outerdiv">
               <div class="innerdiv">
                 <div class="eachdiv div1">
@@ -475,7 +514,7 @@
                   </div>
                 </div>
               </div> -->
-              <!-- <div class="masonry">
+    <!-- <div class="masonry">
                 <div class="masonry__brick" data-aos="fade-up">
                     <div class="item-folio">
                         
@@ -511,15 +550,15 @@
                     </div>
                 </div>
                 </div>  -->
-          <!--  </div> -->
-            <!-- end col-full -->
-        <!--  </div> -->
-          <!-- end works-content -->
-       <!-- </section> -->
-        <!-- end s-works -->
-        <!-- clients
+    <!--  </div> -->
+    <!-- end col-full -->
+    <!--  </div> -->
+    <!-- end works-content -->
+    <!-- </section> -->
+    <!-- end s-works -->
+    <!-- clients
           ================================================== -->
-        <!-- <section id="clients" class="s-clients">
+    <!-- <section id="clients" class="s-clients">
           <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
               <h3 class="subhead">COMMUNITY❤️</h3>
@@ -573,98 +612,130 @@
             </div>
           </div>
         </section> -->
-        <!-- end s-clients -->
-        <!-- contact
+    <!-- end s-clients -->
+    <!-- contact
           ================================================== -->
 
-        <section id="writers-program" style="padding-bottom: 6rem;" data-aos="fade-up">
-          <h2 class="process-section-title" style="text-align: center; font-size: 6.3rem; color: #F89559; margin-bottom: 6rem; font-weight: 800;">
-           Here's how the Program works
-          </h2>
-          <div class="process-wrapper" style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: space-evenly;">
-            <div class="process-item">
-              <div class="process-div" style="display: flex; flex-direction: row; ">
-                <h3 style="font-size: 3rem; color: #00163D;">01</h3>
-                <img src="./images/handy-folder-with-idea-bulb.gif" alt="Content gif" style="height:130px"/>
-              </div>
-              <h2 style="padding-left: 4rem; margin-top: -1rem; color: #00163D;">Register yourself</h2>
-              <p style="width: 36rem; padding-left: 4rem;">Fill out the form and register to the writers program. We'll be earger to have you along.</p>
-            </div>
-            <div class="process-item">
-              <div class="process-div" style="display: flex; flex-direction: row; color: #00163D;">
-                <h3 style="font-size: 3rem;">02</h3>
-                <img src="./images/dazzle-man-programmer-writing-code-on-a-laptop.gif" alt="Content gif" style="height:130px"/>
-              </div>
-              <h2 style="padding-left: 4rem; margin-top: -1rem; color: #00163D;">Onboarding starts</h2>
-              <p style="width: 36rem; padding-left: 4rem;"> Get onboard with us, know about Keploy's ecosystem, connect to the team & mentors.</p>
-            </div>
-            <div class="process-item">
-              <div class="process-div" style="display: flex; flex-direction: row;">
-                <h3 style="font-size: 3rem;  color: #00163D;">03</h3>
-                <img src="./images/juicy-woman-is-looking-for-perfect-candidate-1.gif" alt="Content gif" style="height:130px"/>
-              </div>
-              <h2 style="padding-left: 4rem; margin-top: -1rem;  color: #00163D;">Research your Idea</h2>
-              <p style="width: 36rem; padding-left: 4rem;">You'll start by choosing and researching about your write-up. Get access to mentorship & resources by the team.</p>
-            </div>
-            <div class="process-item">
-              <div class="process-div" style="display: flex; flex-direction: row;">
-                <h3 style="font-size: 3rem; color: #00163D;">04</h3>
-                <img src="./images/dizzy-education.gif" alt="Content gif" style="height:130px"/>
-              </div>
-              <h2 style="padding-left: 4rem; margin-top: -1rem; color: #00163D;">Craft your Work</h2>
-              <p style="width: 36rem; padding-left: 4rem;">Start crafting your ideas into words. This part includes you working on the approved ideas and topics.</p>
-            </div>
-            <div class="process-item">
-              <div class="process-div" style="display: flex; flex-direction: row;">
-                <h3 style="font-size: 3rem; color: #00163D;">05</h3>
-                <img src="./images/dazzle-blog-post-article.gif" alt="Content gif" style="height:130px"/>
-              </div>
-              <h2 style="padding-left: 4rem; margin-top: -1rem; color: #00163D;">Revision & Submissions</h2>
-              <p style="width: 36rem; padding-left: 4rem;"> This includes copy editing, hero image design, and revision of your article. Yes, we got to help you revise it before submitting.</p>
-            </div>
-            <div class="process-item">
-              <div class="process-div" style="display: flex; flex-direction: row;">
-                <h3 style="font-size: 3rem; color: #00163D;">06</h3>
-                <img src="./images/juicy-man-programmer-writing-code-and-make-web-design-on-a-pc.gif" alt="Content gif" style="height:130px"/>
-              </div>
-              <h2 style="padding-left: 4rem; margin-top: -1rem; color: #00163D;">Publication</h2>
-              <p style="width: 36rem; padding-left: 4rem;">Once the content meets all the guidlines, you're all set to publish your content with Keploy, and earn your benefits</p>
-            </div>
+    <section id="writers-program" style="padding-bottom: 6rem;" data-aos="fade-up">
+      <h2 class="process-section-title"
+        style="text-align: center; font-size: 6.3rem; color: #F89559; margin-bottom: 6rem; font-weight: 800;">
+        Here's how the Program works
+      </h2>
+      <div class="process-wrapper" style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: space-evenly;">
+        <div class="process-item">
+          <div class="process-div" style="display: flex; flex-direction: row; ">
+            <h3 style="font-size: 3rem; color: #00163D;">01</h3>
+            <img src="./images/handy-folder-with-idea-bulb.gif" alt="Content gif" style="height:130px" />
           </div>
+          <h2 style="padding-left: 4rem; margin-top: -1rem; color: #00163D;">Register yourself</h2>
+          <p style="width: 36rem; padding-left: 4rem;">Fill out the form and register to the writers program. We'll be
+            earger to have you along.</p>
+        </div>
+        <div class="process-item">
+          <div class="process-div" style="display: flex; flex-direction: row; color: #00163D;">
+            <h3 style="font-size: 3rem;">02</h3>
+            <img src="./images/dazzle-man-programmer-writing-code-on-a-laptop.gif" alt="Content gif"
+              style="height:130px" />
+          </div>
+          <h2 style="padding-left: 4rem; margin-top: -1rem; color: #00163D;">Onboarding starts</h2>
+          <p style="width: 36rem; padding-left: 4rem;"> Get onboard with us, know about Keploy's ecosystem, connect to
+            the team & mentors.</p>
+        </div>
+        <div class="process-item">
+          <div class="process-div" style="display: flex; flex-direction: row;">
+            <h3 style="font-size: 3rem;  color: #00163D;">03</h3>
+            <img src="./images/juicy-woman-is-looking-for-perfect-candidate-1.gif" alt="Content gif"
+              style="height:130px" />
+          </div>
+          <h2 style="padding-left: 4rem; margin-top: -1rem;  color: #00163D;">Research your Idea</h2>
+          <p style="width: 36rem; padding-left: 4rem;">You'll start by choosing and researching about your write-up. Get
+            access to mentorship & resources by the team.</p>
+        </div>
+        <div class="process-item">
+          <div class="process-div" style="display: flex; flex-direction: row;">
+            <h3 style="font-size: 3rem; color: #00163D;">04</h3>
+            <img src="./images/dizzy-education.gif" alt="Content gif" style="height:130px" />
+          </div>
+          <h2 style="padding-left: 4rem; margin-top: -1rem; color: #00163D;">Craft your Work</h2>
+          <p style="width: 36rem; padding-left: 4rem;">Start crafting your ideas into words. This part includes you
+            working on the approved ideas and topics.</p>
+        </div>
+        <div class="process-item">
+          <div class="process-div" style="display: flex; flex-direction: row;">
+            <h3 style="font-size: 3rem; color: #00163D;">05</h3>
+            <img src="./images/dazzle-blog-post-article.gif" alt="Content gif" style="height:130px" />
+          </div>
+          <h2 style="padding-left: 4rem; margin-top: -1rem; color: #00163D;">Revision & Submissions</h2>
+          <p style="width: 36rem; padding-left: 4rem;"> This includes copy editing, hero image design, and revision of
+            your article. Yes, we got to help you revise it before submitting.</p>
+        </div>
+        <div class="process-item">
+          <div class="process-div" style="display: flex; flex-direction: row;">
+            <h3 style="font-size: 3rem; color: #00163D;">06</h3>
+            <img src="./images/juicy-man-programmer-writing-code-and-make-web-design-on-a-pc.gif" alt="Content gif"
+              style="height:130px" />
+          </div>
+          <h2 style="padding-left: 4rem; margin-top: -1rem; color: #00163D;">Publication</h2>
+          <p style="width: 36rem; padding-left: 4rem;">Once the content meets all the guidlines, you're all set to
+            publish your content with Keploy, and earn your benefits</p>
+        </div>
+      </div>
 
-          <!-- <div class="home-content__buttons" style="padding-top: 0rem; text-align:center">
+      <!-- <div class="home-content__buttons" style="padding-top: 0rem; text-align:center">
             <a href="https://github.com/keploy/writers-program/blob/main/README.md#technical-writing-guidelines" class="btn btn--stroke">
             Guidelines
             </a>
           </div> -->
-        </section>
+    </section>
 
-        <section id="criteria" style="padding-bottom: 6rem;"  data-aos="fade-up">
-          <h2 id="process-section-title" style="text-align: center; font-size: 6.3rem; color: #F89559; margin-bottom: 6rem; font-weight: 800;">
-            Evaluation Criteria
-           </h2>
-          <!-- <div class="based-on-application">
+    <section id="criteria" style="padding-bottom: 6rem;" data-aos="fade-up">
+      <h2 id="process-section-title"
+        style="text-align: center; font-size: 6.3rem; color: #F89559; margin-bottom: 6rem; font-weight: 800;">
+        Evaluation Criteria
+      </h2>
+      <!-- <div class="based-on-application">
             Based on the application, we will review the following:
           </div> -->
-          <div class="listed-criteria">
-            <ol>
-              <li class="criteria-list" style="color: #00163D;"><h2 style="line-height: 0.7; color: #00163D;">Originality: </h2><p style="color: #000000;">Submissions should be entirely original, showcasing your unique perspective and insights.</p></li>
-              <li class="criteria-list" style="color: #00163D;"><h2 style="line-height: 0.7; color: #00163D;">Relevance to Software Developers: </h2><p style="color: #000000;">Content should be tailored for a target audience of beginner to intermediate software developers.</p></li>
-              <li class="criteria-list" style="color: #00163D;"><h2 style="line-height: 0.7; color: #00163D;">Keyword Volume Requirement: </h2><p style="color: #000000;">Ensure the chosen keyword for the blog has a volume of at least more than 400.</p></li>
-              <li class="criteria-list" style="color: #00163D;"><h2 style="line-height: 0.7; color: #00163D;">Conformity to Plagiarism: </h2><p style="color: #000000;">Adhere strictly to the plagiarism policy. Avoid any form of reproducing or claiming someone else's work.</p></li>
-              <li class="criteria-list" style="color: #00163D;"><h2 style="line-height: 0.7; color: #00163D;">Compliance with Terms & Conditions: </h2><p style="color: #000000;">Understand and comply with the terms and conditions of the Keploy Community Writing Program.</p></li>
-            </ol>
-          </div>
+      <div class="listed-criteria">
+        <ol>
+          <li class="criteria-list" style="color: #00163D;">
+            <h2 style="line-height: 0.7; color: #00163D;">Originality: </h2>
+            <p style="color: #000000;">Submissions should be entirely original, showcasing your unique perspective and
+              insights.</p>
+          </li>
+          <li class="criteria-list" style="color: #00163D;">
+            <h2 style="line-height: 0.7; color: #00163D;">Relevance to Software Developers: </h2>
+            <p style="color: #000000;">Content should be tailored for a target audience of beginner to intermediate
+              software developers.</p>
+          </li>
+          <li class="criteria-list" style="color: #00163D;">
+            <h2 style="line-height: 0.7; color: #00163D;">Keyword Volume Requirement: </h2>
+            <p style="color: #000000;">Ensure the chosen keyword for the blog has a volume of at least more than 400.
+            </p>
+          </li>
+          <li class="criteria-list" style="color: #00163D;">
+            <h2 style="line-height: 0.7; color: #00163D;">Conformity to Plagiarism: </h2>
+            <p style="color: #000000;">Adhere strictly to the plagiarism policy. Avoid any form of reproducing or
+              claiming someone else's work.</p>
+          </li>
+          <li class="criteria-list" style="color: #00163D;">
+            <h2 style="line-height: 0.7; color: #00163D;">Compliance with Terms & Conditions: </h2>
+            <p style="color: #000000;">Understand and comply with the terms and conditions of the Keploy Community
+              Writing Program.</p>
+          </li>
+        </ol>
+      </div>
 
-          <div class="home-content__buttons" style="padding-top: 0rem; text-align:center">
-            <a href="https://github.com/keploy/writers-program/blob/main/README.md" class="btn btn--stroke" style="background: #00163D; border: 0.2rem solid #00163D; color: #FFFFFF;">
-            Know More!
-            </a>
-          </div>
-        </section>
+      <div class="home-content__buttons" style="padding-top: 0rem; text-align:center">
+        <a href="https://github.com/keploy/writers-program/blob/main/README.md" class="btn btn--stroke"
+          style="background: #00163D; border: 0.2rem solid #00163D; color: #FFFFFF;">
+          Know More!
+        </a>
+      </div>
+    </section>
 
 
-        <!-- <section id="necessity">
+    <!-- <section id="necessity">
 
           <div>
             <h1 style="text-align: center; color: #F76B1C; font-size: 6.3rem; margin-bottom: 6rem;">Necessities</h1>
@@ -720,52 +791,60 @@
 
 
 
-        <section id="join" class="s-contact" data-aos="fade-up">
-          <div class="overlay"></div>
-          <!-- <div class="contact__line"></div> -->
-          <div class="row section-header">
-            <div class="col-full">
-              <!-- <h3 class="subhead">Join Our API Community Today!</h3> -->
-              <h1 class="display-2 display-2--light" style="font-weight: 800;">Join Our Community Today!</h1>
+    <section id="join" class="s-contact" data-aos="fade-up">
+      <div class="overlay"></div>
+      <!-- <div class="contact__line"></div> -->
+      <div class="row section-header">
+        <div class="col-full">
+          <!-- <h3 class="subhead">Join Our API Community Today!</h3> -->
+          <h1 class="display-2 display-2--light" style="font-weight: 800;">Join Our Community Today!</h1>
+        </div>
+      </div>
+      <div class="row contact-content">
+        <div class="contact-primary">
+          <h3 class="h6" style="font-size: 2rem; font-family: 'Inconsolata', monospace; text-transform: none;">Get
+            Involved In The Community Today!</h3>
+          <img src="./images/slack.png" alt="Slack Image" />
+          <!-- <img src="./images/slack2.png"/> -->
+          <button class="join-btn"><a
+              href="https://join.slack.com/t/keploy/shared_invite/zt-357qqm9b5-PbZRVu3Yt2rJIa6ofrwWNg">Join
+              Slack</a></button>
+        </div>
+        <!-- end contact-primary -->
+        <div class="contact-secondary">
+          <div class="contact-info">
+            <!-- <h3 class="h6 hide-on-fullwidth">Contact Info</h3> -->
+            <div class="cinfo">
+              <h2 style="color:#ffffff;">Connect with writers, mentors, and enthusiasts worldwide who share a passion
+                for crafting content and exploring the layers of technology!</h5>
             </div>
+            <ul class="contact-social">
+              <li><a href="https://keploy.slack.com/" style="color: white;"><i class="fa-brands fa-slack"></i></a></li>
+              <li><a href="https://twitter.com/Keployio" style="color: white;"><i
+                    class="fa-brands fa-x-twitter"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg" style="color: white;"><i
+                    class="fa-brands fa-youtube"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/keploy/" style="color: white;"><i
+                    class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="https://keploy.hashnode.dev" style="color: white;"><i class="fa-brands fa-hashnode"></i></a>
+              </li>
+            </ul>
+            <!-- end contact-social -->
           </div>
-          <div class="row contact-content" >
-            <div class="contact-primary">
-              <h3 class="h6" style="font-size: 2rem; font-family: 'Inconsolata', monospace; text-transform: none;">Get Involved In The Community Today!</h3>
-              <img src="./images/slack.png" alt="Slack Image"/>
-              <!-- <img src="./images/slack2.png"/> -->
-              <button class="join-btn"><a href="https://join.slack.com/t/keploy/shared_invite/zt-357qqm9b5-PbZRVu3Yt2rJIa6ofrwWNg">Join Slack</a></button>
-            </div>
-            <!-- end contact-primary -->
-            <div class="contact-secondary">
-              <div class="contact-info">
-                <!-- <h3 class="h6 hide-on-fullwidth">Contact Info</h3> -->
-                <div class="cinfo">
-                  <h2 style="color:#ffffff;">Connect with writers, mentors, and enthusiasts worldwide who share a passion for crafting content and exploring the layers of technology!</h5>
-                </div>
-                <ul class="contact-social">
-                  <li><a href="https://keploy.slack.com/" style="color: white;"><i class="fa-brands fa-slack"></i></a></li>
-                  <li><a href="https://twitter.com/Keployio" style="color: white;"><i class="fa-brands fa-x-twitter"></i></a></li>
-                  <li><a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg" style="color: white;"><i class="fa-brands fa-youtube"></i></a></li>
-                  <li><a href="https://www.linkedin.com/company/keploy/" style="color: white;"><i class="fa-brands fa-linkedin"></i></a></li>
-                  <li><a href="https://keploy.hashnode.dev" style="color: white;"><i class="fa-brands fa-hashnode"></i></a></li>
-                </ul>
-                <!-- end contact-social -->
-              </div>
-              <!-- end contact-info -->
-            </div>
-            <!-- end contact-secondary -->
-          </div>
-          <!-- end contact-content -->
-        </section>
-        <!-- end s-contact -->
-        <!-- <section>
+          <!-- end contact-info -->
+        </div>
+        <!-- end contact-secondary -->
+      </div>
+      <!-- end contact-content -->
+    </section>
+    <!-- end s-contact -->
+    <!-- <section>
           <div style="width: 100%; height:200px;background:orange; display: flex; flex-direction: column; justify-content: center;align-items: center;"><button style="margin:0 auto;">Join The Next Cohort Today!</button></div>
           </section> -->
-        <!-- footer
+    <!-- footer
           ================================================== -->
-        <!--================Impress Area =================-->
-        <!-- <section class="impress_area">
+    <!--================Impress Area =================-->
+    <!-- <section class="impress_area">
           <div class="container">
             <div class="impress_inner">
               <h2 class="mb-30">Sign-up for the newsletter!</h2>
@@ -785,94 +864,99 @@
             </div>
           </div>
         </section> -->
-        <!--================End Impress Area =================-->
-        <!--================Footer Area =================-->
-        <footer class="footer_area">
-          <div class="container">
-            <div class="row footer_inner">
-              <div class="col-lg-5 col-sm-6">
-                <aside class="f_widget ab_widget">
-                  <div class="f_title">
-                    <h3 style="margin-left: -10px;">Copyright © 2025  Keploy Inc.</h3>
-                  </div>
-                  <p style="font-family:'Inconsolata', monospace;">Developers experience for e2e testing. Toolkit that creates test-cases and data mocks from API calls, DB queries, etc.</p>
-                </aside>
+    <!--================End Impress Area =================-->
+    <!--================Footer Area =================-->
+    <footer class="footer_area">
+      <div class="container">
+        <div class="row footer_inner">
+          <div class="col-lg-5 col-sm-6">
+            <aside class="f_widget ab_widget">
+              <div class="f_title">
+                <h3 style="margin-left: -10px;">Copyright © 2026 Keploy Inc.</h3>
               </div>
-              <div class="col-lg-5 col-sm-6">
-                <aside class="f_widget news_widget">
-                  <div class="f_title">
-                    <h3>Newsletter</h3>
-                  </div>
-                  <p style="font-family:'Inconsolata', monospace;">Stay updated with our latest trends</p>
-                  <div id="mc_embed_signup-impress">
-                    <form id="newsletter-1" target="" action="" method="post" class="subscribe_form relative">
-                      <div class="input-group d-flex flex-row justify-content-center">
-                        <input name="email" class="input" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                        <button class="btn sub-btn submit-btn" style="border:1px; right:0px;"><span class="lnr lnr-arrow-right"></span></button>
-                      </div>
-                      <div class="mt-10 info"></div>
-                    </form>
-                    <div class="alert alert-warning alert-msg text-hide" role="alert"></div>
-                  </div>
-                </aside>
-              </div>
-              <div class="col-lg-2">
-                <aside class="f_widget social_widget">
-                  <div class="f_title">
-                    <h3>Find us on</h3>
-                  </div>
-                  <p style="font-family:'Inconsolata', monospace;">Let us be social</p>
-                  <ul class="list" style="margin-left:0">
-                    <li><a href="https://keploy.slack.com/"><i class="fa-brands fa-slack"></i></a></li>
-                    <li><a href="https://twitter.com/Keployio"><i class="fa-brands fa-x-twitter"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/keploy/"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://keploy.hashnode.dev"><i class="fa-brands fa-hashnode"></i></a></li>
-                  </ul>
-                </aside>
-              </div>
-            </div>
+              <p style="font-family:'Inconsolata', monospace;">Developers experience for e2e testing. Toolkit that
+                creates test-cases and data mocks from API calls, DB queries, etc.</p>
+            </aside>
           </div>
-        </footer>
-        <!-- photoswipe background
-          ================================================== -->
-        <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-          <div class="pswp__bg"></div>
-          <div class="pswp__scroll-wrap">
-            <div class="pswp__container">
-              <div class="pswp__item"></div>
-              <div class="pswp__item"></div>
-              <div class="pswp__item"></div>
-            </div>
-            <div class="pswp__ui pswp__ui--hidden">
-              <div class="pswp__top-bar">
-                <div class="pswp__counter"></div>
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                  "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                  "Zoom in/out"></button>
-                <div class="pswp__preloader">
-                  <div class="pswp__preloader__icn">
-                    <div class="pswp__preloader__cut">
-                      <div class="pswp__preloader__donut"></div>
-                    </div>
+          <div class="col-lg-5 col-sm-6">
+            <aside class="f_widget news_widget">
+              <div class="f_title">
+                <h3>Newsletter</h3>
+              </div>
+              <p style="font-family:'Inconsolata', monospace;">Stay updated with our latest trends</p>
+              <div id="mc_embed_signup-impress">
+                <form id="newsletter-1" target="" action="" method="post" class="subscribe_form relative">
+                  <div class="input-group d-flex flex-row justify-content-center">
+                    <input name="email" class="input" placeholder="Enter email address" onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Email Address '" required="" type="email">
+                    <button class="btn sub-btn submit-btn" style="border:1px; right:0px;"><span
+                        class="lnr lnr-arrow-right"></span></button>
                   </div>
-                </div>
+                  <div class="mt-10 info"></div>
+                </form>
+                <div class="alert alert-warning alert-msg text-hide" role="alert"></div>
               </div>
-              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
+            </aside>
+          </div>
+          <div class="col-lg-2">
+            <aside class="f_widget social_widget">
+              <div class="f_title">
+                <h3>Find us on</h3>
               </div>
-              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-              <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-              </div>
-            </div>
+              <p style="font-family:'Inconsolata', monospace;">Let us be social</p>
+              <ul class="list" style="margin-left:0">
+                <li><a href="https://keploy.slack.com/"><i class="fa-brands fa-slack"></i></a></li>
+                <li><a href="https://twitter.com/Keployio"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UC6OTg7F4o0WkmNtSoob34lg"><i
+                      class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/keploy/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://keploy.hashnode.dev"><i class="fa-brands fa-hashnode"></i></a></li>
+              </ul>
+            </aside>
           </div>
         </div>
-        <!-- end photoSwipe background -->
-        <!-- preloader
+      </div>
+    </footer>
+    <!-- photoswipe background
           ================================================== -->
-        <!-- <div id="preloader">
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button
+              class="pswp__button pswp__button--share" title="Share"></button> <button
+              class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button
+              class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button
+            class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end photoSwipe background -->
+    <!-- preloader
+          ================================================== -->
+    <!-- <div id="preloader">
           <div id="loader">
             <div class="line-scale-pulse-out">
               <div></div>
@@ -883,23 +967,24 @@
             </div>
           </div>
         </div> -->
-        <!-- Java Script
+    <!-- Java Script
           ================================================== -->
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <script>
-          // function modalClose(){
-          //   $('.modal:first').css('display','none');
-          //   $('body').css('overflow','auto');
-          // }
-          // $(document).on('keydown scroll mousewheel touchmove', function(event) {
-          //   if ($('#modal').is(':visible')) {
-          //     event.preventDefault();
-          //   }
-          // });
-        </script>  
-      </div>
-      </body>
-    </html>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script>
+      // function modalClose(){
+      //   $('.modal:first').css('display','none');
+      //   $('body').css('overflow','auto');
+      // }
+      // $(document).on('keydown scroll mousewheel touchmove', function(event) {
+      //   if ($('#modal').is(':visible')) {
+      //     event.preventDefault();
+      //   }
+      // });
+    </script>
+  </div>
+</body>
+
+</html>
