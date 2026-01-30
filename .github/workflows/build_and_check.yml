@@ -13,9 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm run build
       - uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: .
+          source-dir: ./out
           preview-branch: gh-pages
           umbrella-dir: pr-preview
           action: auto
