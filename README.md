@@ -97,7 +97,23 @@ Screenshots can enhance your article by visually representing instructions. Ensu
 - Crop to focus on relevant elements.
 - Remove unnecessary details.
 
+## Configuration
 
+The contact form uses the `SITE_OWNERS_EMAIL` environment variable to determine
+where submissions are sent. If the variable is not set, emails default to
+`user@website.com`.
+
+### Setting the variable locally
+
+```bash
+export SITE_OWNERS_EMAIL=you@example.com
+```
+
+### Hosting platforms
+
+Most hosting providers allow environment variables to be configured from their
+dashboard. Define `SITE_OWNERS_EMAIL` with your preferred address to receive
+emails from the contact form.
 ## FAQs
 
 ### How do I get involved?
