@@ -3920,16 +3920,14 @@ html.no-csstransitions .home-content__main {
 }
 
 .join-btn{
+    display: inline-block;
     margin:0 auto;
     background-color: #00163D;
     border-radius: 5px;
-    color:#FF914D;
+    color: white;
     outline: none;
     border:0px;
-}
-
-.join-btn a{
-    color:white
+    text-decoration: none;
 }
 
 .countdown-timer{
