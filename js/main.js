@@ -9,7 +9,11 @@
 
     var cfg = {
         scrollDuration: 800, // smoothscroll duration
-        mailChimpURL: 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
+        //mailChimpURL: 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
+       // post should be post-json for AJAX requests, as noted in the plugin doc.
+    
+         mailChimpURL: 'https://facebook.us8.list-manage.com/subscribe/post-json?u=cdb7b577e41181934ed6a6a44&id=e6957d85dc&c=?'
+
     },
 
         $WIN = $(window);
@@ -108,16 +112,20 @@
         // get items
         $folioItems.each(function (i) {
 
-            var $folio = $(this),
-                $thumbLink = $folio.find('.thumb-link'),
-                $title = $folio.find('.item-folio__title'),
-                $caption = $folio.find('.item-folio__caption'),
-                $titleText = '<h4>' + $.trim($title.html()) + '</h4>',
-                $captionText = $.trim($caption.html()),
-                $href = $thumbLink.attr('href'),
-                $size = $thumbLink.data('size').split('x'),
-                $width = $size[0],
-                $height = $size[1];
+ var $folio = $(this);
+    var $thumbLink = $folio.find('.thumb-link');
+    var $title = $folio.find('.item-folio__title');
+    var $caption = $folio.find('.item-folio__caption');
+    var $titleText = '<h4>' + $.trim($title.html()) + '</h4>';
+    var $captionText = $.trim($caption.html());
+    var $href = $thumbLink.attr('href');
+
+    var sizeAttr = $thumbLink.data('size');
+    if (!sizeAttr) return; // safely skip if data-size is missing
+
+    var $size = sizeAttr.split('x');
+    var $width = $size[0];
+    var $height = $size[1];
 
             var item = {
                 src: $href,
@@ -143,8 +151,11 @@
                 }
 
                 // initialize PhotoSwipe
-                var lightBox = new clPhotoswipe($pswp, PhotoSwipeUI_Default, items, options);
-                lightBox.init();
+               // var lightBox = new clPhotoswipe($pswp, PhotoSwipeUI_Default, items, options);
+                //clPhotoswipe is being recursively called inside itself instead of using PhotoSwipe constructor.
+                 var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+
+               lightBox.init();
             });
 
         });
@@ -348,8 +359,10 @@
                     success: function (msg) {
 
                         // Message was sent
-                        if (msg == 'OK') {
-                            sLoader.slideUp("slow");
+                        // if (msg == 'OK') {         //This is not a reliable check. Server messages should ideally return a JSON structure with a status.
+                            var res = JSON.parse(msg); // Fix (if backend can be adjusted):
+                        if (res.status === 'success')    { 
+                        sLoader.slideUp("slow");
                             $('.message-warning').fadeOut();
                             $('#contactForm').fadeOut();
                             $('.message-success').fadeIn();
