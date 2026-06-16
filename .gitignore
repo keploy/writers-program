@@ -1,0 +1,47 @@
+# Dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# Build output
+.next
+out
+build
+dist
+
+# Testing
+coverage
+
+# Production
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+.DS_Store
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Misc
+.vercel
+*.pem
+
+# Debug
+.yarn/install-state.gz
+
+# Legacy static files (not used in Next.js)
+old_static/
